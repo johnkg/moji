@@ -1,0 +1,80 @@
+{
+ "id": "ja_phrases",
+ "lang": "ja",
+ "title": "First phrases",
+ "description": "Survival phrases.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "こんにちは",
+   "reading": "konnichiwa",
+   "meaning": "hello"
+  },
+  {
+   "id": "2",
+   "front": "ありがとう",
+   "reading": "arigatou",
+   "meaning": "thank you"
+  },
+  {
+   "id": "3",
+   "front": "すみません",
+   "reading": "sumimasen",
+   "meaning": "excuse me / sorry"
+  },
+  {
+   "id": "4",
+   "front": "はい",
+   "reading": "hai",
+   "meaning": "yes"
+  },
+  {
+   "id": "5",
+   "front": "いいえ",
+   "reading": "iie",
+   "meaning": "no"
+  },
+  {
+   "id": "6",
+   "front": "おはよう",
+   "reading": "ohayou",
+   "meaning": "good morning"
+  },
+  {
+   "id": "7",
+   "front": "こんばんは",
+   "reading": "konbanwa",
+   "meaning": "good evening"
+  },
+  {
+   "id": "8",
+   "front": "さようなら",
+   "reading": "sayounara",
+   "meaning": "goodbye"
+  },
+  {
+   "id": "9",
+   "front": "おねがいします",
+   "reading": "onegaishimasu",
+   "meaning": "please"
+  },
+  {
+   "id": "10",
+   "front": "わかりません",
+   "reading": "wakarimasen",
+   "meaning": "I don't understand"
+  },
+  {
+   "id": "11",
+   "front": "いくらですか",
+   "reading": "ikura desu ka",
+   "meaning": "how much is it?"
+  },
+  {
+   "id": "12",
+   "front": "おいしい",
+   "reading": "oishii",
+   "meaning": "delicious"
+  }
+ ]
+}

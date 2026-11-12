@@ -1,0 +1,38 @@
+{
+ "id": "zh_tones",
+ "lang": "zh",
+ "title": "Tones",
+ "description": "The four tones plus neutral, on the syllable ma.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "妈",
+   "reading": "mā",
+   "meaning": "mother (1st tone: high and flat)"
+  },
+  {
+   "id": "2",
+   "front": "麻",
+   "reading": "má",
+   "meaning": "hemp (2nd tone: rising)"
+  },
+  {
+   "id": "3",
+   "front": "马",
+   "reading": "mǎ",
+   "meaning": "horse (3rd tone: dips low, then rises)"
+  },
+  {
+   "id": "4",
+   "front": "骂",
+   "reading": "mà",
+   "meaning": "to scold (4th tone: sharp fall)"
+  },
+  {
+   "id": "5",
+   "front": "吗",
+   "reading": "ma",
+   "meaning": "question particle (neutral tone: light, short)"
+  }
+ ]
+}

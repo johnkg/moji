@@ -1,0 +1,284 @@
+{
+ "id": "ja_katakana",
+ "lang": "ja",
+ "title": "Katakana",
+ "description": "The 46 basic katakana.",
+ "cards": [
+  {
+   "id": "a",
+   "front": "ア",
+   "reading": "a",
+   "meaning": ""
+  },
+  {
+   "id": "i",
+   "front": "イ",
+   "reading": "i",
+   "meaning": ""
+  },
+  {
+   "id": "u",
+   "front": "ウ",
+   "reading": "u",
+   "meaning": ""
+  },
+  {
+   "id": "e",
+   "front": "エ",
+   "reading": "e",
+   "meaning": ""
+  },
+  {
+   "id": "o",
+   "front": "オ",
+   "reading": "o",
+   "meaning": ""
+  },
+  {
+   "id": "ka",
+   "front": "カ",
+   "reading": "ka",
+   "meaning": ""
+  },
+  {
+   "id": "ki",
+   "front": "キ",
+   "reading": "ki",
+   "meaning": ""
+  },
+  {
+   "id": "ku",
+   "front": "ク",
+   "reading": "ku",
+   "meaning": ""
+  },
+  {
+   "id": "ke",
+   "front": "ケ",
+   "reading": "ke",
+   "meaning": ""
+  },
+  {
+   "id": "ko",
+   "front": "コ",
+   "reading": "ko",
+   "meaning": ""
+  },
+  {
+   "id": "sa",
+   "front": "サ",
+   "reading": "sa",
+   "meaning": ""
+  },
+  {
+   "id": "shi",
+   "front": "シ",
+   "reading": "shi",
+   "meaning": ""
+  },
+  {
+   "id": "su",
+   "front": "ス",
+   "reading": "su",
+   "meaning": ""
+  },
+  {
+   "id": "se",
+   "front": "セ",
+   "reading": "se",
+   "meaning": ""
+  },
+  {
+   "id": "so",
+   "front": "ソ",
+   "reading": "so",
+   "meaning": ""
+  },
+  {
+   "id": "ta",
+   "front": "タ",
+   "reading": "ta",
+   "meaning": ""
+  },
+  {
+   "id": "chi",
+   "front": "チ",
+   "reading": "chi",
+   "meaning": ""
+  },
+  {
+   "id": "tsu",
+   "front": "ツ",
+   "reading": "tsu",
+   "meaning": ""
+  },
+  {
+   "id": "te",
+   "front": "テ",
+   "reading": "te",
+   "meaning": ""
+  },
+  {
+   "id": "to",
+   "front": "ト",
+   "reading": "to",
+   "meaning": ""
+  },
+  {
+   "id": "na",
+   "front": "ナ",
+   "reading": "na",
+   "meaning": ""
+  },
+  {
+   "id": "ni",
+   "front": "ニ",
+   "reading": "ni",
+   "meaning": ""
+  },
+  {
+   "id": "nu",
+   "front": "ヌ",
+   "reading": "nu",
+   "meaning": ""
+  },
+  {
+   "id": "ne",
+   "front": "ネ",
+   "reading": "ne",
+   "meaning": ""
+  },
+  {
+   "id": "no",
+   "front": "ノ",
+   "reading": "no",
+   "meaning": ""
+  },
+  {
+   "id": "ha",
+   "front": "ハ",
+   "reading": "ha",
+   "meaning": ""
+  },
+  {
+   "id": "hi",
+   "front": "ヒ",
+   "reading": "hi",
+   "meaning": ""
+  },
+  {
+   "id": "fu",
+   "front": "フ",
+   "reading": "fu",
+   "meaning": ""
+  },
+  {
+   "id": "he",
+   "front": "ヘ",
+   "reading": "he",
+   "meaning": ""
+  },
+  {
+   "id": "ho",
+   "front": "ホ",
+   "reading": "ho",
+   "meaning": ""
+  },
+  {
+   "id": "ma",
+   "front": "マ",
+   "reading": "ma",
+   "meaning": ""
+  },
+  {
+   "id": "mi",
+   "front": "ミ",
+   "reading": "mi",
+   "meaning": ""
+  },
+  {
+   "id": "mu",
+   "front": "ム",
+   "reading": "mu",
+   "meaning": ""
+  },
+  {
+   "id": "me",
+   "front": "メ",
+   "reading": "me",
+   "meaning": ""
+  },
+  {
+   "id": "mo",
+   "front": "モ",
+   "reading": "mo",
+   "meaning": ""
+  },
+  {
+   "id": "ya",
+   "front": "ヤ",
+   "reading": "ya",
+   "meaning": ""
+  },
+  {
+   "id": "yu",
+   "front": "ユ",
+   "reading": "yu",
+   "meaning": ""
+  },
+  {
+   "id": "yo",
+   "front": "ヨ",
+   "reading": "yo",
+   "meaning": ""
+  },
+  {
+   "id": "ra",
+   "front": "ラ",
+   "reading": "ra",
+   "meaning": ""
+  },
+  {
+   "id": "ri",
+   "front": "リ",
+   "reading": "ri",
+   "meaning": ""
+  },
+  {
+   "id": "ru",
+   "front": "ル",
+   "reading": "ru",
+   "meaning": ""
+  },
+  {
+   "id": "re",
+   "front": "レ",
+   "reading": "re",
+   "meaning": ""
+  },
+  {
+   "id": "ro",
+   "front": "ロ",
+   "reading": "ro",
+   "meaning": ""
+  },
+  {
+   "id": "wa",
+   "front": "ワ",
+   "reading": "wa",
+   "meaning": ""
+  },
+  {
+   "id": "wo",
+   "front": "ヲ",
+   "reading": "wo",
+   "meaning": ""
+  },
+  {
+   "id": "n",
+   "front": "ン",
+   "reading": "n",
+   "meaning": ""
+  }
+ ]
+}

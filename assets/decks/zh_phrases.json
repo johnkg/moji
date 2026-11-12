@@ -1,0 +1,80 @@
+{
+ "id": "zh_phrases",
+ "lang": "zh",
+ "title": "First phrases",
+ "description": "Survival phrases.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "你好",
+   "reading": "nǐ hǎo",
+   "meaning": "hello"
+  },
+  {
+   "id": "2",
+   "front": "谢谢",
+   "reading": "xièxie",
+   "meaning": "thank you"
+  },
+  {
+   "id": "3",
+   "front": "不客气",
+   "reading": "bú kèqi",
+   "meaning": "you're welcome"
+  },
+  {
+   "id": "4",
+   "front": "对不起",
+   "reading": "duìbuqǐ",
+   "meaning": "sorry"
+  },
+  {
+   "id": "5",
+   "front": "没关系",
+   "reading": "méi guānxi",
+   "meaning": "it's okay"
+  },
+  {
+   "id": "6",
+   "front": "再见",
+   "reading": "zàijiàn",
+   "meaning": "goodbye"
+  },
+  {
+   "id": "7",
+   "front": "早上好",
+   "reading": "zǎoshang hǎo",
+   "meaning": "good morning"
+  },
+  {
+   "id": "8",
+   "front": "请",
+   "reading": "qǐng",
+   "meaning": "please"
+  },
+  {
+   "id": "9",
+   "front": "我不懂",
+   "reading": "wǒ bù dǒng",
+   "meaning": "I don't understand"
+  },
+  {
+   "id": "10",
+   "front": "多少钱",
+   "reading": "duōshao qián",
+   "meaning": "how much is it?"
+  },
+  {
+   "id": "11",
+   "front": "是",
+   "reading": "shì",
+   "meaning": "yes / it is"
+  },
+  {
+   "id": "12",
+   "front": "不是",
+   "reading": "bú shì",
+   "meaning": "no / it is not"
+  }
+ ]
+}

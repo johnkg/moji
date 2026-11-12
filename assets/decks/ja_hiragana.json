@@ -1,0 +1,284 @@
+{
+ "id": "ja_hiragana",
+ "lang": "ja",
+ "title": "Hiragana",
+ "description": "The 46 basic hiragana.",
+ "cards": [
+  {
+   "id": "a",
+   "front": "あ",
+   "reading": "a",
+   "meaning": ""
+  },
+  {
+   "id": "i",
+   "front": "い",
+   "reading": "i",
+   "meaning": ""
+  },
+  {
+   "id": "u",
+   "front": "う",
+   "reading": "u",
+   "meaning": ""
+  },
+  {
+   "id": "e",
+   "front": "え",
+   "reading": "e",
+   "meaning": ""
+  },
+  {
+   "id": "o",
+   "front": "お",
+   "reading": "o",
+   "meaning": ""
+  },
+  {
+   "id": "ka",
+   "front": "か",
+   "reading": "ka",
+   "meaning": ""
+  },
+  {
+   "id": "ki",
+   "front": "き",
+   "reading": "ki",
+   "meaning": ""
+  },
+  {
+   "id": "ku",
+   "front": "く",
+   "reading": "ku",
+   "meaning": ""
+  },
+  {
+   "id": "ke",
+   "front": "け",
+   "reading": "ke",
+   "meaning": ""
+  },
+  {
+   "id": "ko",
+   "front": "こ",
+   "reading": "ko",
+   "meaning": ""
+  },
+  {
+   "id": "sa",
+   "front": "さ",
+   "reading": "sa",
+   "meaning": ""
+  },
+  {
+   "id": "shi",
+   "front": "し",
+   "reading": "shi",
+   "meaning": ""
+  },
+  {
+   "id": "su",
+   "front": "す",
+   "reading": "su",
+   "meaning": ""
+  },
+  {
+   "id": "se",
+   "front": "せ",
+   "reading": "se",
+   "meaning": ""
+  },
+  {
+   "id": "so",
+   "front": "そ",
+   "reading": "so",
+   "meaning": ""
+  },
+  {
+   "id": "ta",
+   "front": "た",
+   "reading": "ta",
+   "meaning": ""
+  },
+  {
+   "id": "chi",
+   "front": "ち",
+   "reading": "chi",
+   "meaning": ""
+  },
+  {
+   "id": "tsu",
+   "front": "つ",
+   "reading": "tsu",
+   "meaning": ""
+  },
+  {
+   "id": "te",
+   "front": "て",
+   "reading": "te",
+   "meaning": ""
+  },
+  {
+   "id": "to",
+   "front": "と",
+   "reading": "to",
+   "meaning": ""
+  },
+  {
+   "id": "na",
+   "front": "な",
+   "reading": "na",
+   "meaning": ""
+  },
+  {
+   "id": "ni",
+   "front": "に",
+   "reading": "ni",
+   "meaning": ""
+  },
+  {
+   "id": "nu",
+   "front": "ぬ",
+   "reading": "nu",
+   "meaning": ""
+  },
+  {
+   "id": "ne",
+   "front": "ね",
+   "reading": "ne",
+   "meaning": ""
+  },
+  {
+   "id": "no",
+   "front": "の",
+   "reading": "no",
+   "meaning": ""
+  },
+  {
+   "id": "ha",
+   "front": "は",
+   "reading": "ha",
+   "meaning": ""
+  },
+  {
+   "id": "hi",
+   "front": "ひ",
+   "reading": "hi",
+   "meaning": ""
+  },
+  {
+   "id": "fu",
+   "front": "ふ",
+   "reading": "fu",
+   "meaning": ""
+  },
+  {
+   "id": "he",
+   "front": "へ",
+   "reading": "he",
+   "meaning": ""
+  },
+  {
+   "id": "ho",
+   "front": "ほ",
+   "reading": "ho",
+   "meaning": ""
+  },
+  {
+   "id": "ma",
+   "front": "ま",
+   "reading": "ma",
+   "meaning": ""
+  },
+  {
+   "id": "mi",
+   "front": "み",
+   "reading": "mi",
+   "meaning": ""
+  },
+  {
+   "id": "mu",
+   "front": "む",
+   "reading": "mu",
+   "meaning": ""
+  },
+  {
+   "id": "me",
+   "front": "め",
+   "reading": "me",
+   "meaning": ""
+  },
+  {
+   "id": "mo",
+   "front": "も",
+   "reading": "mo",
+   "meaning": ""
+  },
+  {
+   "id": "ya",
+   "front": "や",
+   "reading": "ya",
+   "meaning": ""
+  },
+  {
+   "id": "yu",
+   "front": "ゆ",
+   "reading": "yu",
+   "meaning": ""
+  },
+  {
+   "id": "yo",
+   "front": "よ",
+   "reading": "yo",
+   "meaning": ""
+  },
+  {
+   "id": "ra",
+   "front": "ら",
+   "reading": "ra",
+   "meaning": ""
+  },
+  {
+   "id": "ri",
+   "front": "り",
+   "reading": "ri",
+   "meaning": ""
+  },
+  {
+   "id": "ru",
+   "front": "る",
+   "reading": "ru",
+   "meaning": ""
+  },
+  {
+   "id": "re",
+   "front": "れ",
+   "reading": "re",
+   "meaning": ""
+  },
+  {
+   "id": "ro",
+   "front": "ろ",
+   "reading": "ro",
+   "meaning": ""
+  },
+  {
+   "id": "wa",
+   "front": "わ",
+   "reading": "wa",
+   "meaning": ""
+  },
+  {
+   "id": "wo",
+   "front": "を",
+   "reading": "wo",
+   "meaning": ""
+  },
+  {
+   "id": "n",
+   "front": "ん",
+   "reading": "n",
+   "meaning": ""
+  }
+ ]
+}

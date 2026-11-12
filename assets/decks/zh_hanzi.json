@@ -1,0 +1,188 @@
+{
+ "id": "zh_hanzi",
+ "lang": "zh",
+ "title": "First hanzi",
+ "description": "30 common characters with pinyin.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "一",
+   "reading": "yī",
+   "meaning": "one"
+  },
+  {
+   "id": "2",
+   "front": "二",
+   "reading": "èr",
+   "meaning": "two"
+  },
+  {
+   "id": "3",
+   "front": "三",
+   "reading": "sān",
+   "meaning": "three"
+  },
+  {
+   "id": "4",
+   "front": "四",
+   "reading": "sì",
+   "meaning": "four"
+  },
+  {
+   "id": "5",
+   "front": "五",
+   "reading": "wǔ",
+   "meaning": "five"
+  },
+  {
+   "id": "6",
+   "front": "六",
+   "reading": "liù",
+   "meaning": "six"
+  },
+  {
+   "id": "7",
+   "front": "七",
+   "reading": "qī",
+   "meaning": "seven"
+  },
+  {
+   "id": "8",
+   "front": "八",
+   "reading": "bā",
+   "meaning": "eight"
+  },
+  {
+   "id": "9",
+   "front": "九",
+   "reading": "jiǔ",
+   "meaning": "nine"
+  },
+  {
+   "id": "10",
+   "front": "十",
+   "reading": "shí",
+   "meaning": "ten"
+  },
+  {
+   "id": "11",
+   "front": "人",
+   "reading": "rén",
+   "meaning": "person"
+  },
+  {
+   "id": "12",
+   "front": "大",
+   "reading": "dà",
+   "meaning": "big"
+  },
+  {
+   "id": "13",
+   "front": "小",
+   "reading": "xiǎo",
+   "meaning": "small"
+  },
+  {
+   "id": "14",
+   "front": "我",
+   "reading": "wǒ",
+   "meaning": "I / me"
+  },
+  {
+   "id": "15",
+   "front": "你",
+   "reading": "nǐ",
+   "meaning": "you"
+  },
+  {
+   "id": "16",
+   "front": "他",
+   "reading": "tā",
+   "meaning": "he / him"
+  },
+  {
+   "id": "17",
+   "front": "她",
+   "reading": "tā",
+   "meaning": "she / her"
+  },
+  {
+   "id": "18",
+   "front": "好",
+   "reading": "hǎo",
+   "meaning": "good"
+  },
+  {
+   "id": "19",
+   "front": "是",
+   "reading": "shì",
+   "meaning": "to be"
+  },
+  {
+   "id": "20",
+   "front": "不",
+   "reading": "bù",
+   "meaning": "not"
+  },
+  {
+   "id": "21",
+   "front": "有",
+   "reading": "yǒu",
+   "meaning": "to have"
+  },
+  {
+   "id": "22",
+   "front": "水",
+   "reading": "shuǐ",
+   "meaning": "water"
+  },
+  {
+   "id": "23",
+   "front": "火",
+   "reading": "huǒ",
+   "meaning": "fire"
+  },
+  {
+   "id": "24",
+   "front": "山",
+   "reading": "shān",
+   "meaning": "mountain"
+  },
+  {
+   "id": "25",
+   "front": "日",
+   "reading": "rì",
+   "meaning": "sun / day"
+  },
+  {
+   "id": "26",
+   "front": "月",
+   "reading": "yuè",
+   "meaning": "moon / month"
+  },
+  {
+   "id": "27",
+   "front": "中",
+   "reading": "zhōng",
+   "meaning": "middle"
+  },
+  {
+   "id": "28",
+   "front": "国",
+   "reading": "guó",
+   "meaning": "country"
+  },
+  {
+   "id": "29",
+   "front": "吃",
+   "reading": "chī",
+   "meaning": "to eat"
+  },
+  {
+   "id": "30",
+   "front": "喝",
+   "reading": "hē",
+   "meaning": "to drink"
+  }
+ ]
+}
