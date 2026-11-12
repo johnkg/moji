@@ -14,6 +14,14 @@ flutter test
 flutter run -d chrome
 ```
 
+## Deployment
+
+Every push to `main` runs `.github/workflows/pages.yml`: analyze, test, build web, deploy to GitHub Pages.
+
+One-time setup: repo Settings > Pages > Source: **GitHub Actions**. Free Pages needs a public repo.
+
+Site: https://johnkg.github.io/moji/
+
 ## What v0.1 does
 
 - 6 decks: hiragana, katakana, Japanese phrases, Mandarin tones, 30 hanzi, Mandarin phrases
