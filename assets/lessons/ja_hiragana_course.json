@@ -1,0 +1,254 @@
+{
+ "id": "ja_hiragana_course",
+ "lang": "ja",
+ "title": "Hiragana, step by step",
+ "description": "Learn to read Japanese sounds, five characters at a time.",
+ "units": [
+  {
+   "id": "vowels",
+   "title": "The five vowels",
+   "intro": [
+    "Japanese is written with three scripts mixed together. Hiragana is the one to learn first. It has 46 characters.",
+    "Each hiragana character is one sound. Unlike English letters, a character is always read the same way.",
+    "Japanese has only five vowel sounds: a, i, u, e, o. Always in that order. Every other character is a consonant plus one of these five.",
+    "How they sound: a = 'ah' as in father. i = 'ee' as in see. u = 'oo' as in food. e = 'eh' as in bed. o = 'oh' as in go. Keep each one short.",
+    "The text under each character (like 'a') is romaji: Japanese sounds spelled with English letters. It is only a helper."
+   ],
+   "items": [
+    {
+     "id": "a",
+     "front": "あ",
+     "reading": "a",
+     "meaning": "",
+     "hint": "Sounds like 'ah'. Look for a capital A hiding in the middle: crossing strokes over a loop.",
+     "card": "ja_hiragana:a"
+    },
+    {
+     "id": "i",
+     "front": "い",
+     "reading": "i",
+     "meaning": "",
+     "hint": "Sounds like 'ee'. Two strokes side by side, like two eels swimming together.",
+     "card": "ja_hiragana:i"
+    },
+    {
+     "id": "u",
+     "front": "う",
+     "reading": "u",
+     "meaning": "",
+     "hint": "Sounds like 'oo'. A dash above a bent line, like someone hit in the belly going 'oof'.",
+     "card": "ja_hiragana:u"
+    },
+    {
+     "id": "e",
+     "front": "え",
+     "reading": "e",
+     "meaning": "",
+     "hint": "Sounds like 'eh'. A runner full of energy: a dash for the head, legs stretched out.",
+     "card": "ja_hiragana:e"
+    },
+    {
+     "id": "o",
+     "front": "お",
+     "reading": "o",
+     "meaning": "",
+     "hint": "Sounds like 'oh'. Close to あ, but with an extra dot on the right: 'oh, a dot!'",
+     "card": "ja_hiragana:o"
+    }
+   ],
+   "words": [
+    {
+     "text": "あい",
+     "reading": "ai",
+     "meaning": "love"
+    },
+    {
+     "text": "いえ",
+     "reading": "ie",
+     "meaning": "house"
+    },
+    {
+     "text": "うえ",
+     "reading": "ue",
+     "meaning": "above"
+    },
+    {
+     "text": "あおい",
+     "reading": "aoi",
+     "meaning": "blue"
+    },
+    {
+     "text": "いいえ",
+     "reading": "iie",
+     "meaning": "no"
+    }
+   ]
+  },
+  {
+   "id": "k_row",
+   "title": "The K row",
+   "intro": [
+    "Now put a k sound in front of each vowel: ka, ki, ku, ke, ko.",
+    "Same vowel order as before: a, i, u, e, o. Every row in the hiragana chart follows it.",
+    "After this unit you can read real words made of vowels and K sounds."
+   ],
+   "items": [
+    {
+     "id": "ka",
+     "front": "か",
+     "reading": "ka",
+     "meaning": "",
+     "hint": "A blade swinging down with a spark flying off: 'ka!' like a karate chop.",
+     "card": "ja_hiragana:ka"
+    },
+    {
+     "id": "ki",
+     "front": "き",
+     "reading": "ki",
+     "meaning": "",
+     "hint": "Looks like an old key with two teeth on top.",
+     "card": "ja_hiragana:ki"
+    },
+    {
+     "id": "ku",
+     "front": "く",
+     "reading": "ku",
+     "meaning": "",
+     "hint": "An open bird beak calling 'coo, coo'.",
+     "card": "ja_hiragana:ku"
+    },
+    {
+     "id": "ke",
+     "front": "け",
+     "reading": "ke",
+     "meaning": "",
+     "hint": "A post on the left and a gate on the right. 'ke' as in 'kept': the gate is kept shut.",
+     "card": "ja_hiragana:ke"
+    },
+    {
+     "id": "ko",
+     "front": "こ",
+     "reading": "ko",
+     "meaning": "",
+     "hint": "Two short curved lines, like two koi fish swimming.",
+     "card": "ja_hiragana:ko"
+    }
+   ],
+   "words": [
+    {
+     "text": "かお",
+     "reading": "kao",
+     "meaning": "face"
+    },
+    {
+     "text": "あか",
+     "reading": "aka",
+     "meaning": "red"
+    },
+    {
+     "text": "えき",
+     "reading": "eki",
+     "meaning": "station"
+    },
+    {
+     "text": "いけ",
+     "reading": "ike",
+     "meaning": "pond"
+    },
+    {
+     "text": "ここ",
+     "reading": "koko",
+     "meaning": "here"
+    },
+    {
+     "text": "きく",
+     "reading": "kiku",
+     "meaning": "to listen"
+    }
+   ]
+  },
+  {
+   "id": "s_row",
+   "title": "The S row",
+   "intro": [
+    "The S row: sa, shi, su, se, so.",
+    "One surprise: the second one is 'shi', not 'si'. Japanese has no 'si' sound.",
+    "さ looks a lot like き from the last unit. さ has one bar, き has two."
+   ],
+   "items": [
+    {
+     "id": "sa",
+     "front": "さ",
+     "reading": "sa",
+     "meaning": "",
+     "hint": "Like き with only one bar. Picture a salmon jumping up a stream.",
+     "card": "ja_hiragana:sa"
+    },
+    {
+     "id": "shi",
+     "front": "し",
+     "reading": "shi",
+     "meaning": "",
+     "hint": "A fishing hook. She is fishing: 'shi'.",
+     "card": "ja_hiragana:shi"
+    },
+    {
+     "id": "su",
+     "front": "す",
+     "reading": "su",
+     "meaning": "",
+     "hint": "A line with a loop, like a curly straw. Sip some soup: 'su'.",
+     "card": "ja_hiragana:su"
+    },
+    {
+     "id": "se",
+     "front": "せ",
+     "reading": "se",
+     "meaning": "",
+     "hint": "Looks like a seat with a back. 'se' as in 'set'.",
+     "card": "ja_hiragana:se"
+    },
+    {
+     "id": "so",
+     "front": "そ",
+     "reading": "so",
+     "meaning": "",
+     "hint": "One zigzag stroke, like thread when you sew: 'so'.",
+     "card": "ja_hiragana:so"
+    }
+   ],
+   "words": [
+    {
+     "text": "すし",
+     "reading": "sushi",
+     "meaning": "sushi"
+    },
+    {
+     "text": "あさ",
+     "reading": "asa",
+     "meaning": "morning"
+    },
+    {
+     "text": "かさ",
+     "reading": "kasa",
+     "meaning": "umbrella"
+    },
+    {
+     "text": "せかい",
+     "reading": "sekai",
+     "meaning": "world"
+    },
+    {
+     "text": "いす",
+     "reading": "isu",
+     "meaning": "chair"
+    },
+    {
+     "text": "うそ",
+     "reading": "uso",
+     "meaning": "a lie"
+    }
+   ]
+  }
+ ]
+}

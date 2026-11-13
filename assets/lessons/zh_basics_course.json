@@ -1,0 +1,196 @@
+{
+ "id": "zh_basics_course",
+ "lang": "zh",
+ "title": "Mandarin basics, step by step",
+ "description": "Tones first, then your first characters.",
+ "units": [
+  {
+   "id": "tones",
+   "title": "The four tones",
+   "intro": [
+    "Mandarin is written with characters called hanzi. Each character is one syllable and has a meaning.",
+    "Pinyin spells the sound of a character with Latin letters, like 'ma'. It is a helper, the same way romaji helps with Japanese.",
+    "The mark above the vowel is the tone: how your voice moves while you say the syllable. A different tone makes a different word.",
+    "1st tone (mā): high and flat, like holding one sung note. 2nd tone (má): rising, like asking 'what?'",
+    "3rd tone (mǎ): low and dipping, like a doubtful 'well...'. 4th tone (mà): a sharp fall, like a firm 'No!'",
+    "Neutral tone (ma): no mark. Short and light.",
+    "In this unit the same syllable, 'ma', is five different words. Listen to each one a few times before you move on."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "妈",
+     "reading": "mā",
+     "meaning": "mother",
+     "hint": "1st tone: high and flat. The flat line over the a is the shape of your voice.",
+     "card": "zh_tones:1"
+    },
+    {
+     "id": "2",
+     "front": "麻",
+     "reading": "má",
+     "meaning": "hemp",
+     "hint": "2nd tone: rising. The mark climbs upward, and so does your voice.",
+     "card": "zh_tones:2"
+    },
+    {
+     "id": "3",
+     "front": "马",
+     "reading": "mǎ",
+     "meaning": "horse",
+     "hint": "3rd tone: dips low. The mark is a small valley: go down, then a little up.",
+     "card": "zh_tones:3"
+    },
+    {
+     "id": "4",
+     "front": "骂",
+     "reading": "mà",
+     "meaning": "to scold",
+     "hint": "4th tone: sharp fall. The mark drops, like a scolding 'No!'",
+     "card": "zh_tones:4"
+    },
+    {
+     "id": "5",
+     "front": "吗",
+     "reading": "ma",
+     "meaning": "question word",
+     "hint": "Neutral tone: light and short. Put 吗 at the end of a sentence to make it a yes/no question.",
+     "card": "zh_tones:5"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "numbers_1_5",
+   "title": "Numbers 1 to 5",
+   "intro": [
+    "Numbers are a good first set of hanzi. The first three are just lines you can count.",
+    "Reading pinyin: 'yī' sounds like 'ee'. 'èr' sounds like 'are'. 'sān' sounds like 'sahn'.",
+    "'sì' is the tricky one: the i after s is not 'ee'. Say 's' and keep buzzing, like 'sz'. 'wǔ' sounds like 'woo'.",
+    "Watch the tone marks. They tell you how to move your voice, just like in the last unit."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "一",
+     "reading": "yī",
+     "meaning": "one",
+     "hint": "One line means one. 1st tone: high and flat, like the line itself.",
+     "card": "zh_hanzi:1"
+    },
+    {
+     "id": "2",
+     "front": "二",
+     "reading": "èr",
+     "meaning": "two",
+     "hint": "Two lines mean two. 4th tone: falling.",
+     "card": "zh_hanzi:2"
+    },
+    {
+     "id": "3",
+     "front": "三",
+     "reading": "sān",
+     "meaning": "three",
+     "hint": "Three lines mean three. 1st tone: high and flat.",
+     "card": "zh_hanzi:3"
+    },
+    {
+     "id": "4",
+     "front": "四",
+     "reading": "sì",
+     "meaning": "four",
+     "hint": "A box with four sides, like a window with curtains. 4th tone: falling.",
+     "card": "zh_hanzi:4"
+    },
+    {
+     "id": "5",
+     "front": "五",
+     "reading": "wǔ",
+     "meaning": "five",
+     "hint": "A shape standing between a top line and a bottom line. 3rd tone: dipping.",
+     "card": "zh_hanzi:5"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "numbers_6_10",
+   "title": "Numbers 6 to 10",
+   "intro": [
+    "Five more and you can count to ten.",
+    "Reading pinyin: 'q' sounds like 'ch', so 'qī' is 'chee'. 'j' is a soft 'j', so 'jiǔ' is close to 'jyoh'.",
+    "'shí' is not 'she'. The i after sh sounds like 'r': say 'shr' with a rising voice. 'liù' is close to 'lyoh', 'bā' is 'bah'.",
+    "Then the fun part. Bigger numbers are built from pieces: 十一 is ten-one, which is 11. 二十 is two-ten, which is 20."
+   ],
+   "items": [
+    {
+     "id": "6",
+     "front": "六",
+     "reading": "liù",
+     "meaning": "six",
+     "hint": "A person with a hat, arms out and legs apart. 4th tone: falling.",
+     "card": "zh_hanzi:6"
+    },
+    {
+     "id": "7",
+     "front": "七",
+     "reading": "qī",
+     "meaning": "seven",
+     "hint": "Like an upside-down 7 with a line through it. 1st tone: high and flat.",
+     "card": "zh_hanzi:7"
+    },
+    {
+     "id": "8",
+     "front": "八",
+     "reading": "bā",
+     "meaning": "eight",
+     "hint": "Two strokes leaning apart. 1st tone: high and flat.",
+     "card": "zh_hanzi:8"
+    },
+    {
+     "id": "9",
+     "front": "九",
+     "reading": "jiǔ",
+     "meaning": "nine",
+     "hint": "Close to a cross, but with a hooked tail: nine is almost ten. 3rd tone: dipping.",
+     "card": "zh_hanzi:9"
+    },
+    {
+     "id": "10",
+     "front": "十",
+     "reading": "shí",
+     "meaning": "ten",
+     "hint": "A cross, like a plus sign. 2nd tone: rising.",
+     "card": "zh_hanzi:10"
+    }
+   ],
+   "words": [
+    {
+     "text": "十一",
+     "reading": "shíyī",
+     "meaning": "eleven (ten + one)"
+    },
+    {
+     "text": "十五",
+     "reading": "shíwǔ",
+     "meaning": "fifteen (ten + five)"
+    },
+    {
+     "text": "二十",
+     "reading": "èrshí",
+     "meaning": "twenty (two tens)"
+    },
+    {
+     "text": "三十",
+     "reading": "sānshí",
+     "meaning": "thirty (three tens)"
+    },
+    {
+     "text": "九十九",
+     "reading": "jiǔshíjiǔ",
+     "meaning": "ninety-nine (nine tens + nine)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../app_state.dart';
+import '../models/course.dart';
 import '../models/deck.dart';
 import 'browse_screen.dart';
+import 'lesson_screen.dart';
 import 'locales.dart';
 import 'study_screen.dart';
 
@@ -13,6 +15,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(title: const Text('Moji')),
       body: AnimatedBuilder(
@@ -21,22 +24,90 @@ class HomeScreen extends StatelessWidget {
           final now = DateTime.now();
           final children = <Widget>[];
           for (final lang in const ['ja', 'zh']) {
+            final courses = app.courses.where((c) => c.lang == lang).toList();
             final decks = app.decks.where((d) => d.lang == lang).toList();
-            if (decks.isEmpty) continue;
+            if (courses.isEmpty && decks.isEmpty) continue;
             children.add(
               Padding(
-                padding: const EdgeInsets.fromLTRB(16, 20, 16, 8),
-                child: Text(
-                  languageName(lang),
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
+                padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
+                child: Text(languageName(lang), style: theme.textTheme.headlineSmall),
               ),
             );
-            for (final deck in decks) {
-              children.add(_DeckTile(app: app, deck: deck, now: now));
+            for (final course in courses) {
+              children.add(_sectionLabel(theme, 'Learn: ${course.title}', course.description));
+              for (var i = 0; i < course.units.length; i++) {
+                children.add(_UnitTile(app: app, course: course, unitIndex: i));
+              }
+            }
+            if (decks.isNotEmpty) {
+              children.add(_sectionLabel(
+                theme,
+                'Flashcard review',
+                'Finished lessons come back here. Opening a deck also adds untaught cards.',
+              ));
+              for (final deck in decks) {
+                children.add(_DeckTile(app: app, deck: deck, now: now));
+              }
             }
           }
+          children.add(const SizedBox(height: 24));
           return ListView(children: children);
+        },
+      ),
+    );
+  }
+
+  Widget _sectionLabel(ThemeData theme, String title, String caption) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: theme.textTheme.titleMedium),
+          if (caption.isNotEmpty) Text(caption, style: theme.textTheme.bodySmall),
+        ],
+      ),
+    );
+  }
+}
+
+class _UnitTile extends StatelessWidget {
+  const _UnitTile({required this.app, required this.course, required this.unitIndex});
+
+  final AppState app;
+  final Course course;
+  final int unitIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    final unit = course.units[unitIndex];
+    final done = app.isUnitDone(course, unitIndex);
+    final unlocked = app.isUnitUnlocked(course, unitIndex);
+    final IconData icon;
+    if (done) {
+      icon = Icons.check_circle;
+    } else if (unlocked) {
+      icon = Icons.play_circle;
+    } else {
+      icon = Icons.lock;
+    }
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+      child: ListTile(
+        enabled: unlocked,
+        leading: Icon(icon, size: 32),
+        title: Text('${unitIndex + 1}. ${unit.title}'),
+        subtitle: Text(
+          unit.items.map((i) => i.front).join('  '),
+          locale: scriptLocale(course.lang),
+        ),
+        trailing: done ? const Text('Redo') : null,
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => LessonScreen(app: app, course: course, unitIndex: unitIndex),
+            ),
+          );
         },
       ),
     );
@@ -59,10 +130,7 @@ class _DeckTile extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       child: ListTile(
         title: Text(deck.title),
-        subtitle: Text(
-          '$due due · $fresh new · $learned/${deck.cards.length} seen\n${deck.description}',
-        ),
-        isThreeLine: true,
+        subtitle: Text('$due due · $fresh new · $learned/${deck.cards.length} seen'),
         trailing: IconButton(
           tooltip: 'Browse all',
           icon: const Icon(Icons.grid_view),
