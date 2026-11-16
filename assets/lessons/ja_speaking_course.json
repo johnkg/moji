@@ -1,0 +1,140 @@
+{
+ "id": "ja_speaking_course",
+ "lang": "ja",
+ "mode": "speaking",
+ "title": "Speak: first phrases",
+ "description": "Sound first. Say useful phrases before you can read them.",
+ "units": [
+  {
+   "id": "greetings",
+   "title": "Hello and goodbye",
+   "intro": [
+    "You can start speaking before you can read. This path is sound first.",
+    "Each phrase is shown in romaji (English letters) so you can say it. The Japanese writing is shown small underneath. Do not worry about reading it yet.",
+    "Japanese is spoken in even beats. Give every syllable the same length, and do not stress one harder than the others.",
+    "Tap the speaker and repeat out loud. Saying it matters more than tapping the right answer."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "こんにちは",
+     "reading": "konnichiwa",
+     "meaning": "hello",
+     "hint": "The daytime hello. Even beats: kon-ni-chi-wa. Hold the first n a little.",
+     "card": "ja_phrases:1"
+    },
+    {
+     "id": "6",
+     "front": "おはよう",
+     "reading": "ohayou",
+     "meaning": "good morning",
+     "hint": "'ou' is one long 'oh', not 'oh-oo': o-ha-yoh. Add 'gozaimasu' after it to be polite.",
+     "card": "ja_phrases:6"
+    },
+    {
+     "id": "7",
+     "front": "こんばんは",
+     "reading": "konbanwa",
+     "meaning": "good evening",
+     "hint": "The evening hello: kon-ban-wa.",
+     "card": "ja_phrases:7"
+    },
+    {
+     "id": "8",
+     "front": "さようなら",
+     "reading": "sayounara",
+     "meaning": "goodbye",
+     "hint": "sa-yoh-na-ra. A real goodbye, for when you will not meet again soon. With friends, people often say 'ja ne'.",
+     "card": "ja_phrases:8"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "yes_no_thanks",
+   "title": "Yes, no, thank you",
+   "intro": [
+    "Five short phrases that carry most simple exchanges.",
+    "The Japanese r is a quick tap of the tongue behind the top teeth, close to a soft d. You will hear it in 'arigatou'."
+   ],
+   "items": [
+    {
+     "id": "4",
+     "front": "はい",
+     "reading": "hai",
+     "meaning": "yes",
+     "hint": "Sounds like the English word 'hi'. Short and crisp.",
+     "card": "ja_phrases:4"
+    },
+    {
+     "id": "5",
+     "front": "いいえ",
+     "reading": "iie",
+     "meaning": "no",
+     "hint": "A long 'ee', then 'eh': ee-eh.",
+     "card": "ja_phrases:5"
+    },
+    {
+     "id": "2",
+     "front": "ありがとう",
+     "reading": "arigatou",
+     "meaning": "thank you",
+     "hint": "a-ri-ga-toh. The 'ou' at the end is one long 'oh'.",
+     "card": "ja_phrases:2"
+    },
+    {
+     "id": "3",
+     "front": "すみません",
+     "reading": "sumimasen",
+     "meaning": "excuse me / sorry",
+     "hint": "su-mi-ma-sen. Use it to get attention, to apologize, or to squeeze past someone.",
+     "card": "ja_phrases:3"
+    },
+    {
+     "id": "9",
+     "front": "おねがいします",
+     "reading": "onegaishimasu",
+     "meaning": "please",
+     "hint": "o-ne-gai-shi-mas. The last u is almost silent. Say it when you ask for something.",
+     "card": "ja_phrases:9"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "getting_by",
+   "title": "Getting by",
+   "intro": [
+    "Three phrases for shops, restaurants and moments when you are lost.",
+    "A 'ka' at the end of a sentence turns it into a question. Your voice does not need to rise."
+   ],
+   "items": [
+    {
+     "id": "10",
+     "front": "わかりません",
+     "reading": "wakarimasen",
+     "meaning": "I don't understand",
+     "hint": "wa-ka-ri-ma-sen. The '-masen' ending means 'do not'.",
+     "card": "ja_phrases:10"
+    },
+    {
+     "id": "11",
+     "front": "いくらですか",
+     "reading": "ikura desu ka",
+     "meaning": "how much is it?",
+     "hint": "i-ku-ra des-ka. 'desu' sounds like 'des'. The 'ka' makes it a question.",
+     "card": "ja_phrases:11"
+    },
+    {
+     "id": "12",
+     "front": "おいしい",
+     "reading": "oishii",
+     "meaning": "delicious",
+     "hint": "o-i-shee. The double i is one long 'ee'. Say it when the food is good.",
+     "card": "ja_phrases:12"
+    }
+   ],
+   "words": []
+  }
+ ]
+}

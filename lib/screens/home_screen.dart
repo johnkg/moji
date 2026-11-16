@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
               ),
             );
             for (final course in courses) {
-              children.add(_sectionLabel(theme, 'Learn: ${course.title}', course.description));
+              children.add(_sectionLabel(theme, course.title, course.description));
               for (var i = 0; i < course.units.length; i++) {
                 children.add(_UnitTile(app: app, course: course, unitIndex: i));
               }
@@ -98,8 +98,12 @@ class _UnitTile extends StatelessWidget {
         leading: Icon(icon, size: 32),
         title: Text('${unitIndex + 1}. ${unit.title}'),
         subtitle: Text(
-          unit.items.map((i) => i.front).join('  '),
+          course.isSpeaking
+              ? unit.items.map((i) => i.reading).join(' · ')
+              : unit.items.map((i) => i.front).join('  '),
           locale: scriptLocale(course.lang),
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
         ),
         trailing: done ? const Text('Redo') : null,
         onTap: () {

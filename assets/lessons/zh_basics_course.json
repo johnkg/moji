@@ -1,8 +1,9 @@
 {
  "id": "zh_basics_course",
  "lang": "zh",
- "title": "Mandarin basics, step by step",
- "description": "Tones first, then your first characters.",
+ "mode": "reading",
+ "title": "Read: tones and first characters",
+ "description": "Tones first, then your first hanzi.",
  "units": [
   {
    "id": "tones",
@@ -21,7 +22,7 @@
      "id": "1",
      "front": "妈",
      "reading": "mā",
-     "meaning": "mother",
+     "meaning": "mother (1st tone: high and flat)",
      "hint": "1st tone: high and flat. The flat line over the a is the shape of your voice.",
      "card": "zh_tones:1"
     },
@@ -29,7 +30,7 @@
      "id": "2",
      "front": "麻",
      "reading": "má",
-     "meaning": "hemp",
+     "meaning": "hemp (2nd tone: rising)",
      "hint": "2nd tone: rising. The mark climbs upward, and so does your voice.",
      "card": "zh_tones:2"
     },
@@ -37,7 +38,7 @@
      "id": "3",
      "front": "马",
      "reading": "mǎ",
-     "meaning": "horse",
+     "meaning": "horse (3rd tone: dips low, then rises)",
      "hint": "3rd tone: dips low. The mark is a small valley: go down, then a little up.",
      "card": "zh_tones:3"
     },
@@ -45,7 +46,7 @@
      "id": "4",
      "front": "骂",
      "reading": "mà",
-     "meaning": "to scold",
+     "meaning": "to scold (4th tone: sharp fall)",
      "hint": "4th tone: sharp fall. The mark drops, like a scolding 'No!'",
      "card": "zh_tones:4"
     },
@@ -53,7 +54,7 @@
      "id": "5",
      "front": "吗",
      "reading": "ma",
-     "meaning": "question word",
+     "meaning": "question particle (neutral tone: light, short)",
      "hint": "Neutral tone: light and short. Put 吗 at the end of a sentence to make it a yes/no question.",
      "card": "zh_tones:5"
     }
@@ -189,6 +190,317 @@
      "text": "九十九",
      "reading": "jiǔshíjiǔ",
      "meaning": "ninety-nine (nine tens + nine)"
+    }
+   ]
+  },
+  {
+   "id": "you_and_me",
+   "title": "You and me",
+   "intro": [
+    "Many hanzi are built from smaller parts, and the parts give clues. Watch the left side of the characters in this unit.",
+    "亻 on the left is a squeezed form of 人, person. 女 on the left means woman.",
+    "Reading pinyin: 'wǒ' is close to 'waw'. 'nǐ' is 'nee'. 'tā' is 'tah'. 'hǎo' is 'how'.",
+    "他 (he) and 她 (she) sound exactly the same. You can only tell them apart in writing."
+   ],
+   "items": [
+    {
+     "id": "14",
+     "front": "我",
+     "reading": "wǒ",
+     "meaning": "I / me",
+     "hint": "I, me. Many strokes, but you will see it so often it sticks. 3rd tone: dipping.",
+     "card": "zh_hanzi:14"
+    },
+    {
+     "id": "15",
+     "front": "你",
+     "reading": "nǐ",
+     "meaning": "you",
+     "hint": "亻 (person) on the left: the person in front of me is you. 3rd tone: dipping.",
+     "card": "zh_hanzi:15"
+    },
+    {
+     "id": "16",
+     "front": "他",
+     "reading": "tā",
+     "meaning": "he / him",
+     "hint": "亻 (person) on the left: he. 1st tone: high and flat.",
+     "card": "zh_hanzi:16"
+    },
+    {
+     "id": "17",
+     "front": "她",
+     "reading": "tā",
+     "meaning": "she / her",
+     "hint": "女 (woman) on the left: she. Same sound as 他.",
+     "card": "zh_hanzi:17"
+    },
+    {
+     "id": "18",
+     "front": "好",
+     "reading": "hǎo",
+     "meaning": "good",
+     "hint": "女 (woman) next to 子 (child): together they mean good. 3rd tone: dipping.",
+     "card": "zh_hanzi:18"
+    }
+   ],
+   "words": [
+    {
+     "text": "你好",
+     "reading": "nǐ hǎo",
+     "meaning": "hello (you + good)"
+    }
+   ]
+  },
+  {
+   "id": "small_words",
+   "title": "Small words",
+   "intro": [
+    "Five characters that show up in almost every sentence.",
+    "Reading pinyin: 'rén' starts with a buzzing r, tongue curled back. 'dà' is 'dah'. 'xiǎo' is close to 'shyow': x is a soft sh.",
+    "是 is 'to be'. Mandarin uses the same word for am, is and are. No changes to memorize.",
+    "不 means 'not'. It is 'bù', but in front of another falling tone it flips to rising: 不是 is 'bú shì'."
+   ],
+   "items": [
+    {
+     "id": "11",
+     "front": "人",
+     "reading": "rén",
+     "meaning": "person",
+     "hint": "A person walking, seen from the side: two legs. 2nd tone: rising.",
+     "card": "zh_hanzi:11"
+    },
+    {
+     "id": "12",
+     "front": "大",
+     "reading": "dà",
+     "meaning": "big",
+     "hint": "A person stretching both arms out wide: big. 4th tone: falling.",
+     "card": "zh_hanzi:12"
+    },
+    {
+     "id": "13",
+     "front": "小",
+     "reading": "xiǎo",
+     "meaning": "small",
+     "hint": "A center stroke with two small strokes falling away from it: small. 3rd tone: dipping.",
+     "card": "zh_hanzi:13"
+    },
+    {
+     "id": "19",
+     "front": "是",
+     "reading": "shì",
+     "meaning": "to be",
+     "hint": "To be. 日 (sun) sits on top. 'shr' with a sharp fall.",
+     "card": "zh_hanzi:19"
+    },
+    {
+     "id": "20",
+     "front": "不",
+     "reading": "bù",
+     "meaning": "not",
+     "hint": "Not. A line on top, like a lid holding things down. 4th tone: falling.",
+     "card": "zh_hanzi:20"
+    }
+   ],
+   "words": [
+    {
+     "text": "大人",
+     "reading": "dàren",
+     "meaning": "adult (big person)"
+    },
+    {
+     "text": "好人",
+     "reading": "hǎorén",
+     "meaning": "good person"
+    },
+    {
+     "text": "不是",
+     "reading": "bú shì",
+     "meaning": "is not"
+    },
+    {
+     "text": "不好",
+     "reading": "bù hǎo",
+     "meaning": "not good"
+    },
+    {
+     "text": "我是",
+     "reading": "wǒ shì",
+     "meaning": "I am"
+    },
+    {
+     "text": "你是",
+     "reading": "nǐ shì",
+     "meaning": "you are"
+    }
+   ]
+  },
+  {
+   "id": "nature",
+   "title": "Sun, moon, fire, water",
+   "intro": [
+    "Some of the oldest hanzi started as drawings. These five still look a little like what they mean.",
+    "Reading pinyin: 'shuǐ' is close to 'shway'. 'huǒ' is 'hwaw'. 'shān' is 'shahn'. 'yuè' is 'yweh'.",
+    "'rì' is hard: curl your tongue back and buzz, like the r in 'run' held on its own, with a falling voice.",
+    "日 also means day, and 月 also means month. So 一月 is month one: January."
+   ],
+   "items": [
+    {
+     "id": "22",
+     "front": "水",
+     "reading": "shuǐ",
+     "meaning": "water",
+     "hint": "A stream down the middle with splashes on both sides. 3rd tone: dipping.",
+     "card": "zh_hanzi:22"
+    },
+    {
+     "id": "23",
+     "front": "火",
+     "reading": "huǒ",
+     "meaning": "fire",
+     "hint": "A fire with a spark flying off each side. 3rd tone: dipping.",
+     "card": "zh_hanzi:23"
+    },
+    {
+     "id": "24",
+     "front": "山",
+     "reading": "shān",
+     "meaning": "mountain",
+     "hint": "Three peaks: a mountain. 1st tone: high and flat.",
+     "card": "zh_hanzi:24"
+    },
+    {
+     "id": "25",
+     "front": "日",
+     "reading": "rì",
+     "meaning": "sun / day",
+     "hint": "It began as a circle with a dot: the sun. Also means day. 4th tone: falling.",
+     "card": "zh_hanzi:25"
+    },
+    {
+     "id": "26",
+     "front": "月",
+     "reading": "yuè",
+     "meaning": "moon / month",
+     "hint": "A crescent moon standing upright. Also means month. 4th tone: falling.",
+     "card": "zh_hanzi:26"
+    }
+   ],
+   "words": [
+    {
+     "text": "火山",
+     "reading": "huǒshān",
+     "meaning": "volcano (fire mountain)"
+    },
+    {
+     "text": "山水",
+     "reading": "shānshuǐ",
+     "meaning": "landscape (mountain and water)"
+    },
+    {
+     "text": "大山",
+     "reading": "dà shān",
+     "meaning": "big mountain"
+    },
+    {
+     "text": "小山",
+     "reading": "xiǎo shān",
+     "meaning": "hill (small mountain)"
+    },
+    {
+     "text": "一月",
+     "reading": "yīyuè",
+     "meaning": "January (month one)"
+    },
+    {
+     "text": "十月",
+     "reading": "shíyuè",
+     "meaning": "October (month ten)"
+    }
+   ]
+  },
+  {
+   "id": "daily",
+   "title": "Have, eat, drink",
+   "intro": [
+    "Three everyday verbs and the name of the country.",
+    "口 is a mouth. Both 吃 (eat) and 喝 (drink) have it on the left.",
+    "Reading pinyin: 'yǒu' sounds like 'yo'. 'zhōng' is close to 'jong'. 'guó' is 'gwaw'. 'chī' is 'chr', high and flat. 'hē' is close to 'huh'.",
+    "中国 is 'middle country': China. Add 人 and you get 中国人, a Chinese person."
+   ],
+   "items": [
+    {
+     "id": "21",
+     "front": "有",
+     "reading": "yǒu",
+     "meaning": "to have",
+     "hint": "To have. The bottom looks like 月. Picture a hand on top holding it. 3rd tone: dipping.",
+     "card": "zh_hanzi:21"
+    },
+    {
+     "id": "27",
+     "front": "中",
+     "reading": "zhōng",
+     "meaning": "middle",
+     "hint": "A line straight through the middle of a box: middle. 1st tone: high and flat.",
+     "card": "zh_hanzi:27"
+    },
+    {
+     "id": "28",
+     "front": "国",
+     "reading": "guó",
+     "meaning": "country",
+     "hint": "A border around something precious: country. 2nd tone: rising.",
+     "card": "zh_hanzi:28"
+    },
+    {
+     "id": "29",
+     "front": "吃",
+     "reading": "chī",
+     "meaning": "to eat",
+     "hint": "口 (mouth) on the left: eat. 1st tone: high and flat.",
+     "card": "zh_hanzi:29"
+    },
+    {
+     "id": "30",
+     "front": "喝",
+     "reading": "hē",
+     "meaning": "to drink",
+     "hint": "口 (mouth) on the left again: drink. 1st tone: high and flat.",
+     "card": "zh_hanzi:30"
+    }
+   ],
+   "words": [
+    {
+     "text": "中国",
+     "reading": "Zhōngguó",
+     "meaning": "China (middle country)"
+    },
+    {
+     "text": "中国人",
+     "reading": "Zhōngguórén",
+     "meaning": "Chinese person"
+    },
+    {
+     "text": "喝水",
+     "reading": "hē shuǐ",
+     "meaning": "drink water"
+    },
+    {
+     "text": "我有",
+     "reading": "wǒ yǒu",
+     "meaning": "I have"
+    },
+    {
+     "text": "不吃",
+     "reading": "bù chī",
+     "meaning": "not eat"
+    },
+    {
+     "text": "不喝",
+     "reading": "bù hē",
+     "meaning": "not drink"
     }
    ]
   }

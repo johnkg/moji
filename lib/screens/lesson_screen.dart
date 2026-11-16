@@ -82,7 +82,7 @@ class _LessonScreenState extends State<LessonScreen> {
   void _pick(Exercise exercise, String option) {
     if (_picked != null) return;
     setState(() => _picked = option);
-    _say(exercise.display);
+    _say(exercise.speak);
   }
 
   Future<void> _next() async {
@@ -111,8 +111,8 @@ class _LessonScreenState extends State<LessonScreen> {
     final next = _steps[_index];
     if (next.kind == _StepKind.meet) {
       _say(next.item!.front);
-    } else if (next.exercise != null && next.exercise!.kind == ExerciseKind.hearChar) {
-      _say(next.exercise!.display);
+    } else if (next.exercise != null && next.exercise!.isListening) {
+      _say(next.exercise!.speak);
     }
   }
 
@@ -199,21 +199,38 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Widget _buildMeet(BuildContext context, LessonItem item) {
     final theme = Theme.of(context);
+    final speaking = widget.course.isSpeaking;
     return Column(
       children: [
-        Text('New character', style: theme.textTheme.labelLarge),
-        FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Text(
+        Text(speaking ? 'New phrase' : 'New character', style: theme.textTheme.labelLarge),
+        const SizedBox(height: 8),
+        if (speaking) ...[
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(item.reading, style: const TextStyle(fontSize: 44)),
+          ),
+          const SizedBox(height: 8),
+          Text(item.meaning, textAlign: TextAlign.center, style: theme.textTheme.titleLarge),
+          const SizedBox(height: 8),
+          Text(
             item.front,
             locale: scriptLocale(_lang),
-            style: const TextStyle(fontSize: 112),
+            style: theme.textTheme.titleMedium?.copyWith(color: theme.colorScheme.outline),
           ),
-        ),
-        Text(item.reading, style: theme.textTheme.headlineMedium),
-        if (item.meaning.isNotEmpty) ...[
-          const SizedBox(height: 4),
-          Text(item.meaning, style: theme.textTheme.titleMedium),
+        ] else ...[
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.front,
+              locale: scriptLocale(_lang),
+              style: const TextStyle(fontSize: 112),
+            ),
+          ),
+          Text(item.reading, style: theme.textTheme.headlineMedium),
+          if (item.meaning.isNotEmpty) ...[
+            const SizedBox(height: 4),
+            Text(item.meaning, style: theme.textTheme.titleMedium),
+          ],
         ],
         const SizedBox(height: 12),
         IconButton.filledTonal(
@@ -241,7 +258,7 @@ class _LessonScreenState extends State<LessonScreen> {
     final theme = Theme.of(context);
     final answered = _picked != null;
     final correct = _picked == exercise.answer;
-    final hearing = exercise.kind == ExerciseKind.hearChar;
+    final hearing = exercise.isListening;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -253,7 +270,7 @@ class _LessonScreenState extends State<LessonScreen> {
               tooltip: 'Play again',
               iconSize: 48,
               icon: const Icon(Icons.volume_up),
-              onPressed: () => _say(exercise.display),
+              onPressed: () => _say(exercise.speak),
             ),
           ),
           if (_voiceFailed) ...[
@@ -269,9 +286,9 @@ class _LessonScreenState extends State<LessonScreen> {
             child: FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(
-                exercise.display,
-                locale: scriptLocale(_lang),
-                style: const TextStyle(fontSize: 80),
+                exercise.display!,
+                locale: exercise.displayIsNative ? scriptLocale(_lang) : null,
+                style: TextStyle(fontSize: exercise.displayIsNative ? 80 : 44),
               ),
             ),
           ),
@@ -308,7 +325,7 @@ class _LessonScreenState extends State<LessonScreen> {
       background = scheme.errorContainer;
       foreground = scheme.onErrorContainer;
     }
-    final native = exercise.kind == ExerciseKind.hearChar;
+    final native = exercise.optionsAreNative;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Material(
@@ -345,14 +362,18 @@ class _LessonScreenState extends State<LessonScreen> {
         FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
-            _unit.items.map((i) => i.front).join('  '),
+            widget.course.isSpeaking
+                ? _unit.items.map((i) => i.reading).join(' · ')
+                : _unit.items.map((i) => i.front).join('  '),
             locale: scriptLocale(_lang),
-            style: const TextStyle(fontSize: 40),
+            style: TextStyle(fontSize: widget.course.isSpeaking ? 24 : 40),
           ),
         ),
         const SizedBox(height: 16),
         Text(
-          'These characters are now in your flashcard review. They come back tomorrow.',
+          widget.course.isSpeaking
+              ? 'These phrases are now in your flashcard review. They come back tomorrow. Keep saying them out loud.'
+              : 'These characters are now in your flashcard review. They come back tomorrow.',
           textAlign: TextAlign.center,
           style: theme.textTheme.bodyLarge,
         ),

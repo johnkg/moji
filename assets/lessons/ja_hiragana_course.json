@@ -1,8 +1,9 @@
 {
  "id": "ja_hiragana_course",
  "lang": "ja",
- "title": "Hiragana, step by step",
- "description": "Learn to read Japanese sounds, five characters at a time.",
+ "mode": "reading",
+ "title": "Read: hiragana, step by step",
+ "description": "Learn to read Japanese sounds, a few characters at a time.",
  "units": [
   {
    "id": "vowels",
@@ -247,6 +248,553 @@
      "text": "うそ",
      "reading": "uso",
      "meaning": "a lie"
+    }
+   ]
+  },
+  {
+   "id": "t_row",
+   "title": "The T row",
+   "intro": [
+    "The T row: ta, chi, tsu, te, to.",
+    "Two surprises this time. The second is 'chi', not 'ti'. The third is 'tsu', not 'tu'.",
+    "'tsu' is the sound at the end of 'cats', then 'oo'. It is one beat, not two."
+   ],
+   "items": [
+    {
+     "id": "ta",
+     "front": "た",
+     "reading": "ta",
+     "meaning": "",
+     "hint": "Looks like a small t and a small a squeezed together: 'ta'.",
+     "card": "ja_hiragana:ta"
+    },
+    {
+     "id": "chi",
+     "front": "ち",
+     "reading": "chi",
+     "meaning": "",
+     "hint": "Like the number 5 with a bar on top. 'chi' as in 'cheese'.",
+     "card": "ja_hiragana:chi"
+    },
+    {
+     "id": "tsu",
+     "front": "つ",
+     "reading": "tsu",
+     "meaning": "",
+     "hint": "One sweeping curve, like a big wave: tsunami.",
+     "card": "ja_hiragana:tsu"
+    },
+    {
+     "id": "te",
+     "front": "て",
+     "reading": "te",
+     "meaning": "",
+     "hint": "A bar on top with a curved tail, like a capital T bending over. 'te' as in 'ten'.",
+     "card": "ja_hiragana:te"
+    },
+    {
+     "id": "to",
+     "front": "と",
+     "reading": "to",
+     "meaning": "",
+     "hint": "A short stick poking into a curve, like a thorn stuck in a toe: 'to'.",
+     "card": "ja_hiragana:to"
+    }
+   ],
+   "words": [
+    {
+     "text": "たこ",
+     "reading": "tako",
+     "meaning": "octopus"
+    },
+    {
+     "text": "つくえ",
+     "reading": "tsukue",
+     "meaning": "desk"
+    },
+    {
+     "text": "とけい",
+     "reading": "tokei",
+     "meaning": "clock"
+    },
+    {
+     "text": "そと",
+     "reading": "soto",
+     "meaning": "outside"
+    },
+    {
+     "text": "あした",
+     "reading": "ashita",
+     "meaning": "tomorrow"
+    },
+    {
+     "text": "くつ",
+     "reading": "kutsu",
+     "meaning": "shoes"
+    }
+   ]
+  },
+  {
+   "id": "n_row",
+   "title": "The N row",
+   "intro": [
+    "The N row: na, ni, nu, ne, no. No surprises here.",
+    "Careful with ぬ and ね. They look alike. ぬ has two loops tangled together. ね has a straight post on the left."
+   ],
+   "items": [
+    {
+     "id": "na",
+     "front": "な",
+     "reading": "na",
+     "meaning": "",
+     "hint": "A cross, a dash, and a loop at the bottom like a knot in a rope. 'na' as in 'nacho'.",
+     "card": "ja_hiragana:na"
+    },
+    {
+     "id": "ni",
+     "front": "に",
+     "reading": "ni",
+     "meaning": "",
+     "hint": "A post on the left and two short lines on the right. 'ni' sounds like 'knee'.",
+     "card": "ja_hiragana:ni"
+    },
+    {
+     "id": "nu",
+     "front": "ぬ",
+     "reading": "nu",
+     "meaning": "",
+     "hint": "Tangled loops, like noodles. 'nu' as in 'noodle'.",
+     "card": "ja_hiragana:nu"
+    },
+    {
+     "id": "ne",
+     "front": "ね",
+     "reading": "ne",
+     "meaning": "",
+     "hint": "A post on the left and a curled tail on the right, like a cat's tail. 'neko' means cat.",
+     "card": "ja_hiragana:ne"
+    },
+    {
+     "id": "no",
+     "front": "の",
+     "reading": "no",
+     "meaning": "",
+     "hint": "One swirl drawn without lifting the pen: 'no'.",
+     "card": "ja_hiragana:no"
+    }
+   ],
+   "words": [
+    {
+     "text": "ねこ",
+     "reading": "neko",
+     "meaning": "cat"
+    },
+    {
+     "text": "いぬ",
+     "reading": "inu",
+     "meaning": "dog"
+    },
+    {
+     "text": "なに",
+     "reading": "nani",
+     "meaning": "what"
+    },
+    {
+     "text": "にく",
+     "reading": "niku",
+     "meaning": "meat"
+    },
+    {
+     "text": "きのこ",
+     "reading": "kinoko",
+     "meaning": "mushroom"
+    },
+    {
+     "text": "なつ",
+     "reading": "natsu",
+     "meaning": "summer"
+    }
+   ]
+  },
+  {
+   "id": "h_row",
+   "title": "The H row",
+   "intro": [
+    "The H row: ha, hi, fu, he, ho.",
+    "The third one is 'fu', not 'hu'. It is a soft f: blow air between your lips without biting your lower lip.",
+    "Later you will see は read as 'wa' when it works as a grammar marker. For now it is 'ha'."
+   ],
+   "items": [
+    {
+     "id": "ha",
+     "front": "は",
+     "reading": "ha",
+     "meaning": "",
+     "hint": "A post on the left, then a cross with a loop at the bottom. 'ha' as in 'ha ha'.",
+     "card": "ja_hiragana:ha"
+    },
+    {
+     "id": "hi",
+     "front": "ひ",
+     "reading": "hi",
+     "meaning": "",
+     "hint": "A wide smile: 'hee hee'.",
+     "card": "ja_hiragana:hi"
+    },
+    {
+     "id": "fu",
+     "front": "ふ",
+     "reading": "fu",
+     "meaning": "",
+     "hint": "A curvy middle with small strokes around it, like a mountain with clouds: Mount Fuji.",
+     "card": "ja_hiragana:fu"
+    },
+    {
+     "id": "he",
+     "front": "へ",
+     "reading": "he",
+     "meaning": "",
+     "hint": "One bent line, like a small hill. 'he' as in 'hen'.",
+     "card": "ja_hiragana:he"
+    },
+    {
+     "id": "ho",
+     "front": "ほ",
+     "reading": "ho",
+     "meaning": "",
+     "hint": "Like は with one more bar on top, as if it put on a hat: 'ho ho'.",
+     "card": "ja_hiragana:ho"
+    }
+   ],
+   "words": [
+    {
+     "text": "はな",
+     "reading": "hana",
+     "meaning": "flower"
+    },
+    {
+     "text": "ひと",
+     "reading": "hito",
+     "meaning": "person"
+    },
+    {
+     "text": "ふね",
+     "reading": "fune",
+     "meaning": "boat"
+    },
+    {
+     "text": "ほし",
+     "reading": "hoshi",
+     "meaning": "star"
+    },
+    {
+     "text": "はこ",
+     "reading": "hako",
+     "meaning": "box"
+    },
+    {
+     "text": "ほね",
+     "reading": "hone",
+     "meaning": "bone"
+    }
+   ]
+  },
+  {
+   "id": "m_row",
+   "title": "The M row",
+   "intro": [
+    "The M row: ma, mi, mu, me, mo. No surprises in the sounds.",
+    "め looks like ぬ from the N row. め ends in a plain curve. ぬ ends in an extra loop."
+   ],
+   "items": [
+    {
+     "id": "ma",
+     "front": "ま",
+     "reading": "ma",
+     "meaning": "",
+     "hint": "Two bars across a pole, with a loop at the foot. 'ma' as in 'mama'.",
+     "card": "ja_hiragana:ma"
+    },
+    {
+     "id": "mi",
+     "front": "み",
+     "reading": "mi",
+     "meaning": "",
+     "hint": "A loop with a long tail and a stroke crossing it, like a music note falling over: do, re, 'mi'.",
+     "card": "ja_hiragana:mi"
+    },
+    {
+     "id": "mu",
+     "front": "む",
+     "reading": "mu",
+     "meaning": "",
+     "hint": "A loop on the left, a hook and a dot on the right. A cow says 'moo': 'mu'.",
+     "card": "ja_hiragana:mu"
+    },
+    {
+     "id": "me",
+     "front": "め",
+     "reading": "me",
+     "meaning": "",
+     "hint": "Like ぬ without the last loop. 'me' is also the Japanese word for eye.",
+     "card": "ja_hiragana:me"
+    },
+    {
+     "id": "mo",
+     "front": "も",
+     "reading": "mo",
+     "meaning": "",
+     "hint": "A fishing hook with two bars across it: catch 'mo'-re fish.",
+     "card": "ja_hiragana:mo"
+    }
+   ],
+   "words": [
+    {
+     "text": "みみ",
+     "reading": "mimi",
+     "meaning": "ear"
+    },
+    {
+     "text": "くも",
+     "reading": "kumo",
+     "meaning": "cloud"
+    },
+    {
+     "text": "むし",
+     "reading": "mushi",
+     "meaning": "insect"
+    },
+    {
+     "text": "あめ",
+     "reading": "ame",
+     "meaning": "rain"
+    },
+    {
+     "text": "もも",
+     "reading": "momo",
+     "meaning": "peach"
+    },
+    {
+     "text": "なまえ",
+     "reading": "namae",
+     "meaning": "name"
+    }
+   ]
+  },
+  {
+   "id": "y_row",
+   "title": "The Y row",
+   "intro": [
+    "The Y row has only three characters: ya, yu, yo. There is no 'yi' or 'ye' in modern Japanese.",
+    "'yu' sounds like the English word 'you'."
+   ],
+   "items": [
+    {
+     "id": "ya",
+     "front": "や",
+     "reading": "ya",
+     "meaning": "",
+     "hint": "A curve with two strokes through it, like the horned head of a yak: 'ya'.",
+     "card": "ja_hiragana:ya"
+    },
+    {
+     "id": "yu",
+     "front": "ゆ",
+     "reading": "yu",
+     "meaning": "",
+     "hint": "A loop with a line through the middle, like a fish. 'yu' sounds like 'you'.",
+     "card": "ja_hiragana:yu"
+    },
+    {
+     "id": "yo",
+     "front": "よ",
+     "reading": "yo",
+     "meaning": "",
+     "hint": "A post with a small arm and a loop at the bottom, like a yo-yo on its string.",
+     "card": "ja_hiragana:yo"
+    }
+   ],
+   "words": [
+    {
+     "text": "やま",
+     "reading": "yama",
+     "meaning": "mountain"
+    },
+    {
+     "text": "ゆき",
+     "reading": "yuki",
+     "meaning": "snow"
+    },
+    {
+     "text": "へや",
+     "reading": "heya",
+     "meaning": "room"
+    },
+    {
+     "text": "ふゆ",
+     "reading": "fuyu",
+     "meaning": "winter"
+    },
+    {
+     "text": "やさい",
+     "reading": "yasai",
+     "meaning": "vegetables"
+    },
+    {
+     "text": "つよい",
+     "reading": "tsuyoi",
+     "meaning": "strong"
+    }
+   ]
+  },
+  {
+   "id": "r_row",
+   "title": "The R row",
+   "intro": [
+    "The R row: ra, ri, ru, re, ro.",
+    "The Japanese r is not the English r. Tap the tip of your tongue once just behind your top teeth. It lands between an English r, l and d.",
+    "Three look-alikes: る ends in a loop, ろ does not. れ looks like ね, but its tail kicks outward instead of curling."
+   ],
+   "items": [
+    {
+     "id": "ra",
+     "front": "ら",
+     "reading": "ra",
+     "meaning": "",
+     "hint": "A dash floating above a curve, like a rabbit's ear above its back: 'ra'.",
+     "card": "ja_hiragana:ra"
+    },
+    {
+     "id": "ri",
+     "front": "り",
+     "reading": "ri",
+     "meaning": "",
+     "hint": "Two strokes, the right one longer, like reeds by a river. 'ri' sounds like 'ree'.",
+     "card": "ja_hiragana:ri"
+    },
+    {
+     "id": "ru",
+     "front": "る",
+     "reading": "ru",
+     "meaning": "",
+     "hint": "A zigzag that ends in a loop: the route loops at the end, 'ru'.",
+     "card": "ja_hiragana:ru"
+    },
+    {
+     "id": "re",
+     "front": "れ",
+     "reading": "re",
+     "meaning": "",
+     "hint": "A post on the left and a tail that kicks out to the right. 're' as in 'red'.",
+     "card": "ja_hiragana:re"
+    },
+    {
+     "id": "ro",
+     "front": "ろ",
+     "reading": "ro",
+     "meaning": "",
+     "hint": "Like る with no loop: the road just ends, 'ro'.",
+     "card": "ja_hiragana:ro"
+    }
+   ],
+   "words": [
+    {
+     "text": "さくら",
+     "reading": "sakura",
+     "meaning": "cherry blossom"
+    },
+    {
+     "text": "とり",
+     "reading": "tori",
+     "meaning": "bird"
+    },
+    {
+     "text": "くるま",
+     "reading": "kuruma",
+     "meaning": "car"
+    },
+    {
+     "text": "これ",
+     "reading": "kore",
+     "meaning": "this"
+    },
+    {
+     "text": "いろ",
+     "reading": "iro",
+     "meaning": "color"
+    },
+    {
+     "text": "よる",
+     "reading": "yoru",
+     "meaning": "night"
+    }
+   ]
+  },
+  {
+   "id": "w_n",
+   "title": "The last three",
+   "intro": [
+    "Three characters left: wa, wo and n. After this you can read all 46 basic hiragana.",
+    "を is written 'wo' in romaji but said 'o', the same as お. It is only used as a grammar marker, never inside a word.",
+    "ん is the only character with no vowel. It is a plain 'n' sound and never starts a word."
+   ],
+   "items": [
+    {
+     "id": "wa",
+     "front": "わ",
+     "reading": "wa",
+     "meaning": "",
+     "hint": "A post on the left and one big round curve on the right, like a round belly: 'wa'.",
+     "card": "ja_hiragana:wa"
+    },
+    {
+     "id": "wo",
+     "front": "を",
+     "reading": "wo",
+     "meaning": "",
+     "hint": "Said 'o'. Marks the thing an action is done to. You will meet it in sentences later.",
+     "card": "ja_hiragana:wo",
+     "listen": false
+    },
+    {
+     "id": "n",
+     "front": "ん",
+     "reading": "n",
+     "meaning": "",
+     "hint": "Looks like a handwritten lowercase n: 'n'.",
+     "card": "ja_hiragana:n"
+    }
+   ],
+   "words": [
+    {
+     "text": "わたし",
+     "reading": "watashi",
+     "meaning": "I / me"
+    },
+    {
+     "text": "ほん",
+     "reading": "hon",
+     "meaning": "book"
+    },
+    {
+     "text": "にほん",
+     "reading": "nihon",
+     "meaning": "Japan"
+    },
+    {
+     "text": "せんせい",
+     "reading": "sensei",
+     "meaning": "teacher"
+    },
+    {
+     "text": "かわ",
+     "reading": "kawa",
+     "meaning": "river"
+    },
+    {
+     "text": "みんな",
+     "reading": "minna",
+     "meaning": "everyone"
     }
    ]
   }

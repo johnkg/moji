@@ -1,0 +1,139 @@
+{
+ "id": "zh_speaking_course",
+ "lang": "zh",
+ "mode": "speaking",
+ "title": "Speak: first phrases",
+ "description": "Sound first. Say useful phrases before you can read them.",
+ "units": [
+  {
+   "id": "greetings",
+   "title": "Hello and goodbye",
+   "intro": [
+    "This path is sound first. Phrases are shown in pinyin so you can say them. The characters are shown small underneath.",
+    "Tones matter for being understood. If you have not done 'The four tones' in the reading path, do it first or right after this.",
+    "Tap the speaker, listen for how the voice moves, and repeat out loud."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "你好",
+     "reading": "nǐ hǎo",
+     "meaning": "hello",
+     "hint": "Sounds like 'nee how'. Two dipping tones in a row are hard to say, so the first one rises instead.",
+     "card": "zh_phrases:1"
+    },
+    {
+     "id": "7",
+     "front": "早上好",
+     "reading": "zǎoshang hǎo",
+     "meaning": "good morning",
+     "hint": "Close to 'dzow-shahng how'. z sounds like the 'ds' in 'kids'.",
+     "card": "zh_phrases:7"
+    },
+    {
+     "id": "6",
+     "front": "再见",
+     "reading": "zàijiàn",
+     "meaning": "goodbye",
+     "hint": "Close to 'dzai jyen'. Both syllables fall sharply. It means 'see you again'.",
+     "card": "zh_phrases:6"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "thanks_sorry",
+   "title": "Thanks and sorry",
+   "intro": [
+    "Two pairs: a phrase, and the usual answer to it.",
+    "In pinyin, x is a soft 'sh' and q is a soft 'ch', both made with the tongue flat behind the lower teeth."
+   ],
+   "items": [
+    {
+     "id": "2",
+     "front": "谢谢",
+     "reading": "xièxie",
+     "meaning": "thank you",
+     "hint": "Close to 'shyeh-shyeh'. The first one falls, the second is light.",
+     "card": "zh_phrases:2"
+    },
+    {
+     "id": "3",
+     "front": "不客气",
+     "reading": "bú kèqi",
+     "meaning": "you're welcome",
+     "hint": "Close to 'boo kuh-chee'. The usual answer to 谢谢.",
+     "card": "zh_phrases:3"
+    },
+    {
+     "id": "4",
+     "front": "对不起",
+     "reading": "duìbuqǐ",
+     "meaning": "sorry",
+     "hint": "Close to 'dway-boo-chee'. For a real apology.",
+     "card": "zh_phrases:4"
+    },
+    {
+     "id": "5",
+     "front": "没关系",
+     "reading": "méi guānxi",
+     "meaning": "it's okay",
+     "hint": "Close to 'may gwahn-shee'. The usual answer to 'sorry': no problem.",
+     "card": "zh_phrases:5"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "getting_by",
+   "title": "Getting by",
+   "intro": [
+    "Phrases for shops and for moments when you are lost.",
+    "Mandarin has no single word for 'yes'. You repeat the verb. 是 means 'it is', and 不是 means 'it is not'."
+   ],
+   "items": [
+    {
+     "id": "8",
+     "front": "请",
+     "reading": "qǐng",
+     "meaning": "please",
+     "hint": "Close to 'ching' with a dipping tone. Put it before a request.",
+     "card": "zh_phrases:8"
+    },
+    {
+     "id": "11",
+     "front": "是",
+     "reading": "shì",
+     "meaning": "yes / it is",
+     "hint": "Close to 'shr' with a sharp fall. It means 'it is'.",
+     "card": "zh_phrases:11"
+    },
+    {
+     "id": "12",
+     "front": "不是",
+     "reading": "bú shì",
+     "meaning": "no / it is not",
+     "hint": "Close to 'boo shr'. 不 means 'not'.",
+     "card": "zh_phrases:12"
+    },
+    {
+     "id": "9",
+     "front": "我不懂",
+     "reading": "wǒ bù dǒng",
+     "meaning": "I don't understand",
+     "hint": "Close to 'waw boo dong'. 我 is I, 不 is not, 懂 is understand.",
+     "card": "zh_phrases:9"
+    },
+    {
+     "id": "10",
+     "front": "多少钱",
+     "reading": "duōshao qián",
+     "meaning": "how much is it?",
+     "hint": "Close to 'dwaw-shao chyen'. 钱 means money.",
+     "card": "zh_phrases:10"
+    }
+   ],
+   "words": []
+  }
+ ]
+}

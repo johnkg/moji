@@ -89,7 +89,7 @@ void main() {
   });
 
   test('words only use characters taught so far', () {
-    for (final course in courses) {
+    for (final course in courses.where((c) => !c.isSpeaking)) {
       final taught = <String>{};
       for (final unit in course.units) {
         taught.addAll(unit.items.map((i) => i.front));
@@ -107,10 +107,10 @@ void main() {
       for (var i = 0; i < course.units.length; i++) {
         final unit = course.units[i];
         final exercises = buildExercises(course, i, math.Random(7));
-        final reads = exercises.where((e) => e.kind == ExerciseKind.readChar).length;
-        final hears = exercises.where((e) => e.kind == ExerciseKind.hearChar).length;
-        expect(reads, unit.items.length);
-        expect(hears, unit.items.length);
+        final listenable = unit.items.where((it) => it.listen).length;
+        expect(exercises.where((e) => !e.isListening && e.kind != ExerciseKind.readWord).length,
+            unit.items.length);
+        expect(exercises.where((e) => e.isListening).length, listenable);
         for (final exercise in exercises) {
           expect(exercise.options, contains(exercise.answer), reason: exercise.display);
           expect(exercise.options.toSet().length, exercise.options.length);
@@ -156,5 +156,37 @@ void main() {
     final before = store.cards[unit.items.first.card]!.dueMs;
     await app.completeUnit(course, unit, now.add(const Duration(days: 5)));
     expect(store.cards[unit.items.first.card]!.dueMs, before);
+  });
+
+  test('listening choices never sound the same as the answer', () {
+    for (final course in courses.where((c) => !c.isSpeaking)) {
+      final readingOf = <String, String>{
+        for (final unit in course.units)
+          for (final item in unit.items) item.front: item.reading,
+      };
+      for (var i = 0; i < course.units.length; i++) {
+        for (final exercise in buildExercises(course, i, math.Random(3))) {
+          if (exercise.kind != ExerciseKind.hearChar) continue;
+          final wrong = exercise.options.where((o) => o != exercise.answer);
+          for (final option in wrong) {
+            expect(readingOf[option], isNot(exercise.reading), reason: exercise.answer);
+          }
+        }
+      }
+    }
+  });
+
+  test('speaking courses have a meaning on every phrase', () {
+    final speaking = courses.where((c) => c.isSpeaking).toList();
+    expect(speaking.map((c) => c.lang).toSet(), {'ja', 'zh'});
+    for (final course in speaking) {
+      for (final unit in course.units) {
+        for (final item in unit.items) {
+          expect(item.meaning, isNotEmpty, reason: item.front);
+        }
+        final meanings = unit.items.map((i) => i.meaning).toSet();
+        expect(meanings.length, unit.items.length, reason: unit.id);
+      }
+    }
   });
 }

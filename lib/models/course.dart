@@ -7,6 +7,7 @@ class LessonItem {
     required this.meaning,
     required this.hint,
     required this.card,
+    this.listen = true,
   });
 
   final String id;
@@ -24,6 +25,10 @@ class LessonItem {
   /// Progress key of the matching flashcard ("deckId:cardId"), if any.
   final String? card;
 
+  /// False when the sound alone is ambiguous (を sounds like お), so no
+  /// listening exercise is made for it.
+  final bool listen;
+
   factory LessonItem.fromJson(Map<String, dynamic> json) {
     return LessonItem(
       id: json['id'] as String,
@@ -32,6 +37,7 @@ class LessonItem {
       meaning: (json['meaning'] as String?) ?? '',
       hint: (json['hint'] as String?) ?? '',
       card: json['card'] as String?,
+      listen: (json['listen'] as bool?) ?? true,
     );
   }
 }
@@ -86,10 +92,19 @@ class LessonUnit {
 }
 
 /// An ordered path of units. A unit unlocks when the one before it is done.
+enum CourseMode {
+  /// Learn to read a script. Native text is shown large.
+  reading,
+
+  /// Learn to say phrases. Romaji or pinyin is shown large, native text small.
+  speaking,
+}
+
 class Course {
   const Course({
     required this.id,
     required this.lang,
+    this.mode = CourseMode.reading,
     required this.title,
     required this.description,
     required this.units,
@@ -99,9 +114,12 @@ class Course {
 
   /// 'ja' or 'zh'.
   final String lang;
+  final CourseMode mode;
   final String title;
   final String description;
   final List<LessonUnit> units;
+
+  bool get isSpeaking => mode == CourseMode.speaking;
 
   /// Key used to store that [unit] is finished. Unique across courses.
   String keyFor(LessonUnit unit) => '$id:${unit.id}';
@@ -110,6 +128,7 @@ class Course {
     return Course(
       id: json['id'] as String,
       lang: json['lang'] as String,
+      mode: json['mode'] == 'speaking' ? CourseMode.speaking : CourseMode.reading,
       title: json['title'] as String,
       description: (json['description'] as String?) ?? '',
       units: (json['units'] as List<dynamic>)
