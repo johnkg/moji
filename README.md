@@ -33,7 +33,7 @@ Each language has two paths. Units unlock in order inside each path.
 - Wrong answers come back once. Finishing a unit puts its items into flashcard review, due the next day.
 - Flashcard decks with spaced repetition (SM-2 style, Again / Hard / Good / Easy)
 - Audio through device or browser text-to-speech
-- **Write** (pencil button on kana units): for each character, watch the strokes in order, trace over a guide, then write from memory. The check is loose: each stroke must start and end near the right place and go the right way. 5 XP per character written from memory.
+- **Write** (pencil button on kana and Mandarin hanzi units): for each character, watch the strokes in order, trace over a guide, then write from memory. The check is loose: each stroke must start and end near the right place and go the right way. 5 XP per character written from memory.
 - XP, levels and a daily streak. A unit gives 20 XP (5 on a redo) plus 2 per exercise right first try; a flashcard not marked Again gives 2. A level is 100 XP. The streak counts days in a row with any activity.
 - Progress saved on device
 
@@ -52,11 +52,12 @@ All deck content is hand-written for this project.
 
 **KanjiVG** (stroke order of hiragana and katakana, `assets/strokes/ja_kana.json`): Copyright (C) 2009-2011 Ulrich Apel, licensed CC BY-SA 3.0, http://kanjivg.tagaini.net. The file is a modified version (paths sampled into points) and stays under the same licence. Regenerate with `tool/gen_strokes.py`.
 
+**Make Me a Hanzi** via hanzi-writer-data (stroke order of the Mandarin hanzi, `assets/strokes/zh_hanzi.json`): outlines from Arphic Technology fonts, Arphic Public License, text in `assets/strokes/ARPHICPL.TXT`. The file is a modified version (centre lines only, rescaled). Regenerate with `tool/gen_hanzi_strokes.py`.
+
 When adding CC-CEDICT, JMdict, KanjiVG or Tatoeba data, record the licence here.
 
 ## Next
 
 1. Hiragana and katakana extras: dakuten (が, ざ), small ゃ ゅ ょ, small っ, long vowels
 2. Simple sentences: は, です, の
-3. Stroke order for Mandarin hanzi (Make Me a Hanzi data)
-4. Speech check (say it aloud)
+3. Speech check (say it aloud)

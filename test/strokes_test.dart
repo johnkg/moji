@@ -11,7 +11,9 @@ List<Offset> _line(Offset a, Offset b, [int steps = 10]) =>
     [for (var i = 0; i <= steps; i++) Offset.lerp(a, b, i / steps)!];
 
 void main() {
-  final data = StrokeData.parse(File('assets/strokes/ja_kana.json').readAsStringSync());
+  final kana = StrokeData.parse(File('assets/strokes/ja_kana.json').readAsStringSync());
+  final hanzi = StrokeData.parse(File('assets/strokes/zh_hanzi.json').readAsStringSync());
+  final data = kana.merge(hanzi);
 
   group('strokeMatches', () {
     final model = _line(const Offset(20, 20), const Offset(90, 20));
@@ -60,9 +62,9 @@ void main() {
     expect(partialPath(path, 1), path);
   });
 
-  test('every kana taught in a lesson has stroke data', () {
+  test('every kana and Mandarin hanzi taught in a lesson has stroke data', () {
     for (final name in courseFiles) {
-      if (!name.contains('hiragana') && !name.contains('katakana')) continue;
+      if (name.contains('speaking')) continue;
       final source = File('assets/lessons/$name.json').readAsStringSync();
       final course = parseCourse(source);
       for (final unit in course.units) {
@@ -74,7 +76,8 @@ void main() {
   });
 
   test('stroke data looks sane: each stroke has a start and end inside the grid', () {
-    expect(data.chars.length, 92);
+    expect(kana.chars.length, 92);
+    expect(hanzi.size, kana.size);
     for (final entry in data.chars.entries) {
       for (final stroke in entry.value) {
         expect(stroke.length, greaterThan(1), reason: entry.key);

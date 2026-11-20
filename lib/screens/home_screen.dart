@@ -85,7 +85,7 @@ class _UnitTile extends StatelessWidget {
     final unit = course.units[unitIndex];
     final done = app.isUnitDone(course, unitIndex);
     final unlocked = app.isUnitUnlocked(course, unitIndex);
-    final canWrite = unit.items.every((i) => app.strokes.has(i.front));
+    final canWrite = unit.items.any((i) => app.strokes.has(i.front));
     final IconData icon;
     if (done) {
       icon = Icons.check_circle;

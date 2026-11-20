@@ -4,7 +4,8 @@ import 'dart:ui' show Offset;
 import 'package:flutter/services.dart' show rootBundle;
 
 /// Stroke order of characters, on a square grid of [size] units.
-/// Data: KanjiVG, (c) Ulrich Apel, CC BY-SA 3.0. See assets/strokes/README.txt.
+/// Data: KanjiVG (CC BY-SA 3.0) and Make Me a Hanzi (Arphic Public License).
+/// See assets/strokes/README.txt.
 class StrokeData {
   const StrokeData({required this.size, required this.chars});
 
@@ -14,6 +15,12 @@ class StrokeData {
 
   /// Character -> strokes in writing order -> points along the stroke.
   final Map<String, List<List<Offset>>> chars;
+
+  /// Both sets must share the same grid size.
+  StrokeData merge(StrokeData other) {
+    assert(chars.isEmpty || size == other.size, 'stroke grids differ');
+    return StrokeData(size: other.size, chars: {...chars, ...other.chars});
+  }
 
   bool has(String char) => chars[char]?.isNotEmpty ?? false;
 
@@ -38,9 +45,16 @@ class StrokeData {
   }
 }
 
+/// Stroke files under assets/strokes/. Add new scripts here. All use the same grid.
+const List<String> strokeFiles = ['ja_kana', 'zh_hanzi'];
+
 Future<StrokeData> loadStrokes() async {
-  final source = await rootBundle.loadString('assets/strokes/ja_kana.json');
-  return StrokeData.parse(source);
+  var merged = StrokeData.empty;
+  for (final name in strokeFiles) {
+    final source = await rootBundle.loadString('assets/strokes/$name.json');
+    merged = merged.merge(StrokeData.parse(source));
+  }
+  return merged;
 }
 
 double pathLength(List<Offset> points) {
