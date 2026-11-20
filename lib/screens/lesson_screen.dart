@@ -60,6 +60,9 @@ class _LessonScreenState extends State<LessonScreen> {
   bool _voiceFailed = false;
   bool _finished = false;
   bool _busy = false;
+  int _firstTryCorrect = 0;
+  int _earnedXp = 0;
+  int _streak = 0;
 
   String get _lang => widget.course.lang;
 
@@ -79,8 +82,11 @@ class _LessonScreenState extends State<LessonScreen> {
     if (!ok && mounted) setState(() => _voiceFailed = true);
   }
 
+  bool get _isRetryStep => _steps[_index].isRetry;
+
   void _pick(Exercise exercise, String option) {
     if (_picked != null) return;
+    if (option == exercise.answer && !_isRetryStep) _firstTryCorrect++;
     setState(() => _picked = option);
     _say(exercise.speak);
   }
@@ -95,9 +101,17 @@ class _LessonScreenState extends State<LessonScreen> {
 
     if (_index + 1 >= _steps.length) {
       setState(() => _busy = true);
-      await widget.app.completeUnit(widget.course, _unit, DateTime.now());
+      final now = DateTime.now();
+      final earned = await widget.app.completeUnit(
+        widget.course,
+        _unit,
+        now,
+        firstTryCorrect: _firstTryCorrect,
+      );
       if (!mounted) return;
       setState(() {
+        _earnedXp = earned;
+        _streak = widget.app.stats.currentStreak(now);
         _finished = true;
         _busy = false;
       });
@@ -377,6 +391,9 @@ class _LessonScreenState extends State<LessonScreen> {
           textAlign: TextAlign.center,
           style: theme.textTheme.bodyLarge,
         ),
+        const SizedBox(height: 16),
+        Text('+$_earnedXp XP', style: theme.textTheme.headlineSmall),
+        if (_streak > 0) Text('🔥 $_streak-day streak', style: theme.textTheme.titleMedium),
         if (hasNext) ...[
           const SizedBox(height: 8),
           Text(

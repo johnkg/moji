@@ -9,6 +9,7 @@ import '../models/course.dart';
 const List<String> courseFiles = [
   'ja_speaking_course',
   'ja_hiragana_course',
+  'ja_katakana_course',
   'zh_speaking_course',
   'zh_basics_course',
 ];
