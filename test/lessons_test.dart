@@ -6,6 +6,7 @@ import 'package:moji/app_state.dart';
 import 'package:moji/lessons/exercise.dart';
 import 'package:moji/models/course.dart';
 import 'package:moji/models/deck.dart';
+import 'package:moji/models/stats.dart';
 import 'package:moji/services/course_loader.dart';
 import 'package:moji/services/deck_loader.dart';
 import 'package:moji/services/progress_store.dart';
@@ -17,6 +18,7 @@ import 'package:moji/srs/scheduler.dart';
 class _MemoryStore implements ProgressStore {
   Map<String, CardState> cards = {};
   Set<String> units = {};
+  Stats stats = const Stats();
 
   @override
   Future<Map<String, CardState>> load() async => cards;
@@ -32,6 +34,14 @@ class _MemoryStore implements ProgressStore {
   @override
   Future<void> saveCompletedUnits(Set<String> done) async {
     units = Set.of(done);
+  }
+
+  @override
+  Future<Stats> loadStats() async => stats;
+
+  @override
+  Future<void> saveStats(Stats value) async {
+    stats = value;
   }
 }
 
@@ -156,6 +166,43 @@ void main() {
     final before = store.cards[unit.items.first.card]!.dueMs;
     await app.completeUnit(course, unit, now.add(const Duration(days: 5)));
     expect(store.cards[unit.items.first.card]!.dueMs, before);
+  });
+
+  test('finishing a unit awards XP once at full rate and starts a streak', () async {
+    final store = _MemoryStore();
+    final app = AppState(store: store, speaker: _SilentSpeaker());
+    app.courses = courses;
+    final course = courses.first;
+    final unit = course.units[0];
+    final now = DateTime(2026, 1, 1, 12);
+
+    final first = await app.completeUnit(course, unit, now, firstTryCorrect: 5);
+    expect(first, AppState.unitXp + 5 * AppState.exerciseXp);
+    expect(store.stats.xp, first);
+    expect(app.stats.currentStreak(now), 1);
+
+    final redo = await app.completeUnit(course, unit, now, firstTryCorrect: 5);
+    expect(redo, AppState.redoXp + 5 * AppState.exerciseXp);
+  });
+
+  test('flashcards give XP unless marked Again', () async {
+    final store = _MemoryStore();
+    final app = AppState(store: store, speaker: _SilentSpeaker());
+    app.decks = _readDecks();
+    final deck = app.decks.first;
+    final now = DateTime(2026, 1, 1, 12);
+
+    await app.grade(deck, deck.cards[0], Grade.again, now);
+    expect(app.stats.xp, 0);
+    await app.grade(deck, deck.cards[1], Grade.good, now);
+    expect(app.stats.xp, AppState.cardXp);
+  });
+
+  test('katakana course covers all 46 basic characters once', () {
+    final kata = courses.firstWhere((c) => c.id == 'ja_katakana_course');
+    final fronts = [for (final u in kata.units) ...u.items.map((i) => i.front)];
+    expect(fronts.length, 46);
+    expect(fronts.toSet().length, 46);
   });
 
   test('listening choices never sound the same as the answer', () {

@@ -154,6 +154,123 @@ hiragana = {
         ("せんせい", "sensei", "teacher"), ("かわ", "kawa", "river"), ("みんな", "minna", "everyone")]),
  ]}
 
+K = "ja_katakana"
+katakana = {
+ "id": "ja_katakana_course", "lang": "ja", "mode": "reading", "title": "Read: katakana, step by step",
+ "description": "The second script. Mostly used for foreign words like ice cream and hotel.",
+ "units": [
+  unit("k_vowels", "The five vowels", [
+    "Katakana is the second Japanese script. It has the same 46 sounds as hiragana, just written with sharper, straighter shapes.",
+    "It is mostly used for words borrowed from other languages: hotel, coffee, America. Names of foreign people and places are written in it too.",
+    "So you already know every sound. This path is about learning a new set of shapes for them. Start with the five vowels: a, i, u, e, o.",
+    "Katakana is drawn with straight strokes and sharp corners. Hiragana is curvy. That is the quickest way to tell them apart.",
+   ], items(K, [
+    ("a", "Looks like an axe: 'ah!' as it hits the log."),
+    ("i", "Two strokes, a short slash and a post, like an eel on a stick. 'ee'."),
+    ("u", "Two dashes on a cap with a hook below, like a surprised face going 'ooh'."),
+    ("e", "Like a capital I: an elevator shaft, 'eh'."),
+    ("o", "A cross bar with a slash through it, like a person with open arms going 'oh!'."),
+   ])),
+  unit("k_k_row", "The K row", [
+    "The K row in katakana: ka, ki, ku, ke, ko.",
+    "Careful with ク and ケ. ク has no vertical post. ケ has one. Also compare ク with タ from a later unit: タ has an extra stroke.",
+    "ケ and コ both look square and tidy. コ is just two lines forming a corner.",
+   ], items(K, [
+    ("ka", "Like the hiragana か without its extra dot: a blade and a hook, 'ka'."),
+    ("ki", "A key with three teeth: 'ki' for key."),
+    ("ku", "Like an open-mouthed bird beak, angled. 'ku' as in 'cool'."),
+    ("ke", "Looks like a capital K made of straight lines, with a post. 'ke' as in 'kept'."),
+    ("ko", "A corner, like the letter L turned over. Two lines, 'ko'."),
+   ]), [("ココア", "kokoa", "cocoa"), ("エコ", "eko", "eco")]),
+  unit("k_s_row", "The S row", [
+    "The S row in katakana: sa, shi, su, se, so.",
+    "Same surprise as hiragana: the second one is 'shi', not 'si'.",
+    "Big trap coming: シ (shi) and ソ (so) look nearly the same, and so do ツ (tsu) and ン (n) later. The difference is the angle. シ has two short dashes and a long sweep that goes up. ソ has one dash and a long stroke that goes down.",
+   ], items(K, [
+    ("sa", "Three strokes, like a sail on a boat. 'sa'."),
+    ("shi", "Three strokes, two dots on the left lying flat and a sweep rising: 'she smiles', lying on her side."),
+    ("su", "A horizontal bar with a hook that bends: a snake on a rock. 'su' as in 'sue'."),
+    ("se", "Looks like a seat with a back, a bit like it fell over. 'se' as in 'set'."),
+    ("so", "A dash and a long stroke going down, like a stitch of sewing thread: 'so'."),
+   ]), [("スイス", "suisu", "Switzerland"), ("アイス", "aisu", "ice"), ("キス", "kisu", "kiss"),
+        ("サイ", "sai", "rhino")]),
+  unit("k_t_row", "The T row", [
+    "The T row in katakana: ta, chi, tsu, te, to.",
+    "Remember the surprises: the second one is 'chi' and the third is 'tsu'.",
+    "ツ (tsu) and シ (shi) are twins. ツ has its two dashes on top, pointing down. シ has them on the left, lying flat. Tsu stands tall, shi lies down.",
+   ], items(K, [
+    ("ta", "Like ク with one more stroke through it, like a 'ta'-ble with a leg: 'ta'."),
+    ("chi", "Three strokes: a short bar, a cross-bar, and a long hook, like a chair. 'chi' as in 'cheese'."),
+    ("tsu", "Three strokes, two dashes on top and a sweep: tsunami waves coming down."),
+    ("te", "A telephone pole with two cross-bars. 'te' as in 'ten'."),
+    ("to", "A post with a small stick leaning on it, like a toe. 'to'."),
+   ]), [("テスト", "tesuto", "test"), ("テキスト", "tekisuto", "text"), ("コスト", "kosuto", "cost")]),
+  unit("k_n_row", "The N row", [
+    "The N row in katakana: na, ni, nu, ne, no.",
+    "ノ (no) is just one slanted stroke, the simplest katakana of all. It is part of many others, like メ and ア.",
+    "ヌ (nu) and ス (su) look alike. ヌ has an extra stroke crossing the hook.",
+   ], items(K, [
+    ("na", "A cross with a slash through it, like a knife: 'na' as in 'nacho'. Careful: メ (me) has no bar on top."),
+    ("ni", "Two lines, one above the other, like the number 2. 'ni' sounds like 'knee', and ni also means 'two' in Japanese."),
+    ("nu", "Like ス with an extra stroke across the hook, like noodles being pulled. 'nu' as in 'noodle'."),
+    ("ne", "A dash on top of a hooked post with a small tail, like a fishing net on a pole: 'ne'."),
+    ("no", "One slash from top right to bottom left. 'no'."),
+   ]), [("テニス", "tenisu", "tennis"), ("ナイス", "naisu", "nice"), ("ネクタイ", "nekutai", "necktie")]),
+  unit("k_h_row", "The H row", [
+    "The H row in katakana: ha, hi, fu, he, ho.",
+    "Again 'fu' is a soft f: blow air between your lips, no biting.",
+    "ヘ (he) is almost the same as the hiragana へ. Learn them as one shape. ホ (ho) looks like a tree with a cross-bar.",
+   ], items(K, [
+    ("ha", "Like the roof of a house with a left and a right slope: 'ha'."),
+    ("hi", "Like a hook on a post, as if hoisting a flag: 'hi'."),
+    ("fu", "A flat roof over a hook, like a fur hood. 'fu'."),
+    ("he", "The same shape as hiragana へ: one little hill. 'he' as in 'hen'."),
+    ("ho", "A tree with a cross-bar and two small leaves, like 'ho ho ho', Santa's tree."),
+   ]), [("ハイ", "hai", "yes / high"), ("ヘア", "hea", "hair"), ("ハイテク", "haiteku", "high-tech"), ("ホスト", "hosuto", "host")]),
+  unit("k_m_row", "The M row", [
+    "The M row in katakana: ma, mi, mu, me, mo.",
+    "メ (me) looks like ノ crossed by another line, a bit like an X. Do not mix it up with ナ (na): ナ has a horizontal bar on top.",
+   ], items(K, [
+    ("ma", "A triangle with a stroke inside, like a map of mountains: 'ma'."),
+    ("mi", "Three slanted lines, like three fingers held up: 'mi' for 'me, me, me'."),
+    ("mu", "A small triangle with a tail, like a cow's head saying 'moo': 'mu'."),
+    ("me", "Two strokes crossing like an X: the eye of a needle, 'me' for eye."),
+    ("mo", "Like the hiragana も made of straight lines: two bars and a hooked post, 'mo'."),
+   ]), [("アニメ", "anime", "anime"), ("メモ", "memo", "memo"), ("ミス", "misu", "mistake"),
+        ("マスク", "masuku", "mask"), ("タイム", "taimu", "time")]),
+  unit("k_y_row", "The Y row", [
+    "The Y row in katakana has only three: ya, yu, yo.",
+    "ユ (yu) looks like a corner with an extra line. Careful: コ (ko) is just a corner, ユ has a long tail.",
+   ], items(K, [
+    ("ya", "A cross with a drooping arm, like a yak with its head down: 'ya'."),
+    ("yu", "A corner shape that looks like a U with a flat bottom: 'you'."),
+    ("yo", "Three horizontal lines hanging off a post, like a yo-yo string: 'yo'."),
+   ]), [("メキシコ", "mekishiko", "Mexico")]),
+  unit("k_r_row", "The R row", [
+    "The R row in katakana: ra, ri, ru, re, ro.",
+    "Same soft Japanese r as before, a quick tap of the tongue, between r, l, and d.",
+    "ロ (ro) is a plain square. ル (ru) has two legs, and the right one has a hook.",
+   ], items(K, [
+    ("ra", "A dash on top of a hooked line, like a rack with a hat. 'ra'."),
+    ("ri", "Two vertical lines, the right one hooked. 'ri' like 'ree'."),
+    ("ru", "A post with a hook on the right and a long leg on the left, like a person walking: 'ru'."),
+    ("re", "A single hook on a post, like the letter L slanted: 're' as in 'red'."),
+    ("ro", "A plain square, like a road sign: 'ro'."),
+   ]), [("アメリカ", "amerika", "America"), ("イタリア", "itaria", "Italy"), ("ロシア", "roshia", "Russia"),
+        ("ホテル", "hoteru", "hotel"), ("ライス", "raisu", "rice"), ("コアラ", "koara", "koala")]),
+  unit("k_w_n", "The last three", [
+    "Three characters left: wa, wo and n. After this you can read all 46 basic katakana.",
+    "ヲ (wo) is said 'o'. It is hardly used in katakana, so we skip its listening test.",
+    "ン (n) and ソ (so) look alike. ン is nearly horizontal on its left: the dash points down and to the right in a flat angle. ソ looks like it is falling.",
+    "ワ (wa) looks like ウ (u) without the top dash.",
+   ], items(K, [
+    ("wa", "Like ウ without the dash on top: a wide mouth, 'wa'."),
+    ("wo", "Said 'o'. Almost never used in katakana. Just recognize it.", False),
+    ("n", "Two strokes: a dash and a sweep that lies flat, like a person lying on their side saying 'n'."),
+   ]), [("ワイン", "wain", "wine"), ("ランチ", "ranchi", "lunch"), ("カメラ", "kamera", "camera"),
+        ("ライオン", "raion", "lion"), ("アンテナ", "antena", "antenna"), ("メロン", "meron", "melon")]),
+ ]}
+
 P = "ja_phrases"
 ja_speaking = {
  "id": "ja_speaking_course", "lang": "ja", "mode": "speaking", "title": "Speak: first phrases",
@@ -328,7 +445,7 @@ zh_speaking = {
  ]}
 
 os.makedirs(OUT, exist_ok=True)
-for course in (ja_speaking, hiragana, zh_speaking, mandarin):
+for course in (ja_speaking, hiragana, katakana, zh_speaking, mandarin):
     for u in course["units"]:
         ids = [i["id"] for i in u["items"]]
         assert len(ids) == len(set(ids)), u["id"]

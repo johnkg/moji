@@ -1,0 +1,677 @@
+{
+ "id": "ja_katakana_course",
+ "lang": "ja",
+ "mode": "reading",
+ "title": "Read: katakana, step by step",
+ "description": "The second script. Mostly used for foreign words like ice cream and hotel.",
+ "units": [
+  {
+   "id": "k_vowels",
+   "title": "The five vowels",
+   "intro": [
+    "Katakana is the second Japanese script. It has the same 46 sounds as hiragana, just written with sharper, straighter shapes.",
+    "It is mostly used for words borrowed from other languages: hotel, coffee, America. Names of foreign people and places are written in it too.",
+    "So you already know every sound. This path is about learning a new set of shapes for them. Start with the five vowels: a, i, u, e, o.",
+    "Katakana is drawn with straight strokes and sharp corners. Hiragana is curvy. That is the quickest way to tell them apart."
+   ],
+   "items": [
+    {
+     "id": "a",
+     "front": "ア",
+     "reading": "a",
+     "meaning": "",
+     "hint": "Looks like an axe: 'ah!' as it hits the log.",
+     "card": "ja_katakana:a"
+    },
+    {
+     "id": "i",
+     "front": "イ",
+     "reading": "i",
+     "meaning": "",
+     "hint": "Two strokes, a short slash and a post, like an eel on a stick. 'ee'.",
+     "card": "ja_katakana:i"
+    },
+    {
+     "id": "u",
+     "front": "ウ",
+     "reading": "u",
+     "meaning": "",
+     "hint": "Two dashes on a cap with a hook below, like a surprised face going 'ooh'.",
+     "card": "ja_katakana:u"
+    },
+    {
+     "id": "e",
+     "front": "エ",
+     "reading": "e",
+     "meaning": "",
+     "hint": "Like a capital I: an elevator shaft, 'eh'.",
+     "card": "ja_katakana:e"
+    },
+    {
+     "id": "o",
+     "front": "オ",
+     "reading": "o",
+     "meaning": "",
+     "hint": "A cross bar with a slash through it, like a person with open arms going 'oh!'.",
+     "card": "ja_katakana:o"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "k_k_row",
+   "title": "The K row",
+   "intro": [
+    "The K row in katakana: ka, ki, ku, ke, ko.",
+    "Careful with ク and ケ. ク has no vertical post. ケ has one. Also compare ク with タ from a later unit: タ has an extra stroke.",
+    "ケ and コ both look square and tidy. コ is just two lines forming a corner."
+   ],
+   "items": [
+    {
+     "id": "ka",
+     "front": "カ",
+     "reading": "ka",
+     "meaning": "",
+     "hint": "Like the hiragana か without its extra dot: a blade and a hook, 'ka'.",
+     "card": "ja_katakana:ka"
+    },
+    {
+     "id": "ki",
+     "front": "キ",
+     "reading": "ki",
+     "meaning": "",
+     "hint": "A key with three teeth: 'ki' for key.",
+     "card": "ja_katakana:ki"
+    },
+    {
+     "id": "ku",
+     "front": "ク",
+     "reading": "ku",
+     "meaning": "",
+     "hint": "Like an open-mouthed bird beak, angled. 'ku' as in 'cool'.",
+     "card": "ja_katakana:ku"
+    },
+    {
+     "id": "ke",
+     "front": "ケ",
+     "reading": "ke",
+     "meaning": "",
+     "hint": "Looks like a capital K made of straight lines, with a post. 'ke' as in 'kept'.",
+     "card": "ja_katakana:ke"
+    },
+    {
+     "id": "ko",
+     "front": "コ",
+     "reading": "ko",
+     "meaning": "",
+     "hint": "A corner, like the letter L turned over. Two lines, 'ko'.",
+     "card": "ja_katakana:ko"
+    }
+   ],
+   "words": [
+    {
+     "text": "ココア",
+     "reading": "kokoa",
+     "meaning": "cocoa"
+    },
+    {
+     "text": "エコ",
+     "reading": "eko",
+     "meaning": "eco"
+    }
+   ]
+  },
+  {
+   "id": "k_s_row",
+   "title": "The S row",
+   "intro": [
+    "The S row in katakana: sa, shi, su, se, so.",
+    "Same surprise as hiragana: the second one is 'shi', not 'si'.",
+    "Big trap coming: シ (shi) and ソ (so) look nearly the same, and so do ツ (tsu) and ン (n) later. The difference is the angle. シ has two short dashes and a long sweep that goes up. ソ has one dash and a long stroke that goes down."
+   ],
+   "items": [
+    {
+     "id": "sa",
+     "front": "サ",
+     "reading": "sa",
+     "meaning": "",
+     "hint": "Three strokes, like a sail on a boat. 'sa'.",
+     "card": "ja_katakana:sa"
+    },
+    {
+     "id": "shi",
+     "front": "シ",
+     "reading": "shi",
+     "meaning": "",
+     "hint": "Three strokes, two dots on the left lying flat and a sweep rising: 'she smiles', lying on her side.",
+     "card": "ja_katakana:shi"
+    },
+    {
+     "id": "su",
+     "front": "ス",
+     "reading": "su",
+     "meaning": "",
+     "hint": "A horizontal bar with a hook that bends: a snake on a rock. 'su' as in 'sue'.",
+     "card": "ja_katakana:su"
+    },
+    {
+     "id": "se",
+     "front": "セ",
+     "reading": "se",
+     "meaning": "",
+     "hint": "Looks like a seat with a back, a bit like it fell over. 'se' as in 'set'.",
+     "card": "ja_katakana:se"
+    },
+    {
+     "id": "so",
+     "front": "ソ",
+     "reading": "so",
+     "meaning": "",
+     "hint": "A dash and a long stroke going down, like a stitch of sewing thread: 'so'.",
+     "card": "ja_katakana:so"
+    }
+   ],
+   "words": [
+    {
+     "text": "スイス",
+     "reading": "suisu",
+     "meaning": "Switzerland"
+    },
+    {
+     "text": "アイス",
+     "reading": "aisu",
+     "meaning": "ice"
+    },
+    {
+     "text": "キス",
+     "reading": "kisu",
+     "meaning": "kiss"
+    },
+    {
+     "text": "サイ",
+     "reading": "sai",
+     "meaning": "rhino"
+    }
+   ]
+  },
+  {
+   "id": "k_t_row",
+   "title": "The T row",
+   "intro": [
+    "The T row in katakana: ta, chi, tsu, te, to.",
+    "Remember the surprises: the second one is 'chi' and the third is 'tsu'.",
+    "ツ (tsu) and シ (shi) are twins. ツ has its two dashes on top, pointing down. シ has them on the left, lying flat. Tsu stands tall, shi lies down."
+   ],
+   "items": [
+    {
+     "id": "ta",
+     "front": "タ",
+     "reading": "ta",
+     "meaning": "",
+     "hint": "Like ク with one more stroke through it, like a 'ta'-ble with a leg: 'ta'.",
+     "card": "ja_katakana:ta"
+    },
+    {
+     "id": "chi",
+     "front": "チ",
+     "reading": "chi",
+     "meaning": "",
+     "hint": "Three strokes: a short bar, a cross-bar, and a long hook, like a chair. 'chi' as in 'cheese'.",
+     "card": "ja_katakana:chi"
+    },
+    {
+     "id": "tsu",
+     "front": "ツ",
+     "reading": "tsu",
+     "meaning": "",
+     "hint": "Three strokes, two dashes on top and a sweep: tsunami waves coming down.",
+     "card": "ja_katakana:tsu"
+    },
+    {
+     "id": "te",
+     "front": "テ",
+     "reading": "te",
+     "meaning": "",
+     "hint": "A telephone pole with two cross-bars. 'te' as in 'ten'.",
+     "card": "ja_katakana:te"
+    },
+    {
+     "id": "to",
+     "front": "ト",
+     "reading": "to",
+     "meaning": "",
+     "hint": "A post with a small stick leaning on it, like a toe. 'to'.",
+     "card": "ja_katakana:to"
+    }
+   ],
+   "words": [
+    {
+     "text": "テスト",
+     "reading": "tesuto",
+     "meaning": "test"
+    },
+    {
+     "text": "テキスト",
+     "reading": "tekisuto",
+     "meaning": "text"
+    },
+    {
+     "text": "コスト",
+     "reading": "kosuto",
+     "meaning": "cost"
+    }
+   ]
+  },
+  {
+   "id": "k_n_row",
+   "title": "The N row",
+   "intro": [
+    "The N row in katakana: na, ni, nu, ne, no.",
+    "ノ (no) is just one slanted stroke, the simplest katakana of all. It is part of many others, like メ and ア.",
+    "ヌ (nu) and ス (su) look alike. ヌ has an extra stroke crossing the hook."
+   ],
+   "items": [
+    {
+     "id": "na",
+     "front": "ナ",
+     "reading": "na",
+     "meaning": "",
+     "hint": "A cross with a slash through it, like a knife: 'na' as in 'nacho'. Careful: メ (me) has no bar on top.",
+     "card": "ja_katakana:na"
+    },
+    {
+     "id": "ni",
+     "front": "ニ",
+     "reading": "ni",
+     "meaning": "",
+     "hint": "Two lines, one above the other, like the number 2. 'ni' sounds like 'knee', and ni also means 'two' in Japanese.",
+     "card": "ja_katakana:ni"
+    },
+    {
+     "id": "nu",
+     "front": "ヌ",
+     "reading": "nu",
+     "meaning": "",
+     "hint": "Like ス with an extra stroke across the hook, like noodles being pulled. 'nu' as in 'noodle'.",
+     "card": "ja_katakana:nu"
+    },
+    {
+     "id": "ne",
+     "front": "ネ",
+     "reading": "ne",
+     "meaning": "",
+     "hint": "A dash on top of a hooked post with a small tail, like a fishing net on a pole: 'ne'.",
+     "card": "ja_katakana:ne"
+    },
+    {
+     "id": "no",
+     "front": "ノ",
+     "reading": "no",
+     "meaning": "",
+     "hint": "One slash from top right to bottom left. 'no'.",
+     "card": "ja_katakana:no"
+    }
+   ],
+   "words": [
+    {
+     "text": "テニス",
+     "reading": "tenisu",
+     "meaning": "tennis"
+    },
+    {
+     "text": "ナイス",
+     "reading": "naisu",
+     "meaning": "nice"
+    },
+    {
+     "text": "ネクタイ",
+     "reading": "nekutai",
+     "meaning": "necktie"
+    }
+   ]
+  },
+  {
+   "id": "k_h_row",
+   "title": "The H row",
+   "intro": [
+    "The H row in katakana: ha, hi, fu, he, ho.",
+    "Again 'fu' is a soft f: blow air between your lips, no biting.",
+    "ヘ (he) is almost the same as the hiragana へ. Learn them as one shape. ホ (ho) looks like a tree with a cross-bar."
+   ],
+   "items": [
+    {
+     "id": "ha",
+     "front": "ハ",
+     "reading": "ha",
+     "meaning": "",
+     "hint": "Like the roof of a house with a left and a right slope: 'ha'.",
+     "card": "ja_katakana:ha"
+    },
+    {
+     "id": "hi",
+     "front": "ヒ",
+     "reading": "hi",
+     "meaning": "",
+     "hint": "Like a hook on a post, as if hoisting a flag: 'hi'.",
+     "card": "ja_katakana:hi"
+    },
+    {
+     "id": "fu",
+     "front": "フ",
+     "reading": "fu",
+     "meaning": "",
+     "hint": "A flat roof over a hook, like a fur hood. 'fu'.",
+     "card": "ja_katakana:fu"
+    },
+    {
+     "id": "he",
+     "front": "ヘ",
+     "reading": "he",
+     "meaning": "",
+     "hint": "The same shape as hiragana へ: one little hill. 'he' as in 'hen'.",
+     "card": "ja_katakana:he"
+    },
+    {
+     "id": "ho",
+     "front": "ホ",
+     "reading": "ho",
+     "meaning": "",
+     "hint": "A tree with a cross-bar and two small leaves, like 'ho ho ho', Santa's tree.",
+     "card": "ja_katakana:ho"
+    }
+   ],
+   "words": [
+    {
+     "text": "ハイ",
+     "reading": "hai",
+     "meaning": "yes / high"
+    },
+    {
+     "text": "ヘア",
+     "reading": "hea",
+     "meaning": "hair"
+    },
+    {
+     "text": "ハイテク",
+     "reading": "haiteku",
+     "meaning": "high-tech"
+    },
+    {
+     "text": "ホスト",
+     "reading": "hosuto",
+     "meaning": "host"
+    }
+   ]
+  },
+  {
+   "id": "k_m_row",
+   "title": "The M row",
+   "intro": [
+    "The M row in katakana: ma, mi, mu, me, mo.",
+    "メ (me) looks like ノ crossed by another line, a bit like an X. Do not mix it up with ナ (na): ナ has a horizontal bar on top."
+   ],
+   "items": [
+    {
+     "id": "ma",
+     "front": "マ",
+     "reading": "ma",
+     "meaning": "",
+     "hint": "A triangle with a stroke inside, like a map of mountains: 'ma'.",
+     "card": "ja_katakana:ma"
+    },
+    {
+     "id": "mi",
+     "front": "ミ",
+     "reading": "mi",
+     "meaning": "",
+     "hint": "Three slanted lines, like three fingers held up: 'mi' for 'me, me, me'.",
+     "card": "ja_katakana:mi"
+    },
+    {
+     "id": "mu",
+     "front": "ム",
+     "reading": "mu",
+     "meaning": "",
+     "hint": "A small triangle with a tail, like a cow's head saying 'moo': 'mu'.",
+     "card": "ja_katakana:mu"
+    },
+    {
+     "id": "me",
+     "front": "メ",
+     "reading": "me",
+     "meaning": "",
+     "hint": "Two strokes crossing like an X: the eye of a needle, 'me' for eye.",
+     "card": "ja_katakana:me"
+    },
+    {
+     "id": "mo",
+     "front": "モ",
+     "reading": "mo",
+     "meaning": "",
+     "hint": "Like the hiragana も made of straight lines: two bars and a hooked post, 'mo'.",
+     "card": "ja_katakana:mo"
+    }
+   ],
+   "words": [
+    {
+     "text": "アニメ",
+     "reading": "anime",
+     "meaning": "anime"
+    },
+    {
+     "text": "メモ",
+     "reading": "memo",
+     "meaning": "memo"
+    },
+    {
+     "text": "ミス",
+     "reading": "misu",
+     "meaning": "mistake"
+    },
+    {
+     "text": "マスク",
+     "reading": "masuku",
+     "meaning": "mask"
+    },
+    {
+     "text": "タイム",
+     "reading": "taimu",
+     "meaning": "time"
+    }
+   ]
+  },
+  {
+   "id": "k_y_row",
+   "title": "The Y row",
+   "intro": [
+    "The Y row in katakana has only three: ya, yu, yo.",
+    "ユ (yu) looks like a corner with an extra line. Careful: コ (ko) is just a corner, ユ has a long tail."
+   ],
+   "items": [
+    {
+     "id": "ya",
+     "front": "ヤ",
+     "reading": "ya",
+     "meaning": "",
+     "hint": "A cross with a drooping arm, like a yak with its head down: 'ya'.",
+     "card": "ja_katakana:ya"
+    },
+    {
+     "id": "yu",
+     "front": "ユ",
+     "reading": "yu",
+     "meaning": "",
+     "hint": "A corner shape that looks like a U with a flat bottom: 'you'.",
+     "card": "ja_katakana:yu"
+    },
+    {
+     "id": "yo",
+     "front": "ヨ",
+     "reading": "yo",
+     "meaning": "",
+     "hint": "Three horizontal lines hanging off a post, like a yo-yo string: 'yo'.",
+     "card": "ja_katakana:yo"
+    }
+   ],
+   "words": [
+    {
+     "text": "メキシコ",
+     "reading": "mekishiko",
+     "meaning": "Mexico"
+    }
+   ]
+  },
+  {
+   "id": "k_r_row",
+   "title": "The R row",
+   "intro": [
+    "The R row in katakana: ra, ri, ru, re, ro.",
+    "Same soft Japanese r as before, a quick tap of the tongue, between r, l, and d.",
+    "ロ (ro) is a plain square. ル (ru) has two legs, and the right one has a hook."
+   ],
+   "items": [
+    {
+     "id": "ra",
+     "front": "ラ",
+     "reading": "ra",
+     "meaning": "",
+     "hint": "A dash on top of a hooked line, like a rack with a hat. 'ra'.",
+     "card": "ja_katakana:ra"
+    },
+    {
+     "id": "ri",
+     "front": "リ",
+     "reading": "ri",
+     "meaning": "",
+     "hint": "Two vertical lines, the right one hooked. 'ri' like 'ree'.",
+     "card": "ja_katakana:ri"
+    },
+    {
+     "id": "ru",
+     "front": "ル",
+     "reading": "ru",
+     "meaning": "",
+     "hint": "A post with a hook on the right and a long leg on the left, like a person walking: 'ru'.",
+     "card": "ja_katakana:ru"
+    },
+    {
+     "id": "re",
+     "front": "レ",
+     "reading": "re",
+     "meaning": "",
+     "hint": "A single hook on a post, like the letter L slanted: 're' as in 'red'.",
+     "card": "ja_katakana:re"
+    },
+    {
+     "id": "ro",
+     "front": "ロ",
+     "reading": "ro",
+     "meaning": "",
+     "hint": "A plain square, like a road sign: 'ro'.",
+     "card": "ja_katakana:ro"
+    }
+   ],
+   "words": [
+    {
+     "text": "アメリカ",
+     "reading": "amerika",
+     "meaning": "America"
+    },
+    {
+     "text": "イタリア",
+     "reading": "itaria",
+     "meaning": "Italy"
+    },
+    {
+     "text": "ロシア",
+     "reading": "roshia",
+     "meaning": "Russia"
+    },
+    {
+     "text": "ホテル",
+     "reading": "hoteru",
+     "meaning": "hotel"
+    },
+    {
+     "text": "ライス",
+     "reading": "raisu",
+     "meaning": "rice"
+    },
+    {
+     "text": "コアラ",
+     "reading": "koara",
+     "meaning": "koala"
+    }
+   ]
+  },
+  {
+   "id": "k_w_n",
+   "title": "The last three",
+   "intro": [
+    "Three characters left: wa, wo and n. After this you can read all 46 basic katakana.",
+    "ヲ (wo) is said 'o'. It is hardly used in katakana, so we skip its listening test.",
+    "ン (n) and ソ (so) look alike. ン is nearly horizontal on its left: the dash points down and to the right in a flat angle. ソ looks like it is falling.",
+    "ワ (wa) looks like ウ (u) without the top dash."
+   ],
+   "items": [
+    {
+     "id": "wa",
+     "front": "ワ",
+     "reading": "wa",
+     "meaning": "",
+     "hint": "Like ウ without the dash on top: a wide mouth, 'wa'.",
+     "card": "ja_katakana:wa"
+    },
+    {
+     "id": "wo",
+     "front": "ヲ",
+     "reading": "wo",
+     "meaning": "",
+     "hint": "Said 'o'. Almost never used in katakana. Just recognize it.",
+     "card": "ja_katakana:wo",
+     "listen": false
+    },
+    {
+     "id": "n",
+     "front": "ン",
+     "reading": "n",
+     "meaning": "",
+     "hint": "Two strokes: a dash and a sweep that lies flat, like a person lying on their side saying 'n'.",
+     "card": "ja_katakana:n"
+    }
+   ],
+   "words": [
+    {
+     "text": "ワイン",
+     "reading": "wain",
+     "meaning": "wine"
+    },
+    {
+     "text": "ランチ",
+     "reading": "ranchi",
+     "meaning": "lunch"
+    },
+    {
+     "text": "カメラ",
+     "reading": "kamera",
+     "meaning": "camera"
+    },
+    {
+     "text": "ライオン",
+     "reading": "raion",
+     "meaning": "lion"
+    },
+    {
+     "text": "アンテナ",
+     "reading": "antena",
+     "meaning": "antenna"
+    },
+    {
+     "text": "メロン",
+     "reading": "meron",
+     "meaning": "melon"
+    }
+   ]
+  }
+ ]
+}

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../app_state.dart';
 import '../models/course.dart';
 import '../models/deck.dart';
+import '../models/stats.dart';
 import 'browse_screen.dart';
 import 'lesson_screen.dart';
 import 'locales.dart';
@@ -22,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         animation: app,
         builder: (context, _) {
           final now = DateTime.now();
-          final children = <Widget>[];
+          final children = <Widget>[_StatsBar(stats: app.stats, now: now)];
           for (final lang in const ['ja', 'zh']) {
             final courses = app.courses.where((c) => c.lang == lang).toList();
             final decks = app.decks.where((d) => d.lang == lang).toList();
@@ -153,6 +154,47 @@ class _DeckTile extends StatelessWidget {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+/// Streak, level and XP toward the next level.
+class _StatsBar extends StatelessWidget {
+  const _StatsBar({required this.stats, required this.now});
+
+  final Stats stats;
+  final DateTime now;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final streak = stats.currentStreak(now);
+    final String streakText;
+    if (streak == 0) {
+      streakText = 'Start a streak today';
+    } else if (stats.activeToday(now)) {
+      streakText = '🔥 $streak-day streak';
+    } else {
+      streakText = '🔥 $streak-day streak: study today to keep it';
+    }
+    return Card(
+      margin: const EdgeInsets.fromLTRB(12, 12, 12, 0),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(streakText, style: theme.textTheme.titleMedium),
+            const SizedBox(height: 12),
+            Text(
+              'Level ${stats.level} · ${stats.xpIntoLevel}/${Stats.xpPerLevel} XP',
+              style: theme.textTheme.bodyMedium,
+            ),
+            const SizedBox(height: 6),
+            LinearProgressIndicator(value: stats.xpIntoLevel / Stats.xpPerLevel),
+          ],
+        ),
       ),
     );
   }

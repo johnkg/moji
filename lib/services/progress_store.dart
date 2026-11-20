@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../models/stats.dart';
 import '../srs/scheduler.dart';
 
 /// Where progress is kept. Swap for SQLite or cloud sync later.
@@ -13,11 +14,16 @@ abstract class ProgressStore {
   /// Keys of finished lesson units.
   Future<Set<String>> loadCompletedUnits();
   Future<void> saveCompletedUnits(Set<String> units);
+
+  /// XP, level and streak.
+  Future<Stats> loadStats();
+  Future<void> saveStats(Stats stats);
 }
 
 class SharedPrefsProgressStore implements ProgressStore {
   static const String _key = 'progress_v1';
   static const String _unitsKey = 'units_done_v1';
+  static const String _statsKey = 'stats_v1';
 
   @override
   Future<Map<String, CardState>> load() async {
@@ -47,5 +53,19 @@ class SharedPrefsProgressStore implements ProgressStore {
   Future<void> saveCompletedUnits(Set<String> units) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_unitsKey, units.toList());
+  }
+
+  @override
+  Future<Stats> loadStats() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_statsKey);
+    if (raw == null) return const Stats();
+    return Stats.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+  }
+
+  @override
+  Future<void> saveStats(Stats stats) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_statsKey, jsonEncode(stats.toJson()));
   }
 }

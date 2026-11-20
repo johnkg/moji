@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 
 import 'models/course.dart';
 import 'models/deck.dart';
+import 'models/stats.dart';
 import 'services/course_loader.dart';
 import 'services/deck_loader.dart';
 import 'services/progress_store.dart';
@@ -23,12 +24,24 @@ class AppState extends ChangeNotifier {
   List<Deck> decks = [];
   Map<String, CardState> progress = {};
   Set<String> completedUnits = {};
+  Stats stats = const Stats();
+
+  /// XP for finishing a unit the first time, and for redoing one.
+  static const int unitXp = 20;
+  static const int redoXp = 5;
+
+  /// XP for each exercise answered right on the first try.
+  static const int exerciseXp = 2;
+
+  /// XP for a flashcard that was not marked Again.
+  static const int cardXp = 2;
 
   Future<void> load() async {
     courses = await loadCourses();
     decks = await loadDecks();
     progress = await store.load();
     completedUnits = await store.loadCompletedUnits();
+    stats = await store.loadStats();
     notifyListeners();
   }
 
@@ -45,8 +58,18 @@ class AppState extends ChangeNotifier {
 
   /// Marks the unit finished and puts its characters into flashcard review,
   /// due tomorrow. Cards that already have review history are left alone.
-  Future<void> completeUnit(Course course, LessonUnit unit, DateTime now) async {
+  /// [firstTryCorrect] is how many exercises were answered right first time.
+  /// Returns the XP earned.
+  Future<int> completeUnit(
+    Course course,
+    LessonUnit unit,
+    DateTime now, {
+    int firstTryCorrect = 0,
+  }) async {
+    final wasDone = completedUnits.contains(course.keyFor(unit));
+    final earned = (wasDone ? redoXp : unitXp) + firstTryCorrect * exerciseXp;
     completedUnits.add(course.keyFor(unit));
+    stats = stats.earn(earned, now);
     for (final item in unit.items) {
       final key = item.card;
       if (key != null && !progress.containsKey(key)) {
@@ -56,6 +79,8 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     await store.saveCompletedUnits(completedUnits);
     await store.save(progress);
+    await store.saveStats(stats);
+    return earned;
   }
 
   // Flashcards
@@ -89,7 +114,9 @@ class AppState extends ChangeNotifier {
   Future<void> grade(Deck deck, StudyCard card, Grade grade, DateTime now) async {
     final key = deck.keyFor(card);
     progress[key] = scheduler.review(progress[key], grade, now);
+    stats = stats.earn(grade == Grade.again ? 0 : cardXp, now);
     notifyListeners();
     await store.save(progress);
+    await store.saveStats(stats);
   }
 }
