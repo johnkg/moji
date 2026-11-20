@@ -7,6 +7,7 @@ import 'services/course_loader.dart';
 import 'services/deck_loader.dart';
 import 'services/progress_store.dart';
 import 'services/speaker.dart';
+import 'writing/strokes.dart';
 import 'srs/scheduler.dart';
 
 class AppState extends ChangeNotifier {
@@ -25,6 +26,10 @@ class AppState extends ChangeNotifier {
   Map<String, CardState> progress = {};
   Set<String> completedUnits = {};
   Stats stats = const Stats();
+  StrokeData strokes = StrokeData.empty;
+
+  /// XP for writing one character from memory.
+  static const int writeXp = 5;
 
   /// XP for finishing a unit the first time, and for redoing one.
   static const int unitXp = 20;
@@ -42,6 +47,7 @@ class AppState extends ChangeNotifier {
     progress = await store.load();
     completedUnits = await store.loadCompletedUnits();
     stats = await store.loadStats();
+    strokes = await loadStrokes();
     notifyListeners();
   }
 
@@ -81,6 +87,13 @@ class AppState extends ChangeNotifier {
     await store.save(progress);
     await store.saveStats(stats);
     return earned;
+  }
+
+  /// Adds XP outside a lesson or review, for example after a writing exercise.
+  Future<void> awardXp(int amount, DateTime now) async {
+    stats = stats.earn(amount, now);
+    notifyListeners();
+    await store.saveStats(stats);
   }
 
   // Flashcards

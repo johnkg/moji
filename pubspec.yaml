@@ -21,3 +21,4 @@ flutter:
   assets:
     - assets/decks/
     - assets/lessons/
+    - assets/strokes/

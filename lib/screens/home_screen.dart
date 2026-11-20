@@ -8,6 +8,7 @@ import 'browse_screen.dart';
 import 'lesson_screen.dart';
 import 'locales.dart';
 import 'study_screen.dart';
+import 'write_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.app});
@@ -84,6 +85,7 @@ class _UnitTile extends StatelessWidget {
     final unit = course.units[unitIndex];
     final done = app.isUnitDone(course, unitIndex);
     final unlocked = app.isUnitUnlocked(course, unitIndex);
+    final canWrite = unit.items.every((i) => app.strokes.has(i.front));
     final IconData icon;
     if (done) {
       icon = Icons.check_circle;
@@ -106,7 +108,24 @@ class _UnitTile extends StatelessWidget {
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
         ),
-        trailing: done ? const Text('Redo') : null,
+        trailing: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (done) const Text('Redo'),
+            if (unlocked && !course.isSpeaking && canWrite)
+              IconButton(
+                tooltip: 'Learn to write these',
+                icon: const Icon(Icons.edit),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => WriteScreen(app: app, course: course, unitIndex: unitIndex),
+                    ),
+                  );
+                },
+              ),
+          ],
+        ),
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute<void>(
