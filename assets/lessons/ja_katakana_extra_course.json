@@ -1,0 +1,893 @@
+{
+ "id": "ja_katakana_extra_course",
+ "lang": "ja",
+ "mode": "reading",
+ "title": "Read: katakana extras",
+ "description": "Voiced sounds, combined sounds and more. Learn the basic characters first.",
+ "units": [
+  {
+   "id": "kx_g",
+   "title": "G sounds",
+   "intro": [
+    "Katakana takes the same two marks (dakuten) as hiragana. Put them on the K row for the G row: ga, gi, gu, ge, go.",
+    "The shapes do not change, only the marks are added: カ becomes ガ, キ becomes ギ."
+   ],
+   "items": [
+    {
+     "id": "ga",
+     "front": "ガ",
+     "reading": "ga",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'ga'.",
+     "card": "ja_katakana_extra:ga"
+    },
+    {
+     "id": "gi",
+     "front": "ギ",
+     "reading": "gi",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'gi'.",
+     "card": "ja_katakana_extra:gi"
+    },
+    {
+     "id": "gu",
+     "front": "グ",
+     "reading": "gu",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'gu'.",
+     "card": "ja_katakana_extra:gu"
+    },
+    {
+     "id": "ge",
+     "front": "ゲ",
+     "reading": "ge",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'ge'.",
+     "card": "ja_katakana_extra:ge"
+    },
+    {
+     "id": "go",
+     "front": "ゴ",
+     "reading": "go",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'go'.",
+     "card": "ja_katakana_extra:go"
+    }
+   ],
+   "words": [
+    {
+     "text": "ガス",
+     "reading": "gasu",
+     "meaning": "gas"
+    },
+    {
+     "text": "ゴルフ",
+     "reading": "gorufu",
+     "meaning": "golf"
+    },
+    {
+     "text": "グラス",
+     "reading": "gurasu",
+     "meaning": "glass"
+    },
+    {
+     "text": "ゲスト",
+     "reading": "gesuto",
+     "meaning": "guest"
+    },
+    {
+     "text": "ゴリラ",
+     "reading": "gorira",
+     "meaning": "gorilla"
+    },
+    {
+     "text": "マグロ",
+     "reading": "maguro",
+     "meaning": "tuna"
+    }
+   ]
+  },
+  {
+   "id": "kx_z",
+   "title": "Z sounds",
+   "intro": [
+    "Two marks on the S row give the Z row: za, ji, zu, ze, zo.",
+    "Same surprises as hiragana: シ becomes ジ (ji) and ス becomes ズ (zu).",
+    "ヂ and ヅ exist but are rare, so we skip them."
+   ],
+   "items": [
+    {
+     "id": "za",
+     "front": "ザ",
+     "reading": "za",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'za'.",
+     "card": "ja_katakana_extra:za"
+    },
+    {
+     "id": "ji",
+     "front": "ジ",
+     "reading": "ji",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'ji'.",
+     "card": "ja_katakana_extra:ji"
+    },
+    {
+     "id": "zu",
+     "front": "ズ",
+     "reading": "zu",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'zu'.",
+     "card": "ja_katakana_extra:zu"
+    },
+    {
+     "id": "ze",
+     "front": "ゼ",
+     "reading": "ze",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'ze'.",
+     "card": "ja_katakana_extra:ze"
+    },
+    {
+     "id": "zo",
+     "front": "ゾ",
+     "reading": "zo",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'zo'.",
+     "card": "ja_katakana_extra:zo"
+    }
+   ],
+   "words": [
+    {
+     "text": "ゼロ",
+     "reading": "zero",
+     "meaning": "zero"
+    },
+    {
+     "text": "ジム",
+     "reading": "jimu",
+     "meaning": "gym"
+    },
+    {
+     "text": "カジノ",
+     "reading": "kajino",
+     "meaning": "casino"
+    }
+   ]
+  },
+  {
+   "id": "kx_d",
+   "title": "D sounds",
+   "intro": [
+    "The T row with two marks gives the D row. Only three are common: da, de, do."
+   ],
+   "items": [
+    {
+     "id": "da",
+     "front": "ダ",
+     "reading": "da",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'da'.",
+     "card": "ja_katakana_extra:da"
+    },
+    {
+     "id": "de",
+     "front": "デ",
+     "reading": "de",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'de'.",
+     "card": "ja_katakana_extra:de"
+    },
+    {
+     "id": "do",
+     "front": "ド",
+     "reading": "do",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'do'.",
+     "card": "ja_katakana_extra:do"
+    }
+   ],
+   "words": [
+    {
+     "text": "ドア",
+     "reading": "doa",
+     "meaning": "door"
+    },
+    {
+     "text": "デスク",
+     "reading": "desuku",
+     "meaning": "desk"
+    },
+    {
+     "text": "ダンス",
+     "reading": "dansu",
+     "meaning": "dance"
+    },
+    {
+     "text": "デザイン",
+     "reading": "dezain",
+     "meaning": "design"
+    },
+    {
+     "text": "メダル",
+     "reading": "medaru",
+     "meaning": "medal"
+    }
+   ]
+  },
+  {
+   "id": "kx_b",
+   "title": "B sounds",
+   "intro": [
+    "The H row with two marks gives the B row: ba, bi, bu, be, bo.",
+    "These are very common in loanwords: bus, building, button."
+   ],
+   "items": [
+    {
+     "id": "ba",
+     "front": "バ",
+     "reading": "ba",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'ba'.",
+     "card": "ja_katakana_extra:ba"
+    },
+    {
+     "id": "bi",
+     "front": "ビ",
+     "reading": "bi",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'bi'.",
+     "card": "ja_katakana_extra:bi"
+    },
+    {
+     "id": "bu",
+     "front": "ブ",
+     "reading": "bu",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'bu'.",
+     "card": "ja_katakana_extra:bu"
+    },
+    {
+     "id": "be",
+     "front": "ベ",
+     "reading": "be",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'be'.",
+     "card": "ja_katakana_extra:be"
+    },
+    {
+     "id": "bo",
+     "front": "ボ",
+     "reading": "bo",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with two small marks at the top right: 'bo'.",
+     "card": "ja_katakana_extra:bo"
+    }
+   ],
+   "words": [
+    {
+     "text": "バス",
+     "reading": "basu",
+     "meaning": "bus"
+    },
+    {
+     "text": "ビル",
+     "reading": "biru",
+     "meaning": "building"
+    },
+    {
+     "text": "ボタン",
+     "reading": "botan",
+     "meaning": "button"
+    },
+    {
+     "text": "バナナ",
+     "reading": "banana",
+     "meaning": "banana"
+    },
+    {
+     "text": "ビザ",
+     "reading": "biza",
+     "meaning": "visa"
+    },
+    {
+     "text": "ベスト",
+     "reading": "besuto",
+     "meaning": "best, vest"
+    },
+    {
+     "text": "ズボン",
+     "reading": "zubon",
+     "meaning": "trousers"
+    }
+   ]
+  },
+  {
+   "id": "kx_p",
+   "title": "P sounds",
+   "intro": [
+    "The H row with a small circle gives the P row: pa, pi, pu, pe, po.",
+    "Two marks means B, a circle means P."
+   ],
+   "items": [
+    {
+     "id": "pa",
+     "front": "パ",
+     "reading": "pa",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with a small circle at the top right: 'pa'.",
+     "card": "ja_katakana_extra:pa"
+    },
+    {
+     "id": "pi",
+     "front": "ピ",
+     "reading": "pi",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with a small circle at the top right: 'pi'.",
+     "card": "ja_katakana_extra:pi"
+    },
+    {
+     "id": "pu",
+     "front": "プ",
+     "reading": "pu",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with a small circle at the top right: 'pu'.",
+     "card": "ja_katakana_extra:pu"
+    },
+    {
+     "id": "pe",
+     "front": "ペ",
+     "reading": "pe",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with a small circle at the top right: 'pe'.",
+     "card": "ja_katakana_extra:pe"
+    },
+    {
+     "id": "po",
+     "front": "ポ",
+     "reading": "po",
+     "meaning": "",
+     "hint": "Same shape as the plain character, with a small circle at the top right: 'po'.",
+     "card": "ja_katakana_extra:po"
+    }
+   ],
+   "words": [
+    {
+     "text": "パン",
+     "reading": "pan",
+     "meaning": "bread"
+    },
+    {
+     "text": "ピアノ",
+     "reading": "piano",
+     "meaning": "piano"
+    },
+    {
+     "text": "ペン",
+     "reading": "pen",
+     "meaning": "pen"
+    },
+    {
+     "text": "パソコン",
+     "reading": "pasokon",
+     "meaning": "personal computer"
+    },
+    {
+     "text": "ポスト",
+     "reading": "posuto",
+     "meaning": "mailbox"
+    },
+    {
+     "text": "ペンギン",
+     "reading": "pengin",
+     "meaning": "penguin"
+    }
+   ]
+  },
+  {
+   "id": "kx_c1",
+   "title": "Combined sounds: キャ, ギャ",
+   "intro": [
+    "Just as in hiragana, a small ャ, ュ or ョ blends with the character before it. キ and ャ make キャ (kya).",
+    "The small character is half size and sits low and to the right. kya is one beat, not two."
+   ],
+   "items": [
+    {
+     "id": "kya",
+     "front": "キャ",
+     "reading": "kya",
+     "meaning": "",
+     "hint": "キ plus a small ャ: say 'kya' as one sound, one beat.",
+     "card": "ja_katakana_extra:kya"
+    },
+    {
+     "id": "kyu",
+     "front": "キュ",
+     "reading": "kyu",
+     "meaning": "",
+     "hint": "キ plus a small ュ: say 'kyu' as one sound, one beat.",
+     "card": "ja_katakana_extra:kyu"
+    },
+    {
+     "id": "kyo",
+     "front": "キョ",
+     "reading": "kyo",
+     "meaning": "",
+     "hint": "キ plus a small ョ: say 'kyo' as one sound, one beat.",
+     "card": "ja_katakana_extra:kyo"
+    },
+    {
+     "id": "gya",
+     "front": "ギャ",
+     "reading": "gya",
+     "meaning": "",
+     "hint": "ギ plus a small ャ: say 'gya' as one sound, one beat.",
+     "card": "ja_katakana_extra:gya"
+    },
+    {
+     "id": "gyu",
+     "front": "ギュ",
+     "reading": "gyu",
+     "meaning": "",
+     "hint": "ギ plus a small ュ: say 'gyu' as one sound, one beat.",
+     "card": "ja_katakana_extra:gyu"
+    },
+    {
+     "id": "gyo",
+     "front": "ギョ",
+     "reading": "gyo",
+     "meaning": "",
+     "hint": "ギ plus a small ョ: say 'gyo' as one sound, one beat.",
+     "card": "ja_katakana_extra:gyo"
+    }
+   ],
+   "words": [
+    {
+     "text": "キャンプ",
+     "reading": "kyanpu",
+     "meaning": "camp"
+    }
+   ]
+  },
+  {
+   "id": "kx_c2",
+   "title": "Combined sounds: シャ, ジャ",
+   "intro": [
+    "With シ and ジ the i drops away: シャ is sha and ジャ is ja.",
+    "So the pattern is sha, shu, sho and ja, ju, jo."
+   ],
+   "items": [
+    {
+     "id": "sha",
+     "front": "シャ",
+     "reading": "sha",
+     "meaning": "",
+     "hint": "シ plus a small ャ: say 'sha' as one sound, one beat.",
+     "card": "ja_katakana_extra:sha"
+    },
+    {
+     "id": "shu",
+     "front": "シュ",
+     "reading": "shu",
+     "meaning": "",
+     "hint": "シ plus a small ュ: say 'shu' as one sound, one beat.",
+     "card": "ja_katakana_extra:shu"
+    },
+    {
+     "id": "sho",
+     "front": "ショ",
+     "reading": "sho",
+     "meaning": "",
+     "hint": "シ plus a small ョ: say 'sho' as one sound, one beat.",
+     "card": "ja_katakana_extra:sho"
+    },
+    {
+     "id": "ja",
+     "front": "ジャ",
+     "reading": "ja",
+     "meaning": "",
+     "hint": "ジ plus a small ャ: say 'ja' as one sound, one beat.",
+     "card": "ja_katakana_extra:ja"
+    },
+    {
+     "id": "ju",
+     "front": "ジュ",
+     "reading": "ju",
+     "meaning": "",
+     "hint": "ジ plus a small ュ: say 'ju' as one sound, one beat.",
+     "card": "ja_katakana_extra:ju"
+    },
+    {
+     "id": "jo",
+     "front": "ジョ",
+     "reading": "jo",
+     "meaning": "",
+     "hint": "ジ plus a small ョ: say 'jo' as one sound, one beat.",
+     "card": "ja_katakana_extra:jo"
+    }
+   ],
+   "words": [
+    {
+     "text": "ジャム",
+     "reading": "jamu",
+     "meaning": "jam"
+    },
+    {
+     "text": "シャツ",
+     "reading": "shatsu",
+     "meaning": "shirt"
+    },
+    {
+     "text": "ジャズ",
+     "reading": "jazu",
+     "meaning": "jazz"
+    }
+   ]
+  },
+  {
+   "id": "kx_c3",
+   "title": "Combined sounds: チャ, ニャ",
+   "intro": [
+    "チ and ニ combine too: チャ is cha, ニャ is nya.",
+    "ニュ in ニュース (news) is one you will see often."
+   ],
+   "items": [
+    {
+     "id": "cha",
+     "front": "チャ",
+     "reading": "cha",
+     "meaning": "",
+     "hint": "チ plus a small ャ: say 'cha' as one sound, one beat.",
+     "card": "ja_katakana_extra:cha"
+    },
+    {
+     "id": "chu",
+     "front": "チュ",
+     "reading": "chu",
+     "meaning": "",
+     "hint": "チ plus a small ュ: say 'chu' as one sound, one beat.",
+     "card": "ja_katakana_extra:chu"
+    },
+    {
+     "id": "cho",
+     "front": "チョ",
+     "reading": "cho",
+     "meaning": "",
+     "hint": "チ plus a small ョ: say 'cho' as one sound, one beat.",
+     "card": "ja_katakana_extra:cho"
+    },
+    {
+     "id": "nya",
+     "front": "ニャ",
+     "reading": "nya",
+     "meaning": "",
+     "hint": "ニ plus a small ャ: say 'nya' as one sound, one beat.",
+     "card": "ja_katakana_extra:nya"
+    },
+    {
+     "id": "nyu",
+     "front": "ニュ",
+     "reading": "nyu",
+     "meaning": "",
+     "hint": "ニ plus a small ュ: say 'nyu' as one sound, one beat.",
+     "card": "ja_katakana_extra:nyu"
+    },
+    {
+     "id": "nyo",
+     "front": "ニョ",
+     "reading": "nyo",
+     "meaning": "",
+     "hint": "ニ plus a small ョ: say 'nyo' as one sound, one beat.",
+     "card": "ja_katakana_extra:nyo"
+    }
+   ],
+   "words": [
+    {
+     "text": "チョコ",
+     "reading": "choko",
+     "meaning": "chocolate"
+    },
+    {
+     "text": "チャンス",
+     "reading": "chansu",
+     "meaning": "chance"
+    }
+   ]
+  },
+  {
+   "id": "kx_c4",
+   "title": "Combined sounds: ヒャ, ミャ",
+   "intro": [
+    "ヒ and ミ combine: ヒャ is hya, ミャ is mya. These are rare in loanwords."
+   ],
+   "items": [
+    {
+     "id": "hya",
+     "front": "ヒャ",
+     "reading": "hya",
+     "meaning": "",
+     "hint": "ヒ plus a small ャ: say 'hya' as one sound, one beat.",
+     "card": "ja_katakana_extra:hya"
+    },
+    {
+     "id": "hyu",
+     "front": "ヒュ",
+     "reading": "hyu",
+     "meaning": "",
+     "hint": "ヒ plus a small ュ: say 'hyu' as one sound, one beat.",
+     "card": "ja_katakana_extra:hyu"
+    },
+    {
+     "id": "hyo",
+     "front": "ヒョ",
+     "reading": "hyo",
+     "meaning": "",
+     "hint": "ヒ plus a small ョ: say 'hyo' as one sound, one beat.",
+     "card": "ja_katakana_extra:hyo"
+    },
+    {
+     "id": "mya",
+     "front": "ミャ",
+     "reading": "mya",
+     "meaning": "",
+     "hint": "ミ plus a small ャ: say 'mya' as one sound, one beat.",
+     "card": "ja_katakana_extra:mya"
+    },
+    {
+     "id": "myu",
+     "front": "ミュ",
+     "reading": "myu",
+     "meaning": "",
+     "hint": "ミ plus a small ュ: say 'myu' as one sound, one beat.",
+     "card": "ja_katakana_extra:myu"
+    },
+    {
+     "id": "myo",
+     "front": "ミョ",
+     "reading": "myo",
+     "meaning": "",
+     "hint": "ミ plus a small ョ: say 'myo' as one sound, one beat.",
+     "card": "ja_katakana_extra:myo"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "kx_c5",
+   "title": "Combined sounds: リャ, ビャ",
+   "intro": [
+    "リ and ビ combine: リャ is rya, ビャ is bya."
+   ],
+   "items": [
+    {
+     "id": "rya",
+     "front": "リャ",
+     "reading": "rya",
+     "meaning": "",
+     "hint": "リ plus a small ャ: say 'rya' as one sound, one beat.",
+     "card": "ja_katakana_extra:rya"
+    },
+    {
+     "id": "ryu",
+     "front": "リュ",
+     "reading": "ryu",
+     "meaning": "",
+     "hint": "リ plus a small ュ: say 'ryu' as one sound, one beat.",
+     "card": "ja_katakana_extra:ryu"
+    },
+    {
+     "id": "ryo",
+     "front": "リョ",
+     "reading": "ryo",
+     "meaning": "",
+     "hint": "リ plus a small ョ: say 'ryo' as one sound, one beat.",
+     "card": "ja_katakana_extra:ryo"
+    },
+    {
+     "id": "bya",
+     "front": "ビャ",
+     "reading": "bya",
+     "meaning": "",
+     "hint": "ビ plus a small ャ: say 'bya' as one sound, one beat.",
+     "card": "ja_katakana_extra:bya"
+    },
+    {
+     "id": "byu",
+     "front": "ビュ",
+     "reading": "byu",
+     "meaning": "",
+     "hint": "ビ plus a small ュ: say 'byu' as one sound, one beat.",
+     "card": "ja_katakana_extra:byu"
+    },
+    {
+     "id": "byo",
+     "front": "ビョ",
+     "reading": "byo",
+     "meaning": "",
+     "hint": "ビ plus a small ョ: say 'byo' as one sound, one beat.",
+     "card": "ja_katakana_extra:byo"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "kx_c6",
+   "title": "Combined sounds: ピャ",
+   "intro": [
+    "The last ones: ピャ, ピュ, ピョ (pya, pyu, pyo). They are rare. ピュア (pure) is one example."
+   ],
+   "items": [
+    {
+     "id": "pya",
+     "front": "ピャ",
+     "reading": "pya",
+     "meaning": "",
+     "hint": "ピ plus a small ャ: say 'pya' as one sound, one beat.",
+     "card": "ja_katakana_extra:pya"
+    },
+    {
+     "id": "pyu",
+     "front": "ピュ",
+     "reading": "pyu",
+     "meaning": "",
+     "hint": "ピ plus a small ュ: say 'pyu' as one sound, one beat.",
+     "card": "ja_katakana_extra:pyu"
+    },
+    {
+     "id": "pyo",
+     "front": "ピョ",
+     "reading": "pyo",
+     "meaning": "",
+     "hint": "ピ plus a small ョ: say 'pyo' as one sound, one beat.",
+     "card": "ja_katakana_extra:pyo"
+    }
+   ],
+   "words": [
+    {
+     "text": "ピュア",
+     "reading": "pyua",
+     "meaning": "pure"
+    }
+   ]
+  },
+  {
+   "id": "kx_small_tsu",
+   "title": "Small ッ",
+   "intro": [
+    "A small ッ means: pause briefly, then say the next consonant twice. カット is 'kat-to', with a held beat in the middle.",
+    "You do not pronounce ッ by itself. It is silence, one beat long.",
+    "It is half the size of ツ and sits low on the line."
+   ],
+   "items": [
+    {
+     "id": "xtsu",
+     "front": "ッ",
+     "reading": "small tsu",
+     "meaning": "a short pause: the next consonant is doubled",
+     "hint": "Looks like ツ but half the size and low on the line. Say nothing: hold the next consonant a beat longer.",
+     "card": "ja_katakana_extra:xtsu",
+     "listen": false
+    }
+   ],
+   "words": [
+    {
+     "text": "ベッド",
+     "reading": "beddo",
+     "meaning": "bed"
+    },
+    {
+     "text": "カップ",
+     "reading": "kappu",
+     "meaning": "cup"
+    },
+    {
+     "text": "コップ",
+     "reading": "koppu",
+     "meaning": "glass, cup"
+    },
+    {
+     "text": "チケット",
+     "reading": "chiketto",
+     "meaning": "ticket"
+    },
+    {
+     "text": "ロケット",
+     "reading": "roketto",
+     "meaning": "rocket"
+    },
+    {
+     "text": "ホット",
+     "reading": "hotto",
+     "meaning": "hot"
+    }
+   ]
+  },
+  {
+   "id": "kx_long",
+   "title": "The long mark ー",
+   "intro": [
+    "In katakana, a long vowel is written with a bar: ー. コーヒー is ko-o-hi-i, with two beats on each long sound.",
+    "The bar always points along the writing direction: it is a horizontal line in horizontal text.",
+    "Do not confuse ー with the kanji 一 (one). The long mark only ever follows a katakana character."
+   ],
+   "items": [
+    {
+     "id": "choon",
+     "front": "ー",
+     "reading": "long mark",
+     "meaning": "stretches the vowel before it",
+     "hint": "A plain horizontal bar after a character. Hold the vowel of the character before it for one extra beat.",
+     "card": "ja_katakana_extra:choon",
+     "listen": false
+    }
+   ],
+   "words": [
+    {
+     "text": "コーヒー",
+     "reading": "koohii",
+     "meaning": "coffee"
+    },
+    {
+     "text": "ケーキ",
+     "reading": "keeki",
+     "meaning": "cake"
+    },
+    {
+     "text": "タクシー",
+     "reading": "takushii",
+     "meaning": "taxi"
+    },
+    {
+     "text": "ビール",
+     "reading": "biiru",
+     "meaning": "beer"
+    },
+    {
+     "text": "ノート",
+     "reading": "nooto",
+     "meaning": "notebook"
+    },
+    {
+     "text": "スープ",
+     "reading": "suupu",
+     "meaning": "soup"
+    },
+    {
+     "text": "メール",
+     "reading": "meeru",
+     "meaning": "email"
+    },
+    {
+     "text": "カレー",
+     "reading": "karee",
+     "meaning": "curry"
+    },
+    {
+     "text": "ジュース",
+     "reading": "juusu",
+     "meaning": "juice"
+    },
+    {
+     "text": "ニュース",
+     "reading": "nyuusu",
+     "meaning": "news"
+    },
+    {
+     "text": "ギター",
+     "reading": "gitaa",
+     "meaning": "guitar"
+    },
+    {
+     "text": "サッカー",
+     "reading": "sakkaa",
+     "meaning": "soccer"
+    },
+    {
+     "text": "シャワー",
+     "reading": "shawaa",
+     "meaning": "shower"
+    }
+   ]
+  }
+ ]
+}

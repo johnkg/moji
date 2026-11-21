@@ -3,7 +3,8 @@
 Items are looked up in assets/decks/ by card id, so lesson text always matches
 the flashcard it feeds. Run tool/gen_decks.py first if decks changed.
 """
-import json, os
+import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.dirname(__file__)
 OUT = os.path.join(HERE, '..', 'assets', 'lessons')
 DECKS = os.path.join(HERE, '..', 'assets', 'decks')
@@ -444,8 +445,167 @@ zh_speaking = {
    ])),
  ]}
 
+# ---- Kana extras: voiced sounds, combined sounds, small tsu, long mark ----
+import kana_extras as X
+
+def _conv(text, katakana):
+    return X.to_kata(text) if katakana else text
+
+# Short intro and word lists per unit. Words use only kana taught up to that unit
+# (plus all the basic kana of the same script).
+H_INTRO = {
+ "g": ["Two small marks, called dakuten, turn a sound into its voiced partner. Put them on the K row and you get the G row: ga, gi, gu, ge, go.",
+       "The character keeps its shape. Only the two marks are new: か becomes が, き becomes ぎ.",
+       "The g is always hard, as in 'go', never soft as in 'giraffe'."],
+ "z": ["The same two marks on the S row give the Z row: za, ji, zu, ze, zo.",
+       "Two surprises: し becomes じ (ji, as in 'jeep') and す becomes ず (zu).",
+       "ぢ and づ sound exactly like じ and ず. They are rare, so we skip them and write じ and ず."],
+ "d": ["The T row with dakuten gives the D row. Only three are common: da, de, do.",
+       "ち and つ also have voiced forms (ぢ and づ), but they sound like じ and ず and appear in only a few words, so we skip them."],
+ "b": ["The H row with dakuten gives the B row: ba, bi, bu, be, bo.",
+       "The two marks sit at the top right, the same as on every other voiced character."],
+ "p": ["The H row can also take a small circle, called handakuten. That gives the P row: pa, pi, pu, pe, po.",
+       "Two marks means B. A circle means P. Check which one before you read."],
+ "c1": ["A small や, ゆ or よ after a character in the 'i' column blends the two into one sound. き and ゃ make きゃ (kya).",
+        "The small character is about half the size and sits low and to the right. It does not get its own beat: kya is one sound, not ki-ya.",
+        "Compare きや (ki-ya, two beats) with きゃ (kya, one beat)."],
+ "c2": ["With し and じ the i drops away completely: しゃ is sha, not shi-ya. じゃ is ja.",
+        "So the pattern is sha, shu, sho and ja, ju, jo."],
+ "c3": ["ち and に also combine: ちゃ is cha, にゃ is nya.",
+        "Same rule: the small や, ゆ or よ is half size and joins the sound before it."],
+ "c4": ["ひ and み combine the same way: ひゃ is hya, みゃ is mya.",
+        "These are less common than the earlier ones, but they turn up in numbers like 100."],
+ "c5": ["り and び also combine: りゃ is rya, びゃ is bya.",
+        "Remember that Japanese r is a quick tongue tap."],
+ "c6": ["The last combined sounds: ぴゃ, ぴゅ, ぴょ (pya, pyu, pyo).",
+        "These are rare. You will see them mostly in sound words like ぴょんぴょん (boing, boing)."],
+}
+H_WORDS = {
+ "g": [("かぎ", "kagi", "key"), ("ごはん", "gohan", "rice, a meal"), ("ぎんこう", "ginkou", "bank"),
+       ("たまご", "tamago", "egg"), ("えいが", "eiga", "movie"), ("げんき", "genki", "healthy, well")],
+ "z": [("かぞく", "kazoku", "family"), ("じかん", "jikan", "time"), ("みず", "mizu", "water"),
+       ("すずしい", "suzushii", "cool"), ("かぜ", "kaze", "wind, a cold"), ("ぞう", "zou", "elephant")],
+ "d": [("だれ", "dare", "who"), ("でんわ", "denwa", "telephone"), ("どこ", "doko", "where"),
+       ("ともだち", "tomodachi", "friend"), ("どうぞ", "douzo", "please, go ahead"), ("おでん", "oden", "oden (a hot-pot dish)")],
+ "b": [("かばん", "kaban", "bag"), ("そば", "soba", "buckwheat noodles"), ("ぼく", "boku", "I (a boy or man)"),
+       ("たべる", "taberu", "to eat"), ("さびしい", "sabishii", "lonely"), ("ぶた", "buta", "pig")],
+ "p": [("ぱん", "pan", "bread"), ("えんぴつ", "enpitsu", "pencil"), ("てんぷら", "tenpura", "tempura"),
+       ("さんぽ", "sanpo", "a walk")],
+ "c1": [("きょう", "kyou", "today"), ("きゅうり", "kyuuri", "cucumber"), ("ぎゅうにく", "gyuuniku", "beef"),
+        ("おきゃく", "okyaku", "guest, customer")],
+ "c2": [("しゃしん", "shashin", "photograph"), ("しゅみ", "shumi", "hobby"), ("じしょ", "jisho", "dictionary"),
+        ("しょくじ", "shokuji", "meal"), ("じゅう", "juu", "ten")],
+ "c3": [("おちゃ", "ocha", "tea"), ("ぎゅうにゅう", "gyuunyuu", "milk"), ("こんにゃく", "konnyaku", "konnyaku (a jelly food)"),
+        ("ちゅうごく", "chuugoku", "China")],
+ "c4": [("ひゃく", "hyaku", "one hundred"), ("みゃく", "myaku", "pulse")],
+ "c5": [("りょこう", "ryokou", "trip"), ("りゅう", "ryuu", "dragon"), ("びょういん", "byouin", "hospital"),
+        ("さんびゃく", "sanbyaku", "three hundred")],
+ "c6": [("ぴょんぴょん", "pyonpyon", "boing boing (hopping)")],
+}
+K_INTRO = {
+ "g": ["Katakana takes the same two marks (dakuten) as hiragana. Put them on the K row for the G row: ga, gi, gu, ge, go.",
+       "The shapes do not change, only the marks are added: カ becomes ガ, キ becomes ギ."],
+ "z": ["Two marks on the S row give the Z row: za, ji, zu, ze, zo.",
+       "Same surprises as hiragana: シ becomes ジ (ji) and ス becomes ズ (zu).",
+       "ヂ and ヅ exist but are rare, so we skip them."],
+ "d": ["The T row with two marks gives the D row. Only three are common: da, de, do."],
+ "b": ["The H row with two marks gives the B row: ba, bi, bu, be, bo.",
+       "These are very common in loanwords: bus, building, button."],
+ "p": ["The H row with a small circle gives the P row: pa, pi, pu, pe, po.",
+       "Two marks means B, a circle means P."],
+ "c1": ["Just as in hiragana, a small ャ, ュ or ョ blends with the character before it. キ and ャ make キャ (kya).",
+        "The small character is half size and sits low and to the right. kya is one beat, not two."],
+ "c2": ["With シ and ジ the i drops away: シャ is sha and ジャ is ja.",
+        "So the pattern is sha, shu, sho and ja, ju, jo."],
+ "c3": ["チ and ニ combine too: チャ is cha, ニャ is nya.", "ニュ in ニュース (news) is one you will see often."],
+ "c4": ["ヒ and ミ combine: ヒャ is hya, ミャ is mya. These are rare in loanwords."],
+ "c5": ["リ and ビ combine: リャ is rya, ビャ is bya."],
+ "c6": ["The last ones: ピャ, ピュ, ピョ (pya, pyu, pyo). They are rare. ピュア (pure) is one example."],
+}
+K_WORDS = {
+ "g": [("ガス", "gasu", "gas"), ("ゴルフ", "gorufu", "golf"), ("グラス", "gurasu", "glass"),
+       ("ゲスト", "gesuto", "guest"), ("ゴリラ", "gorira", "gorilla"), ("マグロ", "maguro", "tuna")],
+ "z": [("ゼロ", "zero", "zero"), ("ジム", "jimu", "gym"), ("カジノ", "kajino", "casino")],
+ "d": [("ドア", "doa", "door"), ("デスク", "desuku", "desk"), ("ダンス", "dansu", "dance"),
+       ("デザイン", "dezain", "design"), ("メダル", "medaru", "medal")],
+ "b": [("バス", "basu", "bus"), ("ビル", "biru", "building"), ("ボタン", "botan", "button"),
+       ("バナナ", "banana", "banana"), ("ビザ", "biza", "visa"), ("ベスト", "besuto", "best, vest"),
+       ("ズボン", "zubon", "trousers")],
+ "p": [("パン", "pan", "bread"), ("ピアノ", "piano", "piano"), ("ペン", "pen", "pen"),
+       ("パソコン", "pasokon", "personal computer"), ("ポスト", "posuto", "mailbox"), ("ペンギン", "pengin", "penguin")],
+ "c1": [("キャンプ", "kyanpu", "camp")],
+ "c2": [("ジャム", "jamu", "jam"), ("シャツ", "shatsu", "shirt"), ("ジャズ", "jazu", "jazz")],
+ "c3": [("チョコ", "choko", "chocolate"), ("チャンス", "chansu", "chance")],
+ "c4": [],
+ "c5": [],
+ "c6": [("ピュア", "pyua", "pure")],
+}
+
+def _combo_hint(char, rom, katakana):
+    big, small = char[0], char[1]
+    return f"{big} plus a small {small}: say '{rom}' as one sound, one beat."
+
+def _voiced_hint2(char, rom):
+    return f"Same shape as the plain character, with {'a small circle' if rom[0] == 'p' else 'two small marks'} at the top right: '{rom}'."
+
+def build_extra(katakana):
+    conv = lambda t: _conv(t, katakana)
+    deck = "ja_katakana_extra" if katakana else "ja_hiragana_extra"
+    prefix = "k" if katakana else "h"
+    intro = K_INTRO if katakana else H_INTRO
+    wordsets = K_WORDS if katakana else H_WORDS
+    units = []
+    for uid, rows in X.VOICED:
+        title = {"g": "G sounds", "z": "Z sounds", "d": "D sounds", "b": "B sounds", "p": "P sounds"}[uid]
+        units.append(unit(f"{prefix}x_{uid}", title, intro[uid],
+                          items(deck, [(r, _voiced_hint2(conv(c), r)) for c, r in rows]),
+                          wordsets[uid]))
+    for uid, pairs in X.COMBO_UNITS:
+        rows = X.combo_rows(pairs)
+        title = "Combined sounds: " + ", ".join(conv(b) + conv("ゃ") for b, _ in pairs)
+        units.append(unit(f"{prefix}x_{uid}", title, intro[uid],
+                          items(deck, [(r, _combo_hint(conv(c), r, katakana)) for c, r in rows]),
+                          wordsets[uid]))
+    tsu = X.SMALL_TSU
+    if katakana:
+        units.append(unit("kx_small_tsu", "Small ッ", [
+            "A small ッ means: pause briefly, then say the next consonant twice. カット is 'kat-to', with a held beat in the middle.",
+            "You do not pronounce ッ by itself. It is silence, one beat long.",
+            "It is half the size of ツ and sits low on the line."],
+            items(deck, [(tsu[1], "Looks like ツ but half the size and low on the line. Say nothing: hold the next consonant a beat longer.", False)]),
+            [("ベッド", "beddo", "bed"), ("カップ", "kappu", "cup"), ("コップ", "koppu", "glass, cup"),
+             ("チケット", "chiketto", "ticket"), ("ロケット", "roketto", "rocket"), ("ホット", "hotto", "hot")]))
+        units.append(unit("kx_long", "The long mark ー", [
+            "In katakana, a long vowel is written with a bar: ー. コーヒー is ko-o-hi-i, with two beats on each long sound.",
+            "The bar always points along the writing direction: it is a horizontal line in horizontal text.",
+            "Do not confuse ー with the kanji 一 (one). The long mark only ever follows a katakana character."],
+            items(deck, [("choon", "A plain horizontal bar after a character. Hold the vowel of the character before it for one extra beat.", False)]),
+            [("コーヒー", "koohii", "coffee"), ("ケーキ", "keeki", "cake"), ("タクシー", "takushii", "taxi"),
+             ("ビール", "biiru", "beer"), ("ノート", "nooto", "notebook"), ("スープ", "suupu", "soup"),
+             ("メール", "meeru", "email"), ("カレー", "karee", "curry"), ("ジュース", "juusu", "juice"),
+             ("ニュース", "nyuusu", "news"), ("ギター", "gitaa", "guitar"), ("サッカー", "sakkaa", "soccer"),
+             ("シャワー", "shawaa", "shower")]))
+    else:
+        units.append(unit("hx_small_tsu", "Small っ and long vowels", [
+            "A small っ means: pause briefly, then say the next consonant twice. きて is 'kite', but きって is 'kit-te', with a held beat in the middle.",
+            "You do not pronounce っ by itself. It is silence, one beat long. It is half the size of つ and sits low on the line.",
+            "Long vowels are written by adding another vowel kana: あ after あ-column sounds, い after い or え sounds, う after う or お sounds. おかあさん (mother) has two beats on 'aa'. とうきょう (Tokyo) is 'toh-kyoh'.",
+            "Hold a long vowel for about two beats. Short and long vowels change the word: おばさん (aunt) vs おばあさん (grandmother)."],
+            items(deck, [(tsu[1], "Looks like つ but half the size and low on the line. Say nothing: hold the next consonant a beat longer.", False)]),
+            [("きって", "kitte", "postage stamp"), ("ざっし", "zasshi", "magazine"), ("がっこう", "gakkou", "school"),
+             ("ちょっと", "chotto", "a little"), ("まって", "matte", "wait"), ("いっぱい", "ippai", "full"),
+             ("おとうさん", "otousan", "father"), ("おねえさん", "oneesan", "older sister"),
+             ("とうきょう", "toukyou", "Tokyo"), ("おおきい", "ookii", "big")]))
+    return {"id": f"ja_{'katakana' if katakana else 'hiragana'}_extra_course", "lang": "ja", "mode": "reading",
+            "title": f"Read: {'katakana' if katakana else 'hiragana'} extras",
+            "description": "Voiced sounds, combined sounds and more. Learn the basic characters first.",
+            "units": units}
+
+hiragana_extra = build_extra(False)
+katakana_extra = build_extra(True)
+
 os.makedirs(OUT, exist_ok=True)
-for course in (ja_speaking, hiragana, katakana, zh_speaking, mandarin):
+for course in (ja_speaking, hiragana, hiragana_extra, katakana, katakana_extra, zh_speaking, mandarin):
     for u in course["units"]:
         ids = [i["id"] for i in u["items"]]
         assert len(ids) == len(set(ids)), u["id"]

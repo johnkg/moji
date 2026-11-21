@@ -67,12 +67,16 @@ def flatten(d):
 
 def main(folder):
     chars = []
-    for deck in ('ja_hiragana', 'ja_katakana'):
+    for deck in ('ja_hiragana', 'ja_katakana', 'ja_hiragana_extra', 'ja_katakana_extra'):
         with open(os.path.join(DECKS, deck + '.json'), encoding='utf-8') as f:
-            chars += [c['front'] for c in json.load(f)['cards']]
+            # Combined sounds like きゃ are written as two characters; the long mark has no strokes worth teaching.
+            chars += [c['front'] for c in json.load(f)['cards'] if len(c['front']) == 1 and c['front'] != 'ー']
     out = {}
     for ch in chars:
         path = os.path.join(folder, '%05x.svg' % ord(ch))
+        if not os.path.exists(path):
+            print('no stroke data for', ch)
+            continue
         root = ET.parse(path).getroot()
         strokes = []
         for el in root.iter('{http://www.w3.org/2000/svg}path'):

@@ -71,7 +71,9 @@ void main() {
       expect(course.units, isNotEmpty);
       for (final unit in course.units) {
         expect(unit.intro, isNotEmpty, reason: unit.id);
-        expect(unit.items.length, inInclusiveRange(3, 6), reason: unit.id);
+        // Small tsu and the long mark are taught one at a time, through words.
+        final single = unit.id.endsWith('small_tsu') || unit.id.endsWith('_long');
+        expect(unit.items.length, inInclusiveRange(single ? 1 : 3, 6), reason: unit.id);
         for (final item in unit.items) {
           expect(item.hint, isNotEmpty, reason: '${unit.id}/${item.id}');
         }
@@ -101,8 +103,20 @@ void main() {
   test('words only use characters taught so far', () {
     for (final course in courses.where((c) => !c.isSpeaking)) {
       final taught = <String>{};
+      // Extras courses build on the basic characters of the same script.
+      if (course.id.endsWith('_extra_course')) {
+        final basic = courses.firstWhere((c) => c.id == course.id.replaceFirst('_extra', ''));
+        for (final unit in basic.units) {
+          for (final item in unit.items) {
+            taught.addAll(item.front.runes.map(String.fromCharCode));
+          }
+        }
+      }
       for (final unit in course.units) {
-        taught.addAll(unit.items.map((i) => i.front));
+        // Combined sounds like きゃ teach both of their characters.
+        for (final item in unit.items) {
+          taught.addAll(item.front.runes.map(String.fromCharCode));
+        }
         for (final word in unit.words) {
           for (final rune in word.text.runes) {
             expect(taught, contains(String.fromCharCode(rune)), reason: word.text);
