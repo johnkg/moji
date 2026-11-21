@@ -1,5 +1,7 @@
 """Regenerates assets/decks/*.json. Content is hand-written (no third-party data)."""
-import json, os
+import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import kana_extras as X
 OUT = os.path.join(os.path.dirname(__file__), '..', 'assets', 'decks')
 ROMAJI = ("a i u e o ka ki ku ke ko sa shi su se so ta chi tsu te to na ni nu ne no "
           "ha hi fu he ho ma mi mu me mo ya yu yo ra ri ru re ro wa wo n").split()
@@ -13,9 +15,21 @@ def kana(chars):
 def rows(items):
     return [{"id": str(i + 1), "front": f, "reading": r, "meaning": m} for i, (f, r, m) in enumerate(items)]
 
+def extras(katakana):
+    conv = X.to_kata if katakana else (lambda t: t)
+    cards = [{"id": r, "front": conv(c), "reading": r, "meaning": ""} for c, r in X.all_voiced() + X.all_combos()]
+    t = X.SMALL_TSU
+    cards.append({"id": t[1], "front": conv(t[0]), "reading": t[2], "meaning": t[3]})
+    if katakana:
+        m = X.LONG_MARK
+        cards.append({"id": m[1], "front": m[0], "reading": m[2], "meaning": m[3]})
+    return cards
+
 decks = [
  {"id": "ja_hiragana", "lang": "ja", "title": "Hiragana", "description": "The 46 basic hiragana.", "cards": kana(HIRA)},
  {"id": "ja_katakana", "lang": "ja", "title": "Katakana", "description": "The 46 basic katakana.", "cards": kana(KATA)},
+ {"id": "ja_hiragana_extra", "lang": "ja", "title": "Hiragana extras", "description": "Voiced sounds, combined sounds and small っ.", "cards": extras(False)},
+ {"id": "ja_katakana_extra", "lang": "ja", "title": "Katakana extras", "description": "Voiced sounds, combined sounds, small ッ and the long mark.", "cards": extras(True)},
  {"id": "ja_phrases", "lang": "ja", "title": "First phrases", "description": "Survival phrases.", "cards": rows([
   ("こんにちは", "konnichiwa", "hello"), ("ありがとう", "arigatou", "thank you"),
   ("すみません", "sumimasen", "excuse me / sorry"), ("はい", "hai", "yes"), ("いいえ", "iie", "no"),

@@ -7,7 +7,9 @@ import '../models/deck.dart';
 /// Deck files under assets/decks/. Add new decks here.
 const List<String> deckFiles = [
   'ja_hiragana',
+  'ja_hiragana_extra',
   'ja_katakana',
+  'ja_katakana_extra',
   'ja_phrases',
   'zh_tones',
   'zh_hanzi',

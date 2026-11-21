@@ -1,0 +1,350 @@
+{
+ "id": "ja_hiragana_extra",
+ "lang": "ja",
+ "title": "Hiragana extras",
+ "description": "Voiced sounds, combined sounds and small っ.",
+ "cards": [
+  {
+   "id": "ga",
+   "front": "が",
+   "reading": "ga",
+   "meaning": ""
+  },
+  {
+   "id": "gi",
+   "front": "ぎ",
+   "reading": "gi",
+   "meaning": ""
+  },
+  {
+   "id": "gu",
+   "front": "ぐ",
+   "reading": "gu",
+   "meaning": ""
+  },
+  {
+   "id": "ge",
+   "front": "げ",
+   "reading": "ge",
+   "meaning": ""
+  },
+  {
+   "id": "go",
+   "front": "ご",
+   "reading": "go",
+   "meaning": ""
+  },
+  {
+   "id": "za",
+   "front": "ざ",
+   "reading": "za",
+   "meaning": ""
+  },
+  {
+   "id": "ji",
+   "front": "じ",
+   "reading": "ji",
+   "meaning": ""
+  },
+  {
+   "id": "zu",
+   "front": "ず",
+   "reading": "zu",
+   "meaning": ""
+  },
+  {
+   "id": "ze",
+   "front": "ぜ",
+   "reading": "ze",
+   "meaning": ""
+  },
+  {
+   "id": "zo",
+   "front": "ぞ",
+   "reading": "zo",
+   "meaning": ""
+  },
+  {
+   "id": "da",
+   "front": "だ",
+   "reading": "da",
+   "meaning": ""
+  },
+  {
+   "id": "de",
+   "front": "で",
+   "reading": "de",
+   "meaning": ""
+  },
+  {
+   "id": "do",
+   "front": "ど",
+   "reading": "do",
+   "meaning": ""
+  },
+  {
+   "id": "ba",
+   "front": "ば",
+   "reading": "ba",
+   "meaning": ""
+  },
+  {
+   "id": "bi",
+   "front": "び",
+   "reading": "bi",
+   "meaning": ""
+  },
+  {
+   "id": "bu",
+   "front": "ぶ",
+   "reading": "bu",
+   "meaning": ""
+  },
+  {
+   "id": "be",
+   "front": "べ",
+   "reading": "be",
+   "meaning": ""
+  },
+  {
+   "id": "bo",
+   "front": "ぼ",
+   "reading": "bo",
+   "meaning": ""
+  },
+  {
+   "id": "pa",
+   "front": "ぱ",
+   "reading": "pa",
+   "meaning": ""
+  },
+  {
+   "id": "pi",
+   "front": "ぴ",
+   "reading": "pi",
+   "meaning": ""
+  },
+  {
+   "id": "pu",
+   "front": "ぷ",
+   "reading": "pu",
+   "meaning": ""
+  },
+  {
+   "id": "pe",
+   "front": "ぺ",
+   "reading": "pe",
+   "meaning": ""
+  },
+  {
+   "id": "po",
+   "front": "ぽ",
+   "reading": "po",
+   "meaning": ""
+  },
+  {
+   "id": "kya",
+   "front": "きゃ",
+   "reading": "kya",
+   "meaning": ""
+  },
+  {
+   "id": "kyu",
+   "front": "きゅ",
+   "reading": "kyu",
+   "meaning": ""
+  },
+  {
+   "id": "kyo",
+   "front": "きょ",
+   "reading": "kyo",
+   "meaning": ""
+  },
+  {
+   "id": "gya",
+   "front": "ぎゃ",
+   "reading": "gya",
+   "meaning": ""
+  },
+  {
+   "id": "gyu",
+   "front": "ぎゅ",
+   "reading": "gyu",
+   "meaning": ""
+  },
+  {
+   "id": "gyo",
+   "front": "ぎょ",
+   "reading": "gyo",
+   "meaning": ""
+  },
+  {
+   "id": "sha",
+   "front": "しゃ",
+   "reading": "sha",
+   "meaning": ""
+  },
+  {
+   "id": "shu",
+   "front": "しゅ",
+   "reading": "shu",
+   "meaning": ""
+  },
+  {
+   "id": "sho",
+   "front": "しょ",
+   "reading": "sho",
+   "meaning": ""
+  },
+  {
+   "id": "ja",
+   "front": "じゃ",
+   "reading": "ja",
+   "meaning": ""
+  },
+  {
+   "id": "ju",
+   "front": "じゅ",
+   "reading": "ju",
+   "meaning": ""
+  },
+  {
+   "id": "jo",
+   "front": "じょ",
+   "reading": "jo",
+   "meaning": ""
+  },
+  {
+   "id": "cha",
+   "front": "ちゃ",
+   "reading": "cha",
+   "meaning": ""
+  },
+  {
+   "id": "chu",
+   "front": "ちゅ",
+   "reading": "chu",
+   "meaning": ""
+  },
+  {
+   "id": "cho",
+   "front": "ちょ",
+   "reading": "cho",
+   "meaning": ""
+  },
+  {
+   "id": "nya",
+   "front": "にゃ",
+   "reading": "nya",
+   "meaning": ""
+  },
+  {
+   "id": "nyu",
+   "front": "にゅ",
+   "reading": "nyu",
+   "meaning": ""
+  },
+  {
+   "id": "nyo",
+   "front": "にょ",
+   "reading": "nyo",
+   "meaning": ""
+  },
+  {
+   "id": "hya",
+   "front": "ひゃ",
+   "reading": "hya",
+   "meaning": ""
+  },
+  {
+   "id": "hyu",
+   "front": "ひゅ",
+   "reading": "hyu",
+   "meaning": ""
+  },
+  {
+   "id": "hyo",
+   "front": "ひょ",
+   "reading": "hyo",
+   "meaning": ""
+  },
+  {
+   "id": "mya",
+   "front": "みゃ",
+   "reading": "mya",
+   "meaning": ""
+  },
+  {
+   "id": "myu",
+   "front": "みゅ",
+   "reading": "myu",
+   "meaning": ""
+  },
+  {
+   "id": "myo",
+   "front": "みょ",
+   "reading": "myo",
+   "meaning": ""
+  },
+  {
+   "id": "rya",
+   "front": "りゃ",
+   "reading": "rya",
+   "meaning": ""
+  },
+  {
+   "id": "ryu",
+   "front": "りゅ",
+   "reading": "ryu",
+   "meaning": ""
+  },
+  {
+   "id": "ryo",
+   "front": "りょ",
+   "reading": "ryo",
+   "meaning": ""
+  },
+  {
+   "id": "bya",
+   "front": "びゃ",
+   "reading": "bya",
+   "meaning": ""
+  },
+  {
+   "id": "byu",
+   "front": "びゅ",
+   "reading": "byu",
+   "meaning": ""
+  },
+  {
+   "id": "byo",
+   "front": "びょ",
+   "reading": "byo",
+   "meaning": ""
+  },
+  {
+   "id": "pya",
+   "front": "ぴゃ",
+   "reading": "pya",
+   "meaning": ""
+  },
+  {
+   "id": "pyu",
+   "front": "ぴゅ",
+   "reading": "pyu",
+   "meaning": ""
+  },
+  {
+   "id": "pyo",
+   "front": "ぴょ",
+   "reading": "pyo",
+   "meaning": ""
+  },
+  {
+   "id": "xtsu",
+   "front": "っ",
+   "reading": "small tsu",
+   "meaning": "a short pause: the next consonant is doubled"
+  }
+ ]
+}

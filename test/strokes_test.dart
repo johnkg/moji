@@ -69,6 +69,8 @@ void main() {
       final course = parseCourse(source);
       for (final unit in course.units) {
         for (final item in unit.items) {
+          // Combined sounds (きゃ) and the long mark (ー) are not single glyphs.
+          if (item.front.runes.length != 1 || item.front == 'ー') continue;
           expect(data.has(item.front), isTrue, reason: item.front);
         }
       }
@@ -76,7 +78,7 @@ void main() {
   });
 
   test('stroke data looks sane: each stroke has a start and end inside the grid', () {
-    expect(kana.chars.length, 92);
+    expect(kana.chars.length, 140);
     expect(hanzi.size, kana.size);
     for (final entry in data.chars.entries) {
       for (final stroke in entry.value) {

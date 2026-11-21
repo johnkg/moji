@@ -1,0 +1,356 @@
+{
+ "id": "ja_katakana_extra",
+ "lang": "ja",
+ "title": "Katakana extras",
+ "description": "Voiced sounds, combined sounds, small ッ and the long mark.",
+ "cards": [
+  {
+   "id": "ga",
+   "front": "ガ",
+   "reading": "ga",
+   "meaning": ""
+  },
+  {
+   "id": "gi",
+   "front": "ギ",
+   "reading": "gi",
+   "meaning": ""
+  },
+  {
+   "id": "gu",
+   "front": "グ",
+   "reading": "gu",
+   "meaning": ""
+  },
+  {
+   "id": "ge",
+   "front": "ゲ",
+   "reading": "ge",
+   "meaning": ""
+  },
+  {
+   "id": "go",
+   "front": "ゴ",
+   "reading": "go",
+   "meaning": ""
+  },
+  {
+   "id": "za",
+   "front": "ザ",
+   "reading": "za",
+   "meaning": ""
+  },
+  {
+   "id": "ji",
+   "front": "ジ",
+   "reading": "ji",
+   "meaning": ""
+  },
+  {
+   "id": "zu",
+   "front": "ズ",
+   "reading": "zu",
+   "meaning": ""
+  },
+  {
+   "id": "ze",
+   "front": "ゼ",
+   "reading": "ze",
+   "meaning": ""
+  },
+  {
+   "id": "zo",
+   "front": "ゾ",
+   "reading": "zo",
+   "meaning": ""
+  },
+  {
+   "id": "da",
+   "front": "ダ",
+   "reading": "da",
+   "meaning": ""
+  },
+  {
+   "id": "de",
+   "front": "デ",
+   "reading": "de",
+   "meaning": ""
+  },
+  {
+   "id": "do",
+   "front": "ド",
+   "reading": "do",
+   "meaning": ""
+  },
+  {
+   "id": "ba",
+   "front": "バ",
+   "reading": "ba",
+   "meaning": ""
+  },
+  {
+   "id": "bi",
+   "front": "ビ",
+   "reading": "bi",
+   "meaning": ""
+  },
+  {
+   "id": "bu",
+   "front": "ブ",
+   "reading": "bu",
+   "meaning": ""
+  },
+  {
+   "id": "be",
+   "front": "ベ",
+   "reading": "be",
+   "meaning": ""
+  },
+  {
+   "id": "bo",
+   "front": "ボ",
+   "reading": "bo",
+   "meaning": ""
+  },
+  {
+   "id": "pa",
+   "front": "パ",
+   "reading": "pa",
+   "meaning": ""
+  },
+  {
+   "id": "pi",
+   "front": "ピ",
+   "reading": "pi",
+   "meaning": ""
+  },
+  {
+   "id": "pu",
+   "front": "プ",
+   "reading": "pu",
+   "meaning": ""
+  },
+  {
+   "id": "pe",
+   "front": "ペ",
+   "reading": "pe",
+   "meaning": ""
+  },
+  {
+   "id": "po",
+   "front": "ポ",
+   "reading": "po",
+   "meaning": ""
+  },
+  {
+   "id": "kya",
+   "front": "キャ",
+   "reading": "kya",
+   "meaning": ""
+  },
+  {
+   "id": "kyu",
+   "front": "キュ",
+   "reading": "kyu",
+   "meaning": ""
+  },
+  {
+   "id": "kyo",
+   "front": "キョ",
+   "reading": "kyo",
+   "meaning": ""
+  },
+  {
+   "id": "gya",
+   "front": "ギャ",
+   "reading": "gya",
+   "meaning": ""
+  },
+  {
+   "id": "gyu",
+   "front": "ギュ",
+   "reading": "gyu",
+   "meaning": ""
+  },
+  {
+   "id": "gyo",
+   "front": "ギョ",
+   "reading": "gyo",
+   "meaning": ""
+  },
+  {
+   "id": "sha",
+   "front": "シャ",
+   "reading": "sha",
+   "meaning": ""
+  },
+  {
+   "id": "shu",
+   "front": "シュ",
+   "reading": "shu",
+   "meaning": ""
+  },
+  {
+   "id": "sho",
+   "front": "ショ",
+   "reading": "sho",
+   "meaning": ""
+  },
+  {
+   "id": "ja",
+   "front": "ジャ",
+   "reading": "ja",
+   "meaning": ""
+  },
+  {
+   "id": "ju",
+   "front": "ジュ",
+   "reading": "ju",
+   "meaning": ""
+  },
+  {
+   "id": "jo",
+   "front": "ジョ",
+   "reading": "jo",
+   "meaning": ""
+  },
+  {
+   "id": "cha",
+   "front": "チャ",
+   "reading": "cha",
+   "meaning": ""
+  },
+  {
+   "id": "chu",
+   "front": "チュ",
+   "reading": "chu",
+   "meaning": ""
+  },
+  {
+   "id": "cho",
+   "front": "チョ",
+   "reading": "cho",
+   "meaning": ""
+  },
+  {
+   "id": "nya",
+   "front": "ニャ",
+   "reading": "nya",
+   "meaning": ""
+  },
+  {
+   "id": "nyu",
+   "front": "ニュ",
+   "reading": "nyu",
+   "meaning": ""
+  },
+  {
+   "id": "nyo",
+   "front": "ニョ",
+   "reading": "nyo",
+   "meaning": ""
+  },
+  {
+   "id": "hya",
+   "front": "ヒャ",
+   "reading": "hya",
+   "meaning": ""
+  },
+  {
+   "id": "hyu",
+   "front": "ヒュ",
+   "reading": "hyu",
+   "meaning": ""
+  },
+  {
+   "id": "hyo",
+   "front": "ヒョ",
+   "reading": "hyo",
+   "meaning": ""
+  },
+  {
+   "id": "mya",
+   "front": "ミャ",
+   "reading": "mya",
+   "meaning": ""
+  },
+  {
+   "id": "myu",
+   "front": "ミュ",
+   "reading": "myu",
+   "meaning": ""
+  },
+  {
+   "id": "myo",
+   "front": "ミョ",
+   "reading": "myo",
+   "meaning": ""
+  },
+  {
+   "id": "rya",
+   "front": "リャ",
+   "reading": "rya",
+   "meaning": ""
+  },
+  {
+   "id": "ryu",
+   "front": "リュ",
+   "reading": "ryu",
+   "meaning": ""
+  },
+  {
+   "id": "ryo",
+   "front": "リョ",
+   "reading": "ryo",
+   "meaning": ""
+  },
+  {
+   "id": "bya",
+   "front": "ビャ",
+   "reading": "bya",
+   "meaning": ""
+  },
+  {
+   "id": "byu",
+   "front": "ビュ",
+   "reading": "byu",
+   "meaning": ""
+  },
+  {
+   "id": "byo",
+   "front": "ビョ",
+   "reading": "byo",
+   "meaning": ""
+  },
+  {
+   "id": "pya",
+   "front": "ピャ",
+   "reading": "pya",
+   "meaning": ""
+  },
+  {
+   "id": "pyu",
+   "front": "ピュ",
+   "reading": "pyu",
+   "meaning": ""
+  },
+  {
+   "id": "pyo",
+   "front": "ピョ",
+   "reading": "pyo",
+   "meaning": ""
+  },
+  {
+   "id": "xtsu",
+   "front": "ッ",
+   "reading": "small tsu",
+   "meaning": "a short pause: the next consonant is doubled"
+  },
+  {
+   "id": "choon",
+   "front": "ー",
+   "reading": "long mark",
+   "meaning": "stretches the vowel before it"
+  }
+ ]
+}
