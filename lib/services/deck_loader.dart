@@ -11,9 +11,11 @@ const List<String> deckFiles = [
   'ja_katakana',
   'ja_katakana_extra',
   'ja_phrases',
+  'ja_sentences',
   'zh_tones',
   'zh_hanzi',
   'zh_phrases',
+  'zh_sentences',
 ];
 
 Deck parseDeck(String source) {

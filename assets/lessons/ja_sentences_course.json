@@ -1,0 +1,428 @@
+{
+ "id": "ja_sentences_course",
+ "lang": "ja",
+ "mode": "speaking",
+ "title": "Speak: everyday sentences",
+ "description": "Whole sentences you can use today. Sound first.",
+ "units": [
+  {
+   "id": "about_you",
+   "title": "About you",
+   "intro": [
+    "Sentences you can use the first minute you meet someone.",
+    "In Japanese the verb or ending comes last. 'Watashi wa Mike desu' is word for word 'As for me, Mike is.'",
+    "The character は is written 'ha' but said 'wa' when it marks the topic of a sentence. です (desu) is a polite 'am, is, are'. The u is almost silent, so say 'des'."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "はじめまして",
+     "reading": "hajimemashite",
+     "meaning": "nice to meet you (first meeting)",
+     "hint": "ha-ji-me-ma-shi-te. Said only the first time you meet.",
+     "card": "ja_sentences:1"
+    },
+    {
+     "id": "2",
+     "front": "わたしはマイクです",
+     "reading": "watashi wa maiku desu",
+     "meaning": "I am Mike.",
+     "hint": "Swap maiku for your own name. 'wa' is the particle は.",
+     "card": "ja_sentences:2"
+    },
+    {
+     "id": "3",
+     "front": "よろしくおねがいします",
+     "reading": "yoroshiku onegaishimasu",
+     "meaning": "pleased to meet you",
+     "hint": "yo-ro-shi-ku o-ne-gai-shi-mas. Said after your name. It is a polite 'please be kind to me'.",
+     "card": "ja_sentences:3"
+    },
+    {
+     "id": "4",
+     "front": "おなまえはなんですか",
+     "reading": "onamae wa nan desu ka",
+     "meaning": "what is your name?",
+     "hint": "o-na-ma-e wa nan des-ka. 'nan' means what. The 'ka' makes it a question.",
+     "card": "ja_sentences:4"
+    },
+    {
+     "id": "5",
+     "front": "アメリカからきました",
+     "reading": "amerika kara kimashita",
+     "meaning": "I came from America.",
+     "hint": "'kara' means from. Swap in your own country. ki-ma-shi-ta.",
+     "card": "ja_sentences:5"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "questions",
+   "title": "What and where",
+   "intro": [
+    "Three little words carry most simple questions: nan (what), doko (where) and ikura (how much).",
+    "Add 'desu ka' to the end and you have a polite question. Your voice does not need to rise.",
+    "Kore means this, sore means that (near you), are means that over there."
+   ],
+   "items": [
+    {
+     "id": "6",
+     "front": "これはなんですか",
+     "reading": "kore wa nan desu ka",
+     "meaning": "what is this?",
+     "hint": "ko-re wa nan des-ka. Point at something as you say it.",
+     "card": "ja_sentences:6"
+    },
+    {
+     "id": "7",
+     "front": "それはほんです",
+     "reading": "sore wa hon desu",
+     "meaning": "that is a book.",
+     "hint": "so-re wa hon des. Swap hon for any noun.",
+     "card": "ja_sentences:7"
+    },
+    {
+     "id": "8",
+     "front": "トイレはどこですか",
+     "reading": "toire wa doko desu ka",
+     "meaning": "where is the toilet?",
+     "hint": "toi-re wa do-ko des-ka. One of the most useful sentences you can learn.",
+     "card": "ja_sentences:8"
+    },
+    {
+     "id": "9",
+     "front": "これはいくらですか",
+     "reading": "kore wa ikura desu ka",
+     "meaning": "how much is this?",
+     "hint": "ko-re wa i-ku-ra des-ka. Point at the item.",
+     "card": "ja_sentences:9"
+    },
+    {
+     "id": "10",
+     "front": "はい、そうです",
+     "reading": "hai, sou desu",
+     "meaning": "yes, that's right.",
+     "hint": "hai, soh des. 'sou' is a long 'oh'.",
+     "card": "ja_sentences:10"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "who_when",
+   "title": "Who, when, where",
+   "intro": [
+    "More question words: dare (who), nanji (what time), nanyoubi (what day of the week).",
+    "The same ending 'desu ka' makes all of them questions."
+   ],
+   "items": [
+    {
+     "id": "11",
+     "front": "だれですか",
+     "reading": "dare desu ka",
+     "meaning": "who is it?",
+     "hint": "da-re des-ka. The r is a quick tap of the tongue.",
+     "card": "ja_sentences:11"
+    },
+    {
+     "id": "12",
+     "front": "いまなんじですか",
+     "reading": "ima nanji desu ka",
+     "meaning": "what time is it now?",
+     "hint": "i-ma nan-ji des-ka. 'ima' means now.",
+     "card": "ja_sentences:12"
+    },
+    {
+     "id": "13",
+     "front": "きょうはなんようびですか",
+     "reading": "kyou wa nanyoubi desu ka",
+     "meaning": "what day is it today?",
+     "hint": "kyoh wa nan-yoh-bi des-ka. 'kyou' is today.",
+     "card": "ja_sentences:13"
+    },
+    {
+     "id": "14",
+     "front": "あしたはにちようびです",
+     "reading": "ashita wa nichiyoubi desu",
+     "meaning": "tomorrow is Sunday.",
+     "hint": "a-shi-ta wa ni-chi-yoh-bi des. Swap in any day.",
+     "card": "ja_sentences:14"
+    },
+    {
+     "id": "15",
+     "front": "ここです",
+     "reading": "koko desu",
+     "meaning": "it's here.",
+     "hint": "ko-ko des. Short and useful when you point.",
+     "card": "ja_sentences:15"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "wants",
+   "title": "Wants and needs",
+   "intro": [
+    "To ask for something, say what you want, then を (said 'o'), then 'kudasai' (please give me).",
+    "The character を is only used as this marker, and it sounds just like お.",
+    "Feelings like hungry and thirsty use 'ga' and a past form: onaka ga sukimashita, 'my stomach has emptied'."
+   ],
+   "items": [
+    {
+     "id": "16",
+     "front": "みずをください",
+     "reading": "mizu o kudasai",
+     "meaning": "water, please.",
+     "hint": "mi-zu o ku-da-sai. Swap mizu for what you want.",
+     "card": "ja_sentences:16"
+    },
+    {
+     "id": "17",
+     "front": "これをください",
+     "reading": "kore o kudasai",
+     "meaning": "I'll take this, please.",
+     "hint": "ko-re o ku-da-sai. Point at the item.",
+     "card": "ja_sentences:17"
+    },
+    {
+     "id": "18",
+     "front": "コーヒーをおねがいします",
+     "reading": "koohii o onegaishimasu",
+     "meaning": "coffee, please.",
+     "hint": "koh-hee o o-ne-gai-shi-mas. The long vowels are held for two beats.",
+     "card": "ja_sentences:18"
+    },
+    {
+     "id": "19",
+     "front": "おなかがすきました",
+     "reading": "onaka ga sukimashita",
+     "meaning": "I'm hungry.",
+     "hint": "o-na-ka ga su-ki-ma-shi-ta.",
+     "card": "ja_sentences:19"
+    },
+    {
+     "id": "20",
+     "front": "のどがかわきました",
+     "reading": "nodo ga kawakimashita",
+     "meaning": "I'm thirsty.",
+     "hint": "no-do ga ka-wa-ki-ma-shi-ta.",
+     "card": "ja_sentences:20"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "eating",
+   "title": "Eating out",
+   "intro": [
+    "Two phrases are said at every meal: before you eat and after.",
+    "They are not translated word for word. Think of them as 'thanks for the food' and 'thanks, that was a feast'."
+   ],
+   "items": [
+    {
+     "id": "21",
+     "front": "メニューをください",
+     "reading": "menyuu o kudasai",
+     "meaning": "the menu, please.",
+     "hint": "me-nyuu o ku-da-sai.",
+     "card": "ja_sentences:21"
+    },
+    {
+     "id": "22",
+     "front": "いただきます",
+     "reading": "itadakimasu",
+     "meaning": "thanks for the food (said before eating)",
+     "hint": "i-ta-da-ki-ma-su. Hands together, a small bow.",
+     "card": "ja_sentences:22"
+    },
+    {
+     "id": "23",
+     "front": "ごちそうさまでした",
+     "reading": "gochisousama deshita",
+     "meaning": "thanks for the meal (said after eating)",
+     "hint": "go-chi-soh-sa-ma de-shi-ta. Say it to the cook when you leave.",
+     "card": "ja_sentences:23"
+    },
+    {
+     "id": "24",
+     "front": "おかいけいをおねがいします",
+     "reading": "okaikei o onegaishimasu",
+     "meaning": "the bill, please.",
+     "hint": "o-kai-kei o o-ne-gai-shi-mas.",
+     "card": "ja_sentences:24"
+    },
+    {
+     "id": "25",
+     "front": "おいしかったです",
+     "reading": "oishikatta desu",
+     "meaning": "it was delicious.",
+     "hint": "oi-shi-kat-ta des. The small 'tt' is a held beat.",
+     "card": "ja_sentences:25"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "around",
+   "title": "Getting around",
+   "intro": [
+    "Directions use a short list of words: massugu (straight), migi (right), hidari (left).",
+    "Add 'kudasai' to turn an instruction into a polite request."
+   ],
+   "items": [
+    {
+     "id": "26",
+     "front": "えきはどこですか",
+     "reading": "eki wa doko desu ka",
+     "meaning": "where is the station?",
+     "hint": "e-ki wa do-ko des-ka. The most useful place word in Japan.",
+     "card": "ja_sentences:26"
+    },
+    {
+     "id": "27",
+     "front": "まっすぐいってください",
+     "reading": "massugu itte kudasai",
+     "meaning": "please go straight.",
+     "hint": "mas-su-gu it-te ku-da-sai. Small tsu: a held beat before the next sound.",
+     "card": "ja_sentences:27"
+    },
+    {
+     "id": "28",
+     "front": "ひだりにまがってください",
+     "reading": "hidari ni magatte kudasai",
+     "meaning": "please turn left.",
+     "hint": "hi-da-ri ni ma-gat-te ku-da-sai. Swap hidari for migi to say right.",
+     "card": "ja_sentences:28"
+    },
+    {
+     "id": "29",
+     "front": "ここでとめてください",
+     "reading": "koko de tomete kudasai",
+     "meaning": "please stop here.",
+     "hint": "ko-ko de to-me-te ku-da-sai. Handy in a taxi.",
+     "card": "ja_sentences:29"
+    },
+    {
+     "id": "30",
+     "front": "みちにまよいました",
+     "reading": "michi ni mayoimashita",
+     "meaning": "I'm lost.",
+     "hint": "mi-chi ni ma-yoi-ma-shi-ta.",
+     "card": "ja_sentences:30"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "understanding",
+   "title": "Understanding and help",
+   "intro": [
+    "You will not catch everything. These sentences keep a conversation alive.",
+    "Asking for slower or repeated speech is polite and normal."
+   ],
+   "items": [
+    {
+     "id": "31",
+     "front": "もういちどおねがいします",
+     "reading": "mou ichido onegaishimasu",
+     "meaning": "once more, please.",
+     "hint": "moh i-chi-do o-ne-gai-shi-mas.",
+     "card": "ja_sentences:31"
+    },
+    {
+     "id": "32",
+     "front": "ゆっくりおねがいします",
+     "reading": "yukkuri onegaishimasu",
+     "meaning": "slowly, please.",
+     "hint": "yuk-ku-ri o-ne-gai-shi-mas.",
+     "card": "ja_sentences:32"
+    },
+    {
+     "id": "33",
+     "front": "えいごがわかりますか",
+     "reading": "eigo ga wakarimasu ka",
+     "meaning": "do you understand English?",
+     "hint": "ei-go ga wa-ka-ri-mas-ka.",
+     "card": "ja_sentences:33"
+    },
+    {
+     "id": "34",
+     "front": "にほんごがすこしはなせます",
+     "reading": "nihongo ga sukoshi hanasemasu",
+     "meaning": "I can speak a little Japanese.",
+     "hint": "ni-hon-go ga su-ko-shi ha-na-se-mas.",
+     "card": "ja_sentences:34"
+    },
+    {
+     "id": "35",
+     "front": "たすけてください",
+     "reading": "tasukete kudasai",
+     "meaning": "please help me.",
+     "hint": "ta-su-ke-te ku-da-sai.",
+     "card": "ja_sentences:35"
+    },
+    {
+     "id": "36",
+     "front": "だいじょうぶです",
+     "reading": "daijoubu desu",
+     "meaning": "it's okay, I'm fine.",
+     "hint": "dai-joh-bu des. Also a polite no-thanks.",
+     "card": "ja_sentences:36"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "everyday",
+   "title": "Everyday talk",
+   "intro": [
+    "Small talk you will hear all the time.",
+    "'Ogenki desu ka' asks how someone is. The honest answer is usually 'genki desu', I'm well."
+   ],
+   "items": [
+    {
+     "id": "37",
+     "front": "おげんきですか",
+     "reading": "ogenki desu ka",
+     "meaning": "how are you?",
+     "hint": "o-gen-ki des-ka.",
+     "card": "ja_sentences:37"
+    },
+    {
+     "id": "38",
+     "front": "げんきです、ありがとう",
+     "reading": "genki desu, arigatou",
+     "meaning": "I'm fine, thank you.",
+     "hint": "gen-ki des, a-ri-ga-toh.",
+     "card": "ja_sentences:38"
+    },
+    {
+     "id": "39",
+     "front": "おやすみなさい",
+     "reading": "oyasuminasai",
+     "meaning": "good night.",
+     "hint": "o-ya-su-mi-na-sai.",
+     "card": "ja_sentences:39"
+    },
+    {
+     "id": "40",
+     "front": "たのしかったです",
+     "reading": "tanoshikatta desu",
+     "meaning": "it was fun.",
+     "hint": "ta-no-shi-kat-ta des.",
+     "card": "ja_sentences:40"
+    },
+    {
+     "id": "41",
+     "front": "またあした",
+     "reading": "mata ashita",
+     "meaning": "see you tomorrow.",
+     "hint": "ma-ta a-shi-ta. Casual.",
+     "card": "ja_sentences:41"
+    }
+   ],
+   "words": []
+  }
+ ]
+}

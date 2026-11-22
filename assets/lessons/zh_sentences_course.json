@@ -1,0 +1,427 @@
+{
+ "id": "zh_sentences_course",
+ "lang": "zh",
+ "mode": "speaking",
+ "title": "Speak: everyday sentences",
+ "description": "Whole sentences you can use today. Sound first.",
+ "units": [
+  {
+   "id": "about_you",
+   "title": "About you",
+   "intro": [
+    "Sentences you can use the first minute you meet someone.",
+    "Mandarin word order is close to English: 'I am American' is wǒ shì Měiguó rén, word for word 'I am America person'.",
+    "Say each sentence with its tones. The tone marks in the pinyin show how the voice moves."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "很高兴认识你",
+     "reading": "hěn gāoxìng rènshi nǐ",
+     "meaning": "nice to meet you",
+     "hint": "Close to 'hun gow-shing run-shr nee'. Said when you first meet.",
+     "card": "zh_sentences:1"
+    },
+    {
+     "id": "2",
+     "front": "我叫马克",
+     "reading": "wǒ jiào Mǎkè",
+     "meaning": "my name is Mark.",
+     "hint": "Close to 'waw jyow Mah-kuh'. Swap in your own name.",
+     "card": "zh_sentences:2"
+    },
+    {
+     "id": "3",
+     "front": "你叫什么名字",
+     "reading": "nǐ jiào shénme míngzi",
+     "meaning": "what is your name?",
+     "hint": "Close to 'nee jyow shun-muh ming-dzuh'.",
+     "card": "zh_sentences:3"
+    },
+    {
+     "id": "4",
+     "front": "我是美国人",
+     "reading": "wǒ shì Měiguó rén",
+     "meaning": "I am American.",
+     "hint": "Close to 'waw shr May-gwaw run'. Swap in your own country.",
+     "card": "zh_sentences:4"
+    },
+    {
+     "id": "5",
+     "front": "你是哪国人",
+     "reading": "nǐ shì nǎ guó rén",
+     "meaning": "which country are you from?",
+     "hint": "Close to 'nee shr nah gwaw run'. nǎ means which.",
+     "card": "zh_sentences:5"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "questions",
+   "title": "What and where",
+   "intro": [
+    "Three words carry many simple questions: shénme (what), nǎlǐ (where), duōshao qián (how much).",
+    "To ask 'is it so?', add 吗 (ma) to the end of a statement.",
+    "Zhè is this, nà is that."
+   ],
+   "items": [
+    {
+     "id": "6",
+     "front": "这是什么",
+     "reading": "zhè shì shénme",
+     "meaning": "what is this?",
+     "hint": "Close to 'juh shr shun-muh'. Point at something as you say it.",
+     "card": "zh_sentences:6"
+    },
+    {
+     "id": "7",
+     "front": "那是书",
+     "reading": "nà shì shū",
+     "meaning": "that is a book.",
+     "hint": "Close to 'nah shr shoo'. Swap shū for any noun.",
+     "card": "zh_sentences:7"
+    },
+    {
+     "id": "8",
+     "front": "厕所在哪里",
+     "reading": "cèsuǒ zài nǎlǐ",
+     "meaning": "where is the toilet?",
+     "hint": "Close to 'tsuh-swaw dzai nah-lee'. One of the most useful sentences.",
+     "card": "zh_sentences:8"
+    },
+    {
+     "id": "9",
+     "front": "这个多少钱",
+     "reading": "zhège duōshao qián",
+     "meaning": "how much is this?",
+     "hint": "Close to 'juh-guh dwaw-shao chyen'. Point at the item.",
+     "card": "zh_sentences:9"
+    },
+    {
+     "id": "10",
+     "front": "对，是的",
+     "reading": "duì, shì de",
+     "meaning": "yes, that's right.",
+     "hint": "Close to 'dway, shr duh'.",
+     "card": "zh_sentences:10"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "who_when",
+   "title": "Who, when, where",
+   "intro": [
+    "More question words: shéi (who), jǐ diǎn (what time), xīngqī jǐ (what day).",
+    "For time, jǐ is 'how many' and diǎn is 'o'clock'."
+   ],
+   "items": [
+    {
+     "id": "11",
+     "front": "他是谁",
+     "reading": "tā shì shéi",
+     "meaning": "who is he?",
+     "hint": "Close to 'tah shr shay'.",
+     "card": "zh_sentences:11"
+    },
+    {
+     "id": "12",
+     "front": "现在几点",
+     "reading": "xiànzài jǐ diǎn",
+     "meaning": "what time is it now?",
+     "hint": "Close to 'shyen-dzai jee dyen'.",
+     "card": "zh_sentences:12"
+    },
+    {
+     "id": "13",
+     "front": "今天星期几",
+     "reading": "jīntiān xīngqī jǐ",
+     "meaning": "what day is it today?",
+     "hint": "Close to 'jin-tyen shing-chee jee'.",
+     "card": "zh_sentences:13"
+    },
+    {
+     "id": "14",
+     "front": "明天是星期日",
+     "reading": "míngtiān shì xīngqīrì",
+     "meaning": "tomorrow is Sunday.",
+     "hint": "Close to 'ming-tyen shr shing-chee-r'. Swap in any day.",
+     "card": "zh_sentences:14"
+    },
+    {
+     "id": "15",
+     "front": "我在这里",
+     "reading": "wǒ zài zhèlǐ",
+     "meaning": "I'm here.",
+     "hint": "Close to 'waw dzai juh-lee'.",
+     "card": "zh_sentences:15"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "wants",
+   "title": "Wants and needs",
+   "intro": [
+    "To ask for something, say 'wǒ yào' (I want) and the thing, or 'qǐng gěi wǒ' (please give me).",
+    "To say you are hungry or thirsty, add 了 (le) at the end: wǒ è le."
+   ],
+   "items": [
+    {
+     "id": "16",
+     "front": "我要水",
+     "reading": "wǒ yào shuǐ",
+     "meaning": "I want water.",
+     "hint": "Close to 'waw yow shway'. Swap shuǐ for what you want.",
+     "card": "zh_sentences:16"
+    },
+    {
+     "id": "17",
+     "front": "我要这个",
+     "reading": "wǒ yào zhège",
+     "meaning": "I'll take this one.",
+     "hint": "Close to 'waw yow juh-guh'. Point at the item.",
+     "card": "zh_sentences:17"
+    },
+    {
+     "id": "18",
+     "front": "请给我咖啡",
+     "reading": "qǐng gěi wǒ kāfēi",
+     "meaning": "coffee, please.",
+     "hint": "Close to 'ching gay waw kah-fay'.",
+     "card": "zh_sentences:18"
+    },
+    {
+     "id": "19",
+     "front": "我饿了",
+     "reading": "wǒ è le",
+     "meaning": "I'm hungry.",
+     "hint": "Close to 'waw uh luh'.",
+     "card": "zh_sentences:19"
+    },
+    {
+     "id": "20",
+     "front": "我渴了",
+     "reading": "wǒ kě le",
+     "meaning": "I'm thirsty.",
+     "hint": "Close to 'waw kuh luh'.",
+     "card": "zh_sentences:20"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "eating",
+   "title": "Eating out",
+   "intro": [
+    "Phrases for ordering and paying.",
+    "Spicy food is common in much of China. 不要辣 is a useful way to ask for none."
+   ],
+   "items": [
+    {
+     "id": "21",
+     "front": "请给我菜单",
+     "reading": "qǐng gěi wǒ càidān",
+     "meaning": "the menu, please.",
+     "hint": "Close to 'ching gay waw tsai-dan'.",
+     "card": "zh_sentences:21"
+    },
+    {
+     "id": "22",
+     "front": "我想吃面条",
+     "reading": "wǒ xiǎng chī miàntiáo",
+     "meaning": "I'd like to eat noodles.",
+     "hint": "Close to 'waw shyang chr myen-tyow'. xiǎng means would like.",
+     "card": "zh_sentences:22"
+    },
+    {
+     "id": "23",
+     "front": "很好吃",
+     "reading": "hěn hǎochī",
+     "meaning": "it's delicious.",
+     "hint": "Close to 'hun how-chr'.",
+     "card": "zh_sentences:23"
+    },
+    {
+     "id": "24",
+     "front": "买单",
+     "reading": "mǎidān",
+     "meaning": "the bill, please.",
+     "hint": "Close to 'my-dan'. Say it to the waiter.",
+     "card": "zh_sentences:24"
+    },
+    {
+     "id": "25",
+     "front": "不要辣",
+     "reading": "bú yào là",
+     "meaning": "no spice, please.",
+     "hint": "Close to 'boo yow lah'.",
+     "card": "zh_sentences:25"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "around",
+   "title": "Getting around",
+   "intro": [
+    "Directions use a short list of words: yìzhí zǒu (straight), zuǒ (left), yòu (right).",
+    "Zhuǎn means turn. Put the direction first: zuǒ zhuǎn, left turn."
+   ],
+   "items": [
+    {
+     "id": "26",
+     "front": "地铁站在哪里",
+     "reading": "dìtiězhàn zài nǎlǐ",
+     "meaning": "where is the subway station?",
+     "hint": "Close to 'dee-tyeh-jan dzai nah-lee'.",
+     "card": "zh_sentences:26"
+    },
+    {
+     "id": "27",
+     "front": "一直走",
+     "reading": "yìzhí zǒu",
+     "meaning": "go straight.",
+     "hint": "Close to 'ee-jr dzoh'.",
+     "card": "zh_sentences:27"
+    },
+    {
+     "id": "28",
+     "front": "左转",
+     "reading": "zuǒ zhuǎn",
+     "meaning": "turn left.",
+     "hint": "Close to 'dzwaw jwan'. Swap in yòu (yoh) to say right.",
+     "card": "zh_sentences:28"
+    },
+    {
+     "id": "29",
+     "front": "请停在这里",
+     "reading": "qǐng tíng zài zhèlǐ",
+     "meaning": "please stop here.",
+     "hint": "Close to 'ching ting dzai juh-lee'. Handy in a taxi.",
+     "card": "zh_sentences:29"
+    },
+    {
+     "id": "30",
+     "front": "我迷路了",
+     "reading": "wǒ mílù le",
+     "meaning": "I'm lost.",
+     "hint": "Close to 'waw mee-loo luh'.",
+     "card": "zh_sentences:30"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "understanding",
+   "title": "Understanding and help",
+   "intro": [
+    "You will not catch everything. These sentences keep a conversation alive.",
+    "Asking someone to speak slower or repeat is polite and normal."
+   ],
+   "items": [
+    {
+     "id": "31",
+     "front": "请再说一遍",
+     "reading": "qǐng zài shuō yí biàn",
+     "meaning": "please say it once more.",
+     "hint": "Close to 'ching dzai shwaw ee byen'.",
+     "card": "zh_sentences:31"
+    },
+    {
+     "id": "32",
+     "front": "请说慢一点",
+     "reading": "qǐng shuō màn yìdiǎn",
+     "meaning": "please speak a little slower.",
+     "hint": "Close to 'ching shwaw man ee-dyen'.",
+     "card": "zh_sentences:32"
+    },
+    {
+     "id": "33",
+     "front": "你会说英语吗",
+     "reading": "nǐ huì shuō Yīngyǔ ma",
+     "meaning": "do you speak English?",
+     "hint": "Close to 'nee hway shwaw Ying-yoo ma'.",
+     "card": "zh_sentences:33"
+    },
+    {
+     "id": "34",
+     "front": "我会说一点中文",
+     "reading": "wǒ huì shuō yìdiǎn Zhōngwén",
+     "meaning": "I can speak a little Chinese.",
+     "hint": "Close to 'waw hway shwaw ee-dyen Jong-wun'.",
+     "card": "zh_sentences:34"
+    },
+    {
+     "id": "35",
+     "front": "请帮帮我",
+     "reading": "qǐng bāngbang wǒ",
+     "meaning": "please help me.",
+     "hint": "Close to 'ching bahng-bahng waw'.",
+     "card": "zh_sentences:35"
+    },
+    {
+     "id": "36",
+     "front": "没问题",
+     "reading": "méi wèntí",
+     "meaning": "no problem.",
+     "hint": "Close to 'may wun-tee'.",
+     "card": "zh_sentences:36"
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "everyday",
+   "title": "Everyday talk",
+   "intro": [
+    "Small talk you will hear all the time.",
+    "你好吗 asks how someone is. A common answer is 我很好, I'm very well."
+   ],
+   "items": [
+    {
+     "id": "37",
+     "front": "你好吗",
+     "reading": "nǐ hǎo ma",
+     "meaning": "how are you?",
+     "hint": "Close to 'nee how ma'.",
+     "card": "zh_sentences:37"
+    },
+    {
+     "id": "38",
+     "front": "我很好，谢谢",
+     "reading": "wǒ hěn hǎo, xièxie",
+     "meaning": "I'm fine, thank you.",
+     "hint": "Close to 'waw hun how, shyeh-shyeh'.",
+     "card": "zh_sentences:38"
+    },
+    {
+     "id": "39",
+     "front": "晚安",
+     "reading": "wǎn'ān",
+     "meaning": "good night.",
+     "hint": "Close to 'wan-an'.",
+     "card": "zh_sentences:39"
+    },
+    {
+     "id": "40",
+     "front": "玩得很开心",
+     "reading": "wán de hěn kāixīn",
+     "meaning": "I had a great time.",
+     "hint": "Close to 'wan duh hun kai-shin'.",
+     "card": "zh_sentences:40"
+    },
+    {
+     "id": "41",
+     "front": "明天见",
+     "reading": "míngtiān jiàn",
+     "meaning": "see you tomorrow.",
+     "hint": "Close to 'ming-tyen jyen'.",
+     "card": "zh_sentences:41"
+    }
+   ],
+   "words": []
+  }
+ ]
+}
