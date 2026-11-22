@@ -1,0 +1,254 @@
+{
+ "id": "zh_sentences",
+ "lang": "zh",
+ "title": "Everyday sentences",
+ "description": "Introductions, questions, ordering, directions.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "很高兴认识你",
+   "reading": "hěn gāoxìng rènshi nǐ",
+   "meaning": "nice to meet you"
+  },
+  {
+   "id": "2",
+   "front": "我叫马克",
+   "reading": "wǒ jiào Mǎkè",
+   "meaning": "my name is Mark."
+  },
+  {
+   "id": "3",
+   "front": "你叫什么名字",
+   "reading": "nǐ jiào shénme míngzi",
+   "meaning": "what is your name?"
+  },
+  {
+   "id": "4",
+   "front": "我是美国人",
+   "reading": "wǒ shì Měiguó rén",
+   "meaning": "I am American."
+  },
+  {
+   "id": "5",
+   "front": "你是哪国人",
+   "reading": "nǐ shì nǎ guó rén",
+   "meaning": "which country are you from?"
+  },
+  {
+   "id": "6",
+   "front": "这是什么",
+   "reading": "zhè shì shénme",
+   "meaning": "what is this?"
+  },
+  {
+   "id": "7",
+   "front": "那是书",
+   "reading": "nà shì shū",
+   "meaning": "that is a book."
+  },
+  {
+   "id": "8",
+   "front": "厕所在哪里",
+   "reading": "cèsuǒ zài nǎlǐ",
+   "meaning": "where is the toilet?"
+  },
+  {
+   "id": "9",
+   "front": "这个多少钱",
+   "reading": "zhège duōshao qián",
+   "meaning": "how much is this?"
+  },
+  {
+   "id": "10",
+   "front": "对，是的",
+   "reading": "duì, shì de",
+   "meaning": "yes, that's right."
+  },
+  {
+   "id": "11",
+   "front": "他是谁",
+   "reading": "tā shì shéi",
+   "meaning": "who is he?"
+  },
+  {
+   "id": "12",
+   "front": "现在几点",
+   "reading": "xiànzài jǐ diǎn",
+   "meaning": "what time is it now?"
+  },
+  {
+   "id": "13",
+   "front": "今天星期几",
+   "reading": "jīntiān xīngqī jǐ",
+   "meaning": "what day is it today?"
+  },
+  {
+   "id": "14",
+   "front": "明天是星期日",
+   "reading": "míngtiān shì xīngqīrì",
+   "meaning": "tomorrow is Sunday."
+  },
+  {
+   "id": "15",
+   "front": "我在这里",
+   "reading": "wǒ zài zhèlǐ",
+   "meaning": "I'm here."
+  },
+  {
+   "id": "16",
+   "front": "我要水",
+   "reading": "wǒ yào shuǐ",
+   "meaning": "I want water."
+  },
+  {
+   "id": "17",
+   "front": "我要这个",
+   "reading": "wǒ yào zhège",
+   "meaning": "I'll take this one."
+  },
+  {
+   "id": "18",
+   "front": "请给我咖啡",
+   "reading": "qǐng gěi wǒ kāfēi",
+   "meaning": "coffee, please."
+  },
+  {
+   "id": "19",
+   "front": "我饿了",
+   "reading": "wǒ è le",
+   "meaning": "I'm hungry."
+  },
+  {
+   "id": "20",
+   "front": "我渴了",
+   "reading": "wǒ kě le",
+   "meaning": "I'm thirsty."
+  },
+  {
+   "id": "21",
+   "front": "请给我菜单",
+   "reading": "qǐng gěi wǒ càidān",
+   "meaning": "the menu, please."
+  },
+  {
+   "id": "22",
+   "front": "我想吃面条",
+   "reading": "wǒ xiǎng chī miàntiáo",
+   "meaning": "I'd like to eat noodles."
+  },
+  {
+   "id": "23",
+   "front": "很好吃",
+   "reading": "hěn hǎochī",
+   "meaning": "it's delicious."
+  },
+  {
+   "id": "24",
+   "front": "买单",
+   "reading": "mǎidān",
+   "meaning": "the bill, please."
+  },
+  {
+   "id": "25",
+   "front": "不要辣",
+   "reading": "bú yào là",
+   "meaning": "no spice, please."
+  },
+  {
+   "id": "26",
+   "front": "地铁站在哪里",
+   "reading": "dìtiězhàn zài nǎlǐ",
+   "meaning": "where is the subway station?"
+  },
+  {
+   "id": "27",
+   "front": "一直走",
+   "reading": "yìzhí zǒu",
+   "meaning": "go straight."
+  },
+  {
+   "id": "28",
+   "front": "左转",
+   "reading": "zuǒ zhuǎn",
+   "meaning": "turn left."
+  },
+  {
+   "id": "29",
+   "front": "请停在这里",
+   "reading": "qǐng tíng zài zhèlǐ",
+   "meaning": "please stop here."
+  },
+  {
+   "id": "30",
+   "front": "我迷路了",
+   "reading": "wǒ mílù le",
+   "meaning": "I'm lost."
+  },
+  {
+   "id": "31",
+   "front": "请再说一遍",
+   "reading": "qǐng zài shuō yí biàn",
+   "meaning": "please say it once more."
+  },
+  {
+   "id": "32",
+   "front": "请说慢一点",
+   "reading": "qǐng shuō màn yìdiǎn",
+   "meaning": "please speak a little slower."
+  },
+  {
+   "id": "33",
+   "front": "你会说英语吗",
+   "reading": "nǐ huì shuō Yīngyǔ ma",
+   "meaning": "do you speak English?"
+  },
+  {
+   "id": "34",
+   "front": "我会说一点中文",
+   "reading": "wǒ huì shuō yìdiǎn Zhōngwén",
+   "meaning": "I can speak a little Chinese."
+  },
+  {
+   "id": "35",
+   "front": "请帮帮我",
+   "reading": "qǐng bāngbang wǒ",
+   "meaning": "please help me."
+  },
+  {
+   "id": "36",
+   "front": "没问题",
+   "reading": "méi wèntí",
+   "meaning": "no problem."
+  },
+  {
+   "id": "37",
+   "front": "你好吗",
+   "reading": "nǐ hǎo ma",
+   "meaning": "how are you?"
+  },
+  {
+   "id": "38",
+   "front": "我很好，谢谢",
+   "reading": "wǒ hěn hǎo, xièxie",
+   "meaning": "I'm fine, thank you."
+  },
+  {
+   "id": "39",
+   "front": "晚安",
+   "reading": "wǎn'ān",
+   "meaning": "good night."
+  },
+  {
+   "id": "40",
+   "front": "玩得很开心",
+   "reading": "wán de hěn kāixīn",
+   "meaning": "I had a great time."
+  },
+  {
+   "id": "41",
+   "front": "明天见",
+   "reading": "míngtiān jiàn",
+   "meaning": "see you tomorrow."
+  }
+ ]
+}

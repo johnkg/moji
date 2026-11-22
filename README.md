@@ -2,7 +2,7 @@
 
 Learn to read and speak basic Japanese and Mandarin. Flutter, web-first.
 
-**Status: v0.6. Compiled, tested and deployed by CI. Katakana, XP/streak and writing practice are new and not yet run by hand.**
+**Status: v0.7. Compiled, tested and deployed by CI. Katakana, XP/streak and writing practice are new and not yet run by hand.**
 
 ## First run
 
@@ -22,11 +22,11 @@ One-time setup: repo Settings > Pages > Source: **GitHub Actions**. Free Pages n
 
 Site: https://johnkg.github.io/moji/
 
-## What v0.6 does
+## What v0.7 does
 
 Each language has two paths. Units unlock in order inside each path.
 
-- **Speak** (sound first): phrases shown in romaji or pinyin, native text small. Exercises: see the phrase and pick its meaning, hear it and pick its meaning. Japanese and Mandarin: 3 units each, 12 phrases each.
+- **Speak** (sound first): phrases shown in romaji or pinyin, native text small. Exercises: see the phrase and pick its meaning, hear it and pick its meaning. Japanese and Mandarin: 3 units each, 12 phrases each, then an "Everyday sentences" path of 8 units and 41 sentences each (introductions, what and where, wants, eating out, directions, getting help, small talk).
 - **Read**: a short explanation, each new character with a memory hint and audio, then read it, hear it, and read words built from it.
   - Japanese: all 46 hiragana and all 46 katakana, 10 units each.
   - Japanese extras for each script: voiced sounds (が, ざ, だ, ば) and handakuten (ぱ), combined sounds (きゃ, しゅ, ちょ), small っ, and the katakana long mark ー. 12 units for hiragana, 13 for katakana. Words in these units use the basic kana of the same script, so do the basic path first.
@@ -59,6 +59,6 @@ When adding CC-CEDICT, JMdict, KanjiVG or Tatoeba data, record the licence here.
 
 ## Next
 
-1. Simple sentences: は, です, の
+1. Reading path for sentences (は, です, を and basic grammar written out in kana)
 2. Speech check (say it aloud)
 3. Writing practice for combined sounds (two characters in a row)

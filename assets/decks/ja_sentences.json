@@ -1,0 +1,254 @@
+{
+ "id": "ja_sentences",
+ "lang": "ja",
+ "title": "Everyday sentences",
+ "description": "Introductions, questions, ordering, directions.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "はじめまして",
+   "reading": "hajimemashite",
+   "meaning": "nice to meet you (first meeting)"
+  },
+  {
+   "id": "2",
+   "front": "わたしはマイクです",
+   "reading": "watashi wa maiku desu",
+   "meaning": "I am Mike."
+  },
+  {
+   "id": "3",
+   "front": "よろしくおねがいします",
+   "reading": "yoroshiku onegaishimasu",
+   "meaning": "pleased to meet you"
+  },
+  {
+   "id": "4",
+   "front": "おなまえはなんですか",
+   "reading": "onamae wa nan desu ka",
+   "meaning": "what is your name?"
+  },
+  {
+   "id": "5",
+   "front": "アメリカからきました",
+   "reading": "amerika kara kimashita",
+   "meaning": "I came from America."
+  },
+  {
+   "id": "6",
+   "front": "これはなんですか",
+   "reading": "kore wa nan desu ka",
+   "meaning": "what is this?"
+  },
+  {
+   "id": "7",
+   "front": "それはほんです",
+   "reading": "sore wa hon desu",
+   "meaning": "that is a book."
+  },
+  {
+   "id": "8",
+   "front": "トイレはどこですか",
+   "reading": "toire wa doko desu ka",
+   "meaning": "where is the toilet?"
+  },
+  {
+   "id": "9",
+   "front": "これはいくらですか",
+   "reading": "kore wa ikura desu ka",
+   "meaning": "how much is this?"
+  },
+  {
+   "id": "10",
+   "front": "はい、そうです",
+   "reading": "hai, sou desu",
+   "meaning": "yes, that's right."
+  },
+  {
+   "id": "11",
+   "front": "だれですか",
+   "reading": "dare desu ka",
+   "meaning": "who is it?"
+  },
+  {
+   "id": "12",
+   "front": "いまなんじですか",
+   "reading": "ima nanji desu ka",
+   "meaning": "what time is it now?"
+  },
+  {
+   "id": "13",
+   "front": "きょうはなんようびですか",
+   "reading": "kyou wa nanyoubi desu ka",
+   "meaning": "what day is it today?"
+  },
+  {
+   "id": "14",
+   "front": "あしたはにちようびです",
+   "reading": "ashita wa nichiyoubi desu",
+   "meaning": "tomorrow is Sunday."
+  },
+  {
+   "id": "15",
+   "front": "ここです",
+   "reading": "koko desu",
+   "meaning": "it's here."
+  },
+  {
+   "id": "16",
+   "front": "みずをください",
+   "reading": "mizu o kudasai",
+   "meaning": "water, please."
+  },
+  {
+   "id": "17",
+   "front": "これをください",
+   "reading": "kore o kudasai",
+   "meaning": "I'll take this, please."
+  },
+  {
+   "id": "18",
+   "front": "コーヒーをおねがいします",
+   "reading": "koohii o onegaishimasu",
+   "meaning": "coffee, please."
+  },
+  {
+   "id": "19",
+   "front": "おなかがすきました",
+   "reading": "onaka ga sukimashita",
+   "meaning": "I'm hungry."
+  },
+  {
+   "id": "20",
+   "front": "のどがかわきました",
+   "reading": "nodo ga kawakimashita",
+   "meaning": "I'm thirsty."
+  },
+  {
+   "id": "21",
+   "front": "メニューをください",
+   "reading": "menyuu o kudasai",
+   "meaning": "the menu, please."
+  },
+  {
+   "id": "22",
+   "front": "いただきます",
+   "reading": "itadakimasu",
+   "meaning": "thanks for the food (said before eating)"
+  },
+  {
+   "id": "23",
+   "front": "ごちそうさまでした",
+   "reading": "gochisousama deshita",
+   "meaning": "thanks for the meal (said after eating)"
+  },
+  {
+   "id": "24",
+   "front": "おかいけいをおねがいします",
+   "reading": "okaikei o onegaishimasu",
+   "meaning": "the bill, please."
+  },
+  {
+   "id": "25",
+   "front": "おいしかったです",
+   "reading": "oishikatta desu",
+   "meaning": "it was delicious."
+  },
+  {
+   "id": "26",
+   "front": "えきはどこですか",
+   "reading": "eki wa doko desu ka",
+   "meaning": "where is the station?"
+  },
+  {
+   "id": "27",
+   "front": "まっすぐいってください",
+   "reading": "massugu itte kudasai",
+   "meaning": "please go straight."
+  },
+  {
+   "id": "28",
+   "front": "ひだりにまがってください",
+   "reading": "hidari ni magatte kudasai",
+   "meaning": "please turn left."
+  },
+  {
+   "id": "29",
+   "front": "ここでとめてください",
+   "reading": "koko de tomete kudasai",
+   "meaning": "please stop here."
+  },
+  {
+   "id": "30",
+   "front": "みちにまよいました",
+   "reading": "michi ni mayoimashita",
+   "meaning": "I'm lost."
+  },
+  {
+   "id": "31",
+   "front": "もういちどおねがいします",
+   "reading": "mou ichido onegaishimasu",
+   "meaning": "once more, please."
+  },
+  {
+   "id": "32",
+   "front": "ゆっくりおねがいします",
+   "reading": "yukkuri onegaishimasu",
+   "meaning": "slowly, please."
+  },
+  {
+   "id": "33",
+   "front": "えいごがわかりますか",
+   "reading": "eigo ga wakarimasu ka",
+   "meaning": "do you understand English?"
+  },
+  {
+   "id": "34",
+   "front": "にほんごがすこしはなせます",
+   "reading": "nihongo ga sukoshi hanasemasu",
+   "meaning": "I can speak a little Japanese."
+  },
+  {
+   "id": "35",
+   "front": "たすけてください",
+   "reading": "tasukete kudasai",
+   "meaning": "please help me."
+  },
+  {
+   "id": "36",
+   "front": "だいじょうぶです",
+   "reading": "daijoubu desu",
+   "meaning": "it's okay, I'm fine."
+  },
+  {
+   "id": "37",
+   "front": "おげんきですか",
+   "reading": "ogenki desu ka",
+   "meaning": "how are you?"
+  },
+  {
+   "id": "38",
+   "front": "げんきです、ありがとう",
+   "reading": "genki desu, arigatou",
+   "meaning": "I'm fine, thank you."
+  },
+  {
+   "id": "39",
+   "front": "おやすみなさい",
+   "reading": "oyasuminasai",
+   "meaning": "good night."
+  },
+  {
+   "id": "40",
+   "front": "たのしかったです",
+   "reading": "tanoshikatta desu",
+   "meaning": "it was fun."
+  },
+  {
+   "id": "41",
+   "front": "またあした",
+   "reading": "mata ashita",
+   "meaning": "see you tomorrow."
+  }
+ ]
+}

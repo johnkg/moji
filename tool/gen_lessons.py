@@ -604,8 +604,25 @@ def build_extra(katakana):
 hiragana_extra = build_extra(False)
 katakana_extra = build_extra(True)
 
+
+import sentences as S
+
+def sentence_course(lang, units, deck, title):
+    ids = {}
+    for i, text, reading, meaning, hint, uid in S.flat(units):
+        ids.setdefault(uid, []).append((i, hint))
+    return {"id": f"{lang}_sentences_course", "lang": lang, "mode": "speaking", "title": title,
+            "description": "Whole sentences you can use today. Sound first.",
+            "units": [unit(uid, utitle, intro, items(deck, ids[uid])) for uid, utitle, intro, _ in units]}
+
+ja_sentences = sentence_course("ja", S.JA, "ja_sentences", "Speak: everyday sentences")
+zh_sentences = sentence_course("zh", S.ZH, "zh_sentences", "Speak: everyday sentences")
+for c in (ja_sentences, zh_sentences):
+    ms = [i["meaning"] for u in c["units"] for i in u["items"]]
+    assert len(ms) == len(set(ms)), "duplicate meanings in " + c["id"]
+
 os.makedirs(OUT, exist_ok=True)
-for course in (ja_speaking, hiragana, hiragana_extra, katakana, katakana_extra, zh_speaking, mandarin):
+for course in (ja_speaking, ja_sentences, hiragana, hiragana_extra, katakana, katakana_extra, zh_speaking, zh_sentences, mandarin):
     for u in course["units"]:
         ids = [i["id"] for i in u["items"]]
         assert len(ids) == len(set(ids)), u["id"]

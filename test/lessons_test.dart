@@ -248,6 +248,24 @@ void main() {
         final meanings = unit.items.map((i) => i.meaning).toSet();
         expect(meanings.length, unit.items.length, reason: unit.id);
       }
+      // Wrong choices come from earlier units, so a repeated meaning anywhere
+      // in a course could make two options both right.
+      final all = [for (final u in course.units) ...u.items.map((i) => i.meaning)];
+      expect(all.toSet().length, all.length, reason: course.id);
+    }
+  });
+
+  test('everyday sentence courses cover both languages with whole sentences', () {
+    for (final lang in ['ja', 'zh']) {
+      final course = courses.firstWhere((c) => c.id == '${lang}_sentences_course');
+      expect(course.isSpeaking, isTrue);
+      expect(course.units.length, greaterThanOrEqualTo(6));
+      final items = [for (final u in course.units) ...u.items];
+      expect(items.length, greaterThanOrEqualTo(30));
+      for (final item in items) {
+        expect(item.reading, isNotEmpty, reason: item.front);
+        expect(item.hint, isNotEmpty, reason: item.front);
+      }
     }
   });
 }

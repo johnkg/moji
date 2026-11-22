@@ -8,11 +8,13 @@ import '../models/course.dart';
 /// Speaking paths come first so they show above reading on the home screen.
 const List<String> courseFiles = [
   'ja_speaking_course',
+  'ja_sentences_course',
   'ja_hiragana_course',
   'ja_hiragana_extra_course',
   'ja_katakana_course',
   'ja_katakana_extra_course',
   'zh_speaking_course',
+  'zh_sentences_course',
   'zh_basics_course',
 ];
 

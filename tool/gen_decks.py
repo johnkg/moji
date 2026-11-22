@@ -2,6 +2,7 @@
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kana_extras as X
+import sentences as S
 OUT = os.path.join(os.path.dirname(__file__), '..', 'assets', 'decks')
 ROMAJI = ("a i u e o ka ki ku ke ko sa shi su se so ta chi tsu te to na ni nu ne no "
           "ha hi fu he ho ma mi mu me mo ya yu yo ra ri ru re ro wa wo n").split()
@@ -37,6 +38,10 @@ decks = [
   ("さようなら", "sayounara", "goodbye"), ("おねがいします", "onegaishimasu", "please"),
   ("わかりません", "wakarimasen", "I don't understand"), ("いくらですか", "ikura desu ka", "how much is it?"),
   ("おいしい", "oishii", "delicious")])},
+ {"id": "ja_sentences", "lang": "ja", "title": "Everyday sentences", "description": "Introductions, questions, ordering, directions.", "cards": [
+  {"id": i, "front": t, "reading": r, "meaning": m} for i, t, r, m, _, _ in S.flat(S.JA)]},
+ {"id": "zh_sentences", "lang": "zh", "title": "Everyday sentences", "description": "Introductions, questions, ordering, directions.", "cards": [
+  {"id": i, "front": t, "reading": r, "meaning": m} for i, t, r, m, _, _ in S.flat(S.ZH)]},
  {"id": "zh_tones", "lang": "zh", "title": "Tones", "description": "The four tones plus neutral, on the syllable ma.", "cards": rows([
   ("妈", "mā", "mother (1st tone: high and flat)"), ("麻", "má", "hemp (2nd tone: rising)"),
   ("马", "mǎ", "horse (3rd tone: dips low, then rises)"), ("骂", "mà", "to scold (4th tone: sharp fall)"),
