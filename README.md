@@ -2,7 +2,7 @@
 
 Learn to read and speak basic Japanese and Mandarin. Flutter, web-first.
 
-**Status: v0.7. Compiled, tested and deployed by CI. Katakana, XP/streak and writing practice are new and not yet run by hand.**
+**Status: v0.8. Compiled, tested and deployed by CI. Katakana, XP/streak and writing practice are new and not yet run by hand.**
 
 ## First run
 
@@ -22,7 +22,7 @@ One-time setup: repo Settings > Pages > Source: **GitHub Actions**. Free Pages n
 
 Site: https://johnkg.github.io/moji/
 
-## What v0.7 does
+## What v0.8 does
 
 Each language has two paths. Units unlock in order inside each path.
 
@@ -30,7 +30,7 @@ Each language has two paths. Units unlock in order inside each path.
 - **Read**: a short explanation, each new character with a memory hint and audio, then read it, hear it, and read words built from it.
   - Japanese: all 46 hiragana and all 46 katakana, 10 units each.
   - Japanese extras for each script: voiced sounds (が, ざ, だ, ば) and handakuten (ぱ), combined sounds (きゃ, しゅ, ちょ), small っ, and the katakana long mark ー. 12 units for hiragana, 13 for katakana. Words in these units use the basic kana of the same script, so do the basic path first.
-  - Mandarin: tones, numbers 1 to 10, and 20 more hanzi, 7 units.
+  - Mandarin: tones, numbers 1 to 10, and about 90 more common hanzi in 20 units (family, school, food, verbs, time, directions, qualities, question words), with compound words built from characters already taught.
 - Wrong answers come back once. Finishing a unit puts its items into flashcard review, due the next day.
 - Flashcard decks with spaced repetition (SM-2 style, Again / Hard / Good / Easy)
 - Audio through device or browser text-to-speech

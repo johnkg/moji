@@ -2,8 +2,8 @@
  "id": "zh_basics_course",
  "lang": "zh",
  "mode": "reading",
- "title": "Read: tones and first characters",
- "description": "Tones first, then your first hanzi.",
+ "title": "Read: tones and hanzi",
+ "description": "Tones first, then about a hundred common hanzi with compound words.",
  "units": [
   {
    "id": "tones",
@@ -501,6 +501,1217 @@
      "text": "不喝",
      "reading": "bù hē",
      "meaning": "not drink"
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "title": "Family",
+   "intro": [
+    "Family words are used every day, and most are doubled: 爸爸 (dad) and 妈妈 (mom). The second syllable is light.",
+    "Reading pinyin: 'bà' is 'bah'. 'gē' is close to 'guh'. 'jiě' is close to 'jyeh'. 'dì' is 'dee'. 'mèi' is 'may'.",
+    "姐 and 妹 both have 女 (woman) on the left, because they are sisters. 哥 and 弟 are brothers."
+   ],
+   "items": [
+    {
+     "id": "31",
+     "front": "爸",
+     "reading": "bà",
+     "meaning": "dad, father",
+     "hint": "父 (father) on top gives the meaning. Say 'bah'. 4th tone: falling.",
+     "card": "zh_hanzi:31"
+    },
+    {
+     "id": "32",
+     "front": "哥",
+     "reading": "gē",
+     "meaning": "older brother",
+     "hint": "Two 可 stacked on top of each other: the big brother stands taller. 1st tone: high and flat.",
+     "card": "zh_hanzi:32"
+    },
+    {
+     "id": "33",
+     "front": "姐",
+     "reading": "jiě",
+     "meaning": "older sister",
+     "hint": "女 (woman) on the left: a female relative. 3rd tone: dipping.",
+     "card": "zh_hanzi:33"
+    },
+    {
+     "id": "34",
+     "front": "弟",
+     "reading": "dì",
+     "meaning": "younger brother",
+     "hint": "Picture a little brother with a topknot and a hook hanging down. 4th tone: falling.",
+     "card": "zh_hanzi:34"
+    },
+    {
+     "id": "35",
+     "front": "妹",
+     "reading": "mèi",
+     "meaning": "younger sister",
+     "hint": "女 (woman) on the left, like 姐: a female relative. 4th tone: falling.",
+     "card": "zh_hanzi:35"
+    }
+   ],
+   "words": [
+    {
+     "text": "爸爸",
+     "reading": "bàba",
+     "meaning": "dad"
+    },
+    {
+     "text": "妈妈",
+     "reading": "māma",
+     "meaning": "mom"
+    },
+    {
+     "text": "哥哥",
+     "reading": "gēge",
+     "meaning": "older brother"
+    },
+    {
+     "text": "姐姐",
+     "reading": "jiějie",
+     "meaning": "older sister"
+    },
+    {
+     "text": "弟弟",
+     "reading": "dìdi",
+     "meaning": "younger brother"
+    },
+    {
+     "text": "妹妹",
+     "reading": "mèimei",
+     "meaning": "younger sister"
+    }
+   ]
+  },
+  {
+   "id": "school",
+   "title": "School",
+   "intro": [
+    "Five characters for school life. 学 is 'to study', and it also appears in 学生 (student) and 大学 (university).",
+    "Reading pinyin: 'xué' is close to 'shweh': x is a soft sh. 'shēng' is close to 'shung'. 'lǎo' is 'lao' as in 'now'. 'xiào' is close to 'shyow'.",
+    "老师 (lǎoshī) is 'old master': a teacher. Respect for age runs through many Chinese words."
+   ],
+   "items": [
+    {
+     "id": "36",
+     "front": "学",
+     "reading": "xué",
+     "meaning": "to study, to learn",
+     "hint": "A child 子 sits under a roof of little marks: studying at home. 2nd tone: rising.",
+     "card": "zh_hanzi:36"
+    },
+    {
+     "id": "37",
+     "front": "生",
+     "reading": "shēng",
+     "meaning": "to be born, life, raw",
+     "hint": "A sprout pushing up out of the ground: new life. 1st tone: high and flat.",
+     "card": "zh_hanzi:37"
+    },
+    {
+     "id": "38",
+     "front": "老",
+     "reading": "lǎo",
+     "meaning": "old",
+     "hint": "A bent old person leaning on a stick. 3rd tone: dipping.",
+     "card": "zh_hanzi:38"
+    },
+    {
+     "id": "39",
+     "front": "师",
+     "reading": "shī",
+     "meaning": "teacher, master",
+     "hint": "You will almost always see it in 老师, 'old master': a teacher. 1st tone: high and flat.",
+     "card": "zh_hanzi:39"
+    },
+    {
+     "id": "40",
+     "front": "校",
+     "reading": "xiào",
+     "meaning": "school",
+     "hint": "木 (wood) on the left. Together with 学 it makes 学校, school. 4th tone: falling.",
+     "card": "zh_hanzi:40"
+    }
+   ],
+   "words": [
+    {
+     "text": "学生",
+     "reading": "xuésheng",
+     "meaning": "student"
+    },
+    {
+     "text": "老师",
+     "reading": "lǎoshī",
+     "meaning": "teacher"
+    },
+    {
+     "text": "学校",
+     "reading": "xuéxiào",
+     "meaning": "school"
+    },
+    {
+     "text": "大学",
+     "reading": "dàxué",
+     "meaning": "university"
+    },
+    {
+     "text": "小学",
+     "reading": "xiǎoxué",
+     "meaning": "primary school"
+    },
+    {
+     "text": "老人",
+     "reading": "lǎorén",
+     "meaning": "old person"
+    },
+    {
+     "text": "大学生",
+     "reading": "dàxuéshēng",
+     "meaning": "university student"
+    }
+   ]
+  },
+  {
+   "id": "home_friends",
+   "title": "Home and friends",
+   "intro": [
+    "Two small grammar characters and three everyday words.",
+    "们 (men) makes a person word plural: 我 is I, 我们 is we. 的 (de) shows belonging: 我的家 is 'my home'. Both are light and short.",
+    "Reading pinyin: 'jiā' is 'jyah'. 'péng' is close to 'pung'. 'yǒu' is 'yo'."
+   ],
+   "items": [
+    {
+     "id": "41",
+     "front": "们",
+     "reading": "men",
+     "meaning": "(plural for people)",
+     "hint": "亻 (person) on the left and 门 (door) on the right. Add it after 我, 你 or 他 to say we, you all, they. Neutral tone: light and short.",
+     "card": "zh_hanzi:41"
+    },
+    {
+     "id": "42",
+     "front": "的",
+     "reading": "de",
+     "meaning": "'s (belonging)",
+     "hint": "白 and a small 勺. Put it after a word: 我的 is mine, my. Neutral tone: light and short.",
+     "card": "zh_hanzi:42"
+    },
+    {
+     "id": "43",
+     "front": "家",
+     "reading": "jiā",
+     "meaning": "home, family",
+     "hint": "A roof over a pig: the pig was the family's wealth. Home. 1st tone: high and flat.",
+     "card": "zh_hanzi:43"
+    },
+    {
+     "id": "44",
+     "front": "朋",
+     "reading": "péng",
+     "meaning": "friend (in 朋友)",
+     "hint": "Two 月 side by side: two companions. 2nd tone: rising.",
+     "card": "zh_hanzi:44"
+    },
+    {
+     "id": "45",
+     "front": "友",
+     "reading": "yǒu",
+     "meaning": "friend",
+     "hint": "Two hands joined: friends. Said 'yo'. 3rd tone: dipping.",
+     "card": "zh_hanzi:45"
+    }
+   ],
+   "words": [
+    {
+     "text": "我们",
+     "reading": "wǒmen",
+     "meaning": "we"
+    },
+    {
+     "text": "你们",
+     "reading": "nǐmen",
+     "meaning": "you (all)"
+    },
+    {
+     "text": "他们",
+     "reading": "tāmen",
+     "meaning": "they"
+    },
+    {
+     "text": "她们",
+     "reading": "tāmen",
+     "meaning": "they (all women)"
+    },
+    {
+     "text": "我的家",
+     "reading": "wǒ de jiā",
+     "meaning": "my home"
+    },
+    {
+     "text": "朋友",
+     "reading": "péngyou",
+     "meaning": "friend"
+    },
+    {
+     "text": "好朋友",
+     "reading": "hǎo péngyou",
+     "meaning": "good friend"
+    },
+    {
+     "text": "我的朋友",
+     "reading": "wǒ de péngyou",
+     "meaning": "my friend"
+    },
+    {
+     "text": "大家",
+     "reading": "dàjiā",
+     "meaning": "everyone"
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "title": "Food and drink",
+   "intro": [
+    "Words for the table. 饭 can mean cooked rice, and also 'a meal' in general: 吃饭 is to eat.",
+    "Reading pinyin: 'fàn' is 'fahn'. 'chá' is 'chah'. 'mǐ' is 'mee'. 'ròu' starts with the buzzing r: close to 'roe'. 'cài' is 'tsai'.",
+    "好吃 (hǎochī) is 'good to eat': delicious. 好喝 (hǎohē) is 'good to drink'."
+   ],
+   "items": [
+    {
+     "id": "46",
+     "front": "饭",
+     "reading": "fàn",
+     "meaning": "cooked rice, a meal",
+     "hint": "饣 (food) on the left. 吃饭 is to eat a meal. 4th tone: falling.",
+     "card": "zh_hanzi:46"
+    },
+    {
+     "id": "47",
+     "front": "茶",
+     "reading": "chá",
+     "meaning": "tea",
+     "hint": "A plant 艹 on top, a person 人 in the middle, wood 木 below: someone picking tea leaves. 2nd tone: rising.",
+     "card": "zh_hanzi:47"
+    },
+    {
+     "id": "48",
+     "front": "米",
+     "reading": "mǐ",
+     "meaning": "rice (uncooked)",
+     "hint": "Grains of rice on a stalk, fanning out in all directions. 3rd tone: dipping.",
+     "card": "zh_hanzi:48"
+    },
+    {
+     "id": "49",
+     "front": "肉",
+     "reading": "ròu",
+     "meaning": "meat",
+     "hint": "A slab of meat with the marbling showing inside. 4th tone: falling.",
+     "card": "zh_hanzi:49"
+    },
+    {
+     "id": "50",
+     "front": "菜",
+     "reading": "cài",
+     "meaning": "vegetable, a dish",
+     "hint": "艹 (grass) on top. Also means a dish on the table, as in 中国菜. 4th tone: falling.",
+     "card": "zh_hanzi:50"
+    }
+   ],
+   "words": [
+    {
+     "text": "吃饭",
+     "reading": "chīfàn",
+     "meaning": "to eat a meal"
+    },
+    {
+     "text": "喝茶",
+     "reading": "hē chá",
+     "meaning": "drink tea"
+    },
+    {
+     "text": "米饭",
+     "reading": "mǐfàn",
+     "meaning": "cooked rice"
+    },
+    {
+     "text": "吃肉",
+     "reading": "chī ròu",
+     "meaning": "eat meat"
+    },
+    {
+     "text": "好吃",
+     "reading": "hǎochī",
+     "meaning": "delicious"
+    },
+    {
+     "text": "好喝",
+     "reading": "hǎohē",
+     "meaning": "tasty (to drink)"
+    },
+    {
+     "text": "中国菜",
+     "reading": "Zhōngguó cài",
+     "meaning": "Chinese food"
+    }
+   ]
+  },
+  {
+   "id": "verbs1",
+   "title": "Go, come, look, say, listen",
+   "intro": [
+    "Five verbs you will use constantly. Mandarin verbs never change: 去 is go, whoever goes.",
+    "Reading pinyin: 'qù' is close to 'chyu': round your lips as for 'ü'. 'lái' is 'lie'. 'kàn' is 'kahn'. 'shuō' is 'shwaw'. 'tīng' is 'ting'.",
+    "说 and 听 both have a speech or mouth part on the left, because both belong to talking and hearing."
+   ],
+   "items": [
+    {
+     "id": "51",
+     "front": "去",
+     "reading": "qù",
+     "meaning": "to go",
+     "hint": "The opposite of 来 (come). Say 'chyoo' with a sharp fall. 4th tone: falling.",
+     "card": "zh_hanzi:51"
+    },
+    {
+     "id": "52",
+     "front": "来",
+     "reading": "lái",
+     "meaning": "to come",
+     "hint": "A line down the middle with strokes on both sides, like someone with open arms coming toward you. 2nd tone: rising.",
+     "card": "zh_hanzi:52"
+    },
+    {
+     "id": "53",
+     "front": "看",
+     "reading": "kàn",
+     "meaning": "to look, to watch",
+     "hint": "A hand 手 over an eye 目: a hand shading the eyes to look far. 4th tone: falling.",
+     "card": "zh_hanzi:53"
+    },
+    {
+     "id": "54",
+     "front": "说",
+     "reading": "shuō",
+     "meaning": "to speak, to say",
+     "hint": "讠 (speech) on the left. 1st tone: high and flat.",
+     "card": "zh_hanzi:54"
+    },
+    {
+     "id": "55",
+     "front": "听",
+     "reading": "tīng",
+     "meaning": "to listen, to hear",
+     "hint": "口 (mouth) on the left and 斤 on the right. 说 is the speaking side, 听 is the listening side. 1st tone: high and flat.",
+     "card": "zh_hanzi:55"
+    }
+   ],
+   "words": [
+    {
+     "text": "去中国",
+     "reading": "qù Zhōngguó",
+     "meaning": "go to China"
+    },
+    {
+     "text": "你来",
+     "reading": "nǐ lái",
+     "meaning": "you come"
+    },
+    {
+     "text": "看山",
+     "reading": "kàn shān",
+     "meaning": "look at the mountain"
+    },
+    {
+     "text": "我说",
+     "reading": "wǒ shuō",
+     "meaning": "I say"
+    },
+    {
+     "text": "好听",
+     "reading": "hǎotīng",
+     "meaning": "pleasant to hear"
+    },
+    {
+     "text": "好看",
+     "reading": "hǎokàn",
+     "meaning": "good-looking"
+    },
+    {
+     "text": "不说",
+     "reading": "bù shuō",
+     "meaning": "not say"
+    }
+   ]
+  },
+  {
+   "id": "verbs2",
+   "title": "Buy, do, want, write, read",
+   "intro": [
+    "Five more verbs. 想 (xiǎng) is both 'to want' and 'to think': 想吃 is 'want to eat'.",
+    "Reading pinyin: 'mǎi' is 'my'. 'zuò' is close to 'dzwaw'. 'xiǎng' is close to 'shyahng'. 'xiě' is close to 'shyeh'. 'dú' is 'doo'.",
+    "买 (buy) and 卖 (sell, not taught yet) differ by one stroke on top. Keep them apart: the extra stroke is what you give away."
+   ],
+   "items": [
+    {
+     "id": "56",
+     "front": "买",
+     "reading": "mǎi",
+     "meaning": "to buy",
+     "hint": "Compare 卖 (mài, sell): the seller has one more stroke on top. 3rd tone: dipping.",
+     "card": "zh_hanzi:56"
+    },
+    {
+     "id": "57",
+     "front": "做",
+     "reading": "zuò",
+     "meaning": "to do, to make",
+     "hint": "亻 (person) on the left: a person doing something. 4th tone: falling.",
+     "card": "zh_hanzi:57"
+    },
+    {
+     "id": "58",
+     "front": "想",
+     "reading": "xiǎng",
+     "meaning": "to want, to think",
+     "hint": "心 (heart) at the bottom: what the heart wants and thinks. 3rd tone: dipping.",
+     "card": "zh_hanzi:58"
+    },
+    {
+     "id": "59",
+     "front": "写",
+     "reading": "xiě",
+     "meaning": "to write",
+     "hint": "A cover on top of a base, like a brush resting over a page. 3rd tone: dipping.",
+     "card": "zh_hanzi:59"
+    },
+    {
+     "id": "60",
+     "front": "读",
+     "reading": "dú",
+     "meaning": "to read",
+     "hint": "讠 (speech) on the left: reading aloud. 2nd tone: rising.",
+     "card": "zh_hanzi:60"
+    }
+   ],
+   "words": [
+    {
+     "text": "想吃",
+     "reading": "xiǎng chī",
+     "meaning": "want to eat"
+    },
+    {
+     "text": "想喝",
+     "reading": "xiǎng hē",
+     "meaning": "want to drink"
+    },
+    {
+     "text": "想去",
+     "reading": "xiǎng qù",
+     "meaning": "want to go"
+    },
+    {
+     "text": "想买",
+     "reading": "xiǎng mǎi",
+     "meaning": "want to buy"
+    },
+    {
+     "text": "想看",
+     "reading": "xiǎng kàn",
+     "meaning": "want to see"
+    },
+    {
+     "text": "买菜",
+     "reading": "mǎi cài",
+     "meaning": "buy groceries"
+    },
+    {
+     "text": "不想去",
+     "reading": "bù xiǎng qù",
+     "meaning": "don't want to go"
+    },
+    {
+     "text": "做饭",
+     "reading": "zuòfàn",
+     "meaning": "cook"
+    }
+   ]
+  },
+  {
+   "id": "time1",
+   "title": "Days and years",
+   "intro": [
+    "Time words follow a pattern. 今 is this, 明 is next, 昨 is last: 今天 today, 明天 tomorrow, 昨天 yesterday.",
+    "Reading pinyin: 'nián' is close to 'nyen'. 'tiān' is close to 'tyen'. 'jīn' is 'jin'. 'míng' is 'ming'. 'zuó' is close to 'dzwaw'.",
+    "明 is a sun 日 and a moon 月 side by side: bright, then 'next', as in 明天."
+   ],
+   "items": [
+    {
+     "id": "61",
+     "front": "年",
+     "reading": "nián",
+     "meaning": "year",
+     "hint": "A long vertical stroke through the middle, like a stalk of grain: one harvest, one year. 2nd tone: rising.",
+     "card": "zh_hanzi:61"
+    },
+    {
+     "id": "62",
+     "front": "天",
+     "reading": "tiān",
+     "meaning": "day, sky",
+     "hint": "大 (big) with a line over its head: the big sky above a person. 1st tone: high and flat.",
+     "card": "zh_hanzi:62"
+    },
+    {
+     "id": "63",
+     "front": "今",
+     "reading": "jīn",
+     "meaning": "now, this",
+     "hint": "A roof over a mark: this very moment. 1st tone: high and flat.",
+     "card": "zh_hanzi:63"
+    },
+    {
+     "id": "64",
+     "front": "明",
+     "reading": "míng",
+     "meaning": "bright, next",
+     "hint": "日 (sun) and 月 (moon) side by side: bright. Also 'next', as in 明天. 2nd tone: rising.",
+     "card": "zh_hanzi:64"
+    },
+    {
+     "id": "65",
+     "front": "昨",
+     "reading": "zuó",
+     "meaning": "yesterday, past",
+     "hint": "日 (sun, day) on the left: a day that has gone. 2nd tone: rising.",
+     "card": "zh_hanzi:65"
+    }
+   ],
+   "words": [
+    {
+     "text": "今天",
+     "reading": "jīntiān",
+     "meaning": "today"
+    },
+    {
+     "text": "明天",
+     "reading": "míngtiān",
+     "meaning": "tomorrow"
+    },
+    {
+     "text": "昨天",
+     "reading": "zuótiān",
+     "meaning": "yesterday"
+    },
+    {
+     "text": "今年",
+     "reading": "jīnnián",
+     "meaning": "this year"
+    },
+    {
+     "text": "明年",
+     "reading": "míngnián",
+     "meaning": "next year"
+    },
+    {
+     "text": "去年",
+     "reading": "qùnián",
+     "meaning": "last year"
+    },
+    {
+     "text": "天天",
+     "reading": "tiāntiān",
+     "meaning": "every day"
+    }
+   ]
+  },
+  {
+   "id": "time2",
+   "title": "Parts of the day",
+   "intro": [
+    "Words to say when. 上 is up and also 'before': 上午 is morning. 下 is down and also 'after': 下午 is afternoon.",
+    "To say the time, put the number before 点: 三点 is three o'clock. 分 is the minute: 五分 is five minutes.",
+    "Reading pinyin: 'shàng' is 'shahng'. 'xià' is close to 'shyah'. 'wǔ' is 'woo'. 'diǎn' is close to 'dyen'. 'fēn' is 'fun'."
+   ],
+   "items": [
+    {
+     "id": "66",
+     "front": "上",
+     "reading": "shàng",
+     "meaning": "up, above, before",
+     "hint": "A short line above a long one: something on top. 4th tone: falling.",
+     "card": "zh_hanzi:66"
+    },
+    {
+     "id": "67",
+     "front": "下",
+     "reading": "xià",
+     "meaning": "down, below, after",
+     "hint": "The reverse of 上: a short mark under a long line. 4th tone: falling.",
+     "card": "zh_hanzi:67"
+    },
+    {
+     "id": "68",
+     "front": "午",
+     "reading": "wǔ",
+     "meaning": "noon",
+     "hint": "The middle of the day. 中午 means 'the middle of the day': noon. 3rd tone: dipping.",
+     "card": "zh_hanzi:68"
+    },
+    {
+     "id": "69",
+     "front": "点",
+     "reading": "diǎn",
+     "meaning": "o'clock, a dot",
+     "hint": "Small dots underneath, like the dots on a clock face. 3rd tone: dipping.",
+     "card": "zh_hanzi:69"
+    },
+    {
+     "id": "70",
+     "front": "分",
+     "reading": "fēn",
+     "meaning": "minute, to divide",
+     "hint": "八 (split) above 刀 (knife): to cut apart, a minute. 1st tone: high and flat.",
+     "card": "zh_hanzi:70"
+    }
+   ],
+   "words": [
+    {
+     "text": "上午",
+     "reading": "shàngwǔ",
+     "meaning": "morning"
+    },
+    {
+     "text": "下午",
+     "reading": "xiàwǔ",
+     "meaning": "afternoon"
+    },
+    {
+     "text": "中午",
+     "reading": "zhōngwǔ",
+     "meaning": "noon"
+    },
+    {
+     "text": "三点",
+     "reading": "sān diǎn",
+     "meaning": "three o'clock"
+    },
+    {
+     "text": "十点",
+     "reading": "shí diǎn",
+     "meaning": "ten o'clock"
+    },
+    {
+     "text": "五分",
+     "reading": "wǔ fēn",
+     "meaning": "five minutes"
+    },
+    {
+     "text": "上山",
+     "reading": "shàng shān",
+     "meaning": "go up the mountain"
+    },
+    {
+     "text": "下山",
+     "reading": "xià shān",
+     "meaning": "go down the mountain"
+    }
+   ]
+  },
+  {
+   "id": "colours_amounts",
+   "title": "Colours and amounts",
+   "intro": [
+    "Two colours and two amounts, plus one more colour.",
+    "Reading pinyin: 'hóng' is close to 'hoong'. 'bái' is 'by'. 'hēi' is 'hay'. 'duō' is 'dwaw'. 'shǎo' is 'shao' as in 'now'.",
+    "多 is two 夕 (evening) stacked up, and it means many. 少 is 小 (small) with one more stroke, and it means few."
+   ],
+   "items": [
+    {
+     "id": "71",
+     "front": "红",
+     "reading": "hóng",
+     "meaning": "red",
+     "hint": "纟 (silk) on the left: red silk, a lucky colour. 2nd tone: rising.",
+     "card": "zh_hanzi:71"
+    },
+    {
+     "id": "72",
+     "front": "白",
+     "reading": "bái",
+     "meaning": "white",
+     "hint": "A sun 日 with a small stroke on top, like the first white ray of dawn. 2nd tone: rising.",
+     "card": "zh_hanzi:72"
+    },
+    {
+     "id": "73",
+     "front": "黑",
+     "reading": "hēi",
+     "meaning": "black",
+     "hint": "Four dots (fire) underneath: soot-black. 1st tone: high and flat.",
+     "card": "zh_hanzi:73"
+    },
+    {
+     "id": "74",
+     "front": "多",
+     "reading": "duō",
+     "meaning": "many, much",
+     "hint": "Two 夕 stacked: evening after evening, many of them. 1st tone: high and flat.",
+     "card": "zh_hanzi:74"
+    },
+    {
+     "id": "75",
+     "front": "少",
+     "reading": "shǎo",
+     "meaning": "few, little",
+     "hint": "小 (small) with one stroke through it: a small amount. 3rd tone: dipping.",
+     "card": "zh_hanzi:75"
+    }
+   ],
+   "words": [
+    {
+     "text": "白天",
+     "reading": "báitiān",
+     "meaning": "daytime"
+    },
+    {
+     "text": "黑白",
+     "reading": "hēibái",
+     "meaning": "black and white"
+    },
+    {
+     "text": "多少",
+     "reading": "duōshao",
+     "meaning": "how many, how much"
+    },
+    {
+     "text": "不多",
+     "reading": "bù duō",
+     "meaning": "not many"
+    },
+    {
+     "text": "不少",
+     "reading": "bù shǎo",
+     "meaning": "quite a few"
+    },
+    {
+     "text": "多大",
+     "reading": "duō dà",
+     "meaning": "how big, how old"
+    },
+    {
+     "text": "多吃",
+     "reading": "duō chī",
+     "meaning": "eat more"
+    },
+    {
+     "text": "少吃",
+     "reading": "shǎo chī",
+     "meaning": "eat less"
+    },
+    {
+     "text": "多喝水",
+     "reading": "duō hē shuǐ",
+     "meaning": "drink more water"
+    }
+   ]
+  },
+  {
+   "id": "directions",
+   "title": "Directions and cities",
+   "intro": [
+    "The four compass points, and 京 (capital) to build city names with.",
+    "北京 (Běijīng) is 'northern capital', 南京 (Nánjīng) is 'southern capital', and 东京 (Dōngjīng) is Tokyo, 'eastern capital'.",
+    "Reading pinyin: 'dōng' is 'doong'. 'xī' is 'shee'. 'nán' is 'nahn'. 'běi' is 'bay'. 'jīng' is 'jing'.",
+    "东西 (dōngxi) means east and west, and also 'thing': you may be asked to buy 东西."
+   ],
+   "items": [
+    {
+     "id": "76",
+     "front": "东",
+     "reading": "dōng",
+     "meaning": "east",
+     "hint": "Where the sun rises. 1st tone: high and flat.",
+     "card": "zh_hanzi:76"
+    },
+    {
+     "id": "77",
+     "front": "西",
+     "reading": "xī",
+     "meaning": "west",
+     "hint": "Where the sun sets. 1st tone: high and flat.",
+     "card": "zh_hanzi:77"
+    },
+    {
+     "id": "78",
+     "front": "南",
+     "reading": "nán",
+     "meaning": "south",
+     "hint": "A frame with a cross inside, like a house with a south-facing door. 2nd tone: rising.",
+     "card": "zh_hanzi:78"
+    },
+    {
+     "id": "79",
+     "front": "北",
+     "reading": "běi",
+     "meaning": "north",
+     "hint": "Two people standing back to back: turning their backs to the south. 3rd tone: dipping.",
+     "card": "zh_hanzi:79"
+    },
+    {
+     "id": "80",
+     "front": "京",
+     "reading": "jīng",
+     "meaning": "capital city",
+     "hint": "A tall building with a roof: the great city, the capital. 1st tone: high and flat.",
+     "card": "zh_hanzi:80"
+    }
+   ],
+   "words": [
+    {
+     "text": "北京",
+     "reading": "Běijīng",
+     "meaning": "Beijing"
+    },
+    {
+     "text": "东京",
+     "reading": "Dōngjīng",
+     "meaning": "Tokyo"
+    },
+    {
+     "text": "南京",
+     "reading": "Nánjīng",
+     "meaning": "Nanjing"
+    },
+    {
+     "text": "东西",
+     "reading": "dōngxi",
+     "meaning": "thing, stuff"
+    },
+    {
+     "text": "南北",
+     "reading": "nánběi",
+     "meaning": "north and south"
+    },
+    {
+     "text": "东南",
+     "reading": "dōngnán",
+     "meaning": "southeast"
+    },
+    {
+     "text": "东北",
+     "reading": "dōngběi",
+     "meaning": "northeast"
+    }
+   ]
+  },
+  {
+   "id": "qualities",
+   "title": "Tall, long, new, very",
+   "intro": [
+    "Five words for describing things. 很 (hěn) is 'very' and you will use it all the time: 很好 is 'very good'.",
+    "In Mandarin, adjectives come right after 很, with no word for 'is': 我很好 is 'I am well'.",
+    "Reading pinyin: 'gāo' is 'gow' as in 'cow'. 'cháng' is 'chahng'. 'xīn' is 'sheen'. 'tài' is 'tie'. 'hěn' is close to 'hun'."
+   ],
+   "items": [
+    {
+     "id": "81",
+     "front": "高",
+     "reading": "gāo",
+     "meaning": "tall, high",
+     "hint": "A tall tower with a doorway below. 1st tone: high and flat.",
+     "card": "zh_hanzi:81"
+    },
+    {
+     "id": "82",
+     "front": "长",
+     "reading": "cháng",
+     "meaning": "long",
+     "hint": "A long, flowing line, like long hair. 2nd tone: rising.",
+     "card": "zh_hanzi:82"
+    },
+    {
+     "id": "83",
+     "front": "新",
+     "reading": "xīn",
+     "meaning": "new",
+     "hint": "斤 (axe) on the right: fresh wood just cut. 1st tone: high and flat.",
+     "card": "zh_hanzi:83"
+    },
+    {
+     "id": "84",
+     "front": "太",
+     "reading": "tài",
+     "meaning": "too, extremely",
+     "hint": "大 (big) with an extra dot: too big. 4th tone: falling.",
+     "card": "zh_hanzi:84"
+    },
+    {
+     "id": "85",
+     "front": "很",
+     "reading": "hěn",
+     "meaning": "very",
+     "hint": "彳 (step) on the left. It shows up in almost every sentence with an adjective. 3rd tone: dipping.",
+     "card": "zh_hanzi:85"
+    }
+   ],
+   "words": [
+    {
+     "text": "很好",
+     "reading": "hěn hǎo",
+     "meaning": "very good"
+    },
+    {
+     "text": "很大",
+     "reading": "hěn dà",
+     "meaning": "very big"
+    },
+    {
+     "text": "很多",
+     "reading": "hěn duō",
+     "meaning": "very many"
+    },
+    {
+     "text": "很高",
+     "reading": "hěn gāo",
+     "meaning": "very tall"
+    },
+    {
+     "text": "很长",
+     "reading": "hěn cháng",
+     "meaning": "very long"
+    },
+    {
+     "text": "太大",
+     "reading": "tài dà",
+     "meaning": "too big"
+    },
+    {
+     "text": "太小",
+     "reading": "tài xiǎo",
+     "meaning": "too small"
+    },
+    {
+     "text": "太多",
+     "reading": "tài duō",
+     "meaning": "too many"
+    },
+    {
+     "text": "不太好",
+     "reading": "bú tài hǎo",
+     "meaning": "not very good"
+    },
+    {
+     "text": "新年",
+     "reading": "xīnnián",
+     "meaning": "New Year"
+    },
+    {
+     "text": "高山",
+     "reading": "gāoshān",
+     "meaning": "high mountain"
+    }
+   ]
+  },
+  {
+   "id": "this_that",
+   "title": "This, that, a book",
+   "intro": [
+    "这 (this) and 那 (that) point at things. 个 (gè) and 本 (běn) are measure words: Mandarin counts things with a small word in between.",
+    "一个人 is 'one person'. 一本书 is 'one book'. 个 is the all-purpose measure word. 本 is for books.",
+    "Reading pinyin: 'zhè' is close to 'juh'. 'nà' is 'nah'. 'gè' is close to 'guh'. 'shū' is 'shoo'. 'běn' is close to 'bun'.",
+    "Careful with 一: before a falling tone it flips to rising (一个 is 'yí gè'), and before the other tones it falls (一本 is 'yì běn')."
+   ],
+   "items": [
+    {
+     "id": "86",
+     "front": "这",
+     "reading": "zhè",
+     "meaning": "this",
+     "hint": "辶 (walk) at the bottom left: here, where you walk. Say 'juh' with a fall. 4th tone: falling.",
+     "card": "zh_hanzi:86"
+    },
+    {
+     "id": "87",
+     "front": "那",
+     "reading": "nà",
+     "meaning": "that",
+     "hint": "The partner of 这: this is here, that is over there. Say 'nah' with a fall. 4th tone: falling.",
+     "card": "zh_hanzi:87"
+    },
+    {
+     "id": "88",
+     "front": "个",
+     "reading": "gè",
+     "meaning": "(measure word)",
+     "hint": "A person 人 with a stroke: used to count people and many things. 4th tone: falling.",
+     "card": "zh_hanzi:88"
+    },
+    {
+     "id": "89",
+     "front": "书",
+     "reading": "shū",
+     "meaning": "book",
+     "hint": "Simplified from 書, which has a brush in it: books are written with a brush. 1st tone: high and flat.",
+     "card": "zh_hanzi:89"
+    },
+    {
+     "id": "90",
+     "front": "本",
+     "reading": "běn",
+     "meaning": "(for books), root",
+     "hint": "木 (tree) with a mark at the root: the root, and the word for counting books. 3rd tone: dipping.",
+     "card": "zh_hanzi:90"
+    }
+   ],
+   "words": [
+    {
+     "text": "这个",
+     "reading": "zhège",
+     "meaning": "this one"
+    },
+    {
+     "text": "那个",
+     "reading": "nàge",
+     "meaning": "that one"
+    },
+    {
+     "text": "这是书",
+     "reading": "zhè shì shū",
+     "meaning": "this is a book"
+    },
+    {
+     "text": "那是书",
+     "reading": "nà shì shū",
+     "meaning": "that is a book"
+    },
+    {
+     "text": "这本书",
+     "reading": "zhè běn shū",
+     "meaning": "this book"
+    },
+    {
+     "text": "一本书",
+     "reading": "yì běn shū",
+     "meaning": "one book"
+    },
+    {
+     "text": "一个人",
+     "reading": "yí gè rén",
+     "meaning": "one person"
+    },
+    {
+     "text": "三个人",
+     "reading": "sān gè rén",
+     "meaning": "three people"
+    },
+    {
+     "text": "好书",
+     "reading": "hǎo shū",
+     "meaning": "a good book"
+    }
+   ]
+  },
+  {
+   "id": "questions",
+   "title": "Question words",
+   "intro": [
+    "Question words take the place of the answer. 你是谁? 'Who are you?' is just 你是 with 谁 where the name goes. There is no need to rearrange the sentence.",
+    "What: 什么. Who: 谁. Which or where: 哪. Add 里 to 哪 for 'where': 哪里.",
+    "Reading pinyin: 'shén' is close to 'shun'. 'me' is light. 'shéi' is 'shay'. 'nǎ' is 'nah'. 'lǐ' is 'lee'."
+   ],
+   "items": [
+    {
+     "id": "91",
+     "front": "什",
+     "reading": "shén",
+     "meaning": "what (in 什么)",
+     "hint": "亻 (person) on the left and 十 on the right. Used with 么 to ask 'what'. 2nd tone: rising.",
+     "card": "zh_hanzi:91"
+    },
+    {
+     "id": "92",
+     "front": "么",
+     "reading": "me",
+     "meaning": "(in 什么)",
+     "hint": "A small hooked shape. It never stands alone, and is always light and short. Neutral tone: light and short.",
+     "card": "zh_hanzi:92"
+    },
+    {
+     "id": "93",
+     "front": "谁",
+     "reading": "shéi",
+     "meaning": "who",
+     "hint": "讠 (speech) on the left: asking about a person. 2nd tone: rising.",
+     "card": "zh_hanzi:93"
+    },
+    {
+     "id": "94",
+     "front": "哪",
+     "reading": "nǎ",
+     "meaning": "which, where",
+     "hint": "口 (mouth) on the left: a mouth asking a question. 3rd tone: dipping.",
+     "card": "zh_hanzi:94"
+    },
+    {
+     "id": "95",
+     "front": "里",
+     "reading": "lǐ",
+     "meaning": "inside, in",
+     "hint": "田 (field) above 土 (earth): inside the land. In 哪里 it is light. 3rd tone: dipping.",
+     "card": "zh_hanzi:95"
+    }
+   ],
+   "words": [
+    {
+     "text": "什么",
+     "reading": "shénme",
+     "meaning": "what"
+    },
+    {
+     "text": "哪里",
+     "reading": "nǎlǐ",
+     "meaning": "where"
+    },
+    {
+     "text": "哪国",
+     "reading": "nǎ guó",
+     "meaning": "which country"
+    },
+    {
+     "text": "你是谁",
+     "reading": "nǐ shì shéi",
+     "meaning": "who are you"
+    },
+    {
+     "text": "他是谁",
+     "reading": "tā shì shéi",
+     "meaning": "who is he"
+    },
+    {
+     "text": "这是什么",
+     "reading": "zhè shì shénme",
+     "meaning": "what is this"
+    },
+    {
+     "text": "你吃什么",
+     "reading": "nǐ chī shénme",
+     "meaning": "what do you eat"
+    },
+    {
+     "text": "你想吃什么",
+     "reading": "nǐ xiǎng chī shénme",
+     "meaning": "what do you want to eat"
+    },
+    {
+     "text": "你想去哪里",
+     "reading": "nǐ xiǎng qù nǎlǐ",
+     "meaning": "where do you want to go"
     }
    ]
   }
