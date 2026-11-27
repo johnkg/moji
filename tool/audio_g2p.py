@@ -61,4 +61,5 @@ def zh_phonemes(text, reading, neutral='→'):
     return ' , '.join(out).replace(chr(815), '').replace('ɚ', 'ɑɻ')
 
 def ja_phonemes(text):
-    return _JA(text)
+    # misaki spells some u sounds with 'ɨ'; the plain Japanese u 'ɯ' was recognised more often (79 words: +3).
+    return _JA(text).replace('ɨ', 'ɯ')
