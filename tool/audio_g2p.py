@@ -34,8 +34,9 @@ def _tone(syl):
     t = to_tone3(syl, neutral_tone_with_five=True)
     return t[:-1], int(t[-1]) if t[-1].isdigit() else 5
 
-def zh_phonemes(text, reading):
+def zh_phonemes(text, reading, neutral='→'):
     """Phonemes for hanzi [text] said with the pinyin [reading] (tone marks)."""
+    reading = reading.lower()  # proper nouns like Mǎkè
     clauses = [c for c in re.split(r'[,，、.。?？!！]', reading) if c.strip()]
     hanzi = _HANZI.findall(text)
     words = []   # list of lists of (base, tone) per clause
@@ -53,10 +54,11 @@ def zh_phonemes(text, reading):
         k = 0
         rendered = []
         for w in clause:
-            rendered.append(''.join(_ZH.py2ipa(f'{b}{t}') for b, t in flat[k:k + len(w)]))
+            rendered.append(''.join(_ZH.py2ipa(f'{b}{t}') + (neutral if t == 5 else '') for b, t in flat[k:k + len(w)]))
             k += len(w)
         out.append(' '.join(rendered))
-    return ' , '.join(out).replace(chr(815), '')
+    # 'ɚ' (er) is heard as an English word by the model; 'ɑɻ' comes out as the Mandarin sound.
+    return ' , '.join(out).replace(chr(815), '').replace('ɚ', 'ɑɻ')
 
 def ja_phonemes(text):
     return _JA(text)
