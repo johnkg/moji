@@ -1,9 +1,13 @@
 # Voice tuning notes (Japanese and Mandarin audio)
 
-Status: experiments only. The app does not play recorded clips yet.
+Status: shipped. `assets/audio/` holds 815 clips (4.4 MB) made by `tool/gen_audio.py`, and the app plays
+them through `RecordedSpeaker` (lib/services/speaker.dart), using the device voice for anything without a clip.
 
-Voice: Kokoro v1.0 (Apache-2.0) through `kokoro-onnx`, voices `jf_alpha` (Japanese) and
-`zm_yunxi` (Mandarin). Text goes through `tool/audio_g2p.py`, then the model is run with
+Regenerate after changing lessons or decks: `python3 tool/gen_audio.py --models <folder with the Kokoro files>`
+(existing clips are kept; add `--force` to rebuild all). A test fails if any spoken text has no clip.
+
+Voice: Kokoro v1.0 (Apache-2.0) through `kokoro-onnx`, voices `jf_alpha` (Japanese, model speed 1.1)
+and `zm_yunxi` (Mandarin, model speed 1.0 then slowed 10% by time-stretching). Text goes through `tool/audio_g2p.py`, then the model is run with
 `is_phonemes=True`.
 
 ## Measuring

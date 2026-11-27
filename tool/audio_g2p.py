@@ -18,16 +18,22 @@ _ZH = _zh.ZHG2P()
 _JA = _ja.JAG2P()
 
 def split_pinyin(token):
-    """'gāoxìng' -> ['gāo', 'xìng']. Apostrophes force a split (wǎn'ān)."""
+    """'gāoxìng' -> ['gāo', 'xìng']. Apostrophes force a split (wǎn'ān).
+
+    Tries the longest syllable first but backtracks, so 'qùnián' is qù + nián, not qùn + ...
+    """
+    def parse(chunk):
+        if not chunk: return []
+        for j in range(min(len(chunk), 6), 0, -1):
+            if to_normal(chunk[:j]) in _SYLLABLES:
+                rest = parse(chunk[j:])
+                if rest is not None: return [chunk[:j]] + rest
+        return None
     out = []
     for chunk in token.split("'"):
-        i = 0
-        while i < len(chunk):
-            for j in range(min(len(chunk), i + 6), i, -1):
-                if to_normal(chunk[i:j]) in _SYLLABLES:
-                    out.append(chunk[i:j]); i = j; break
-            else:
-                raise ValueError('cannot split pinyin: ' + token)
+        parts = parse(chunk)
+        if parts is None: raise ValueError('cannot split pinyin: ' + token)
+        out += parts
     return out
 
 def _tone(syl):

@@ -20,7 +20,7 @@ class MojiApp extends StatefulWidget {
 class _MojiAppState extends State<MojiApp> {
   late final AppState _app = AppState(
     store: SharedPrefsProgressStore(),
-    speaker: TtsSpeaker(),
+    speaker: RecordedSpeaker.standard(),
   );
   late final Future<void> _loading = _app.load();
 
