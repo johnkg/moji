@@ -621,6 +621,19 @@ for c in (ja_sentences, zh_sentences):
     ms = [i["meaning"] for u in c["units"] for i in u["items"]]
     assert len(ms) == len(set(ms)), "duplicate meanings in " + c["id"]
 
+
+import zh_extra as ZX
+
+def _extend_mandarin():
+    by_unit = {}
+    for cid, hanzi, pinyin, meaning, hint, uid in ZX.flat():
+        by_unit.setdefault(uid, []).append((cid, hint))
+    for uid, title, intro, chars, words in ZX.UNITS:
+        mandarin["units"].append(unit(uid, title, intro, items(Z, by_unit[uid]), words))
+_extend_mandarin()
+mandarin["title"] = "Read: tones and hanzi"
+mandarin["description"] = "Tones first, then about a hundred common hanzi with compound words."
+
 os.makedirs(OUT, exist_ok=True)
 for course in (ja_speaking, ja_sentences, hiragana, hiragana_extra, katakana, katakana_extra, zh_speaking, zh_sentences, mandarin):
     for u in course["units"]:

@@ -3,6 +3,7 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kana_extras as X
 import sentences as S
+import zh_extra as ZX
 OUT = os.path.join(os.path.dirname(__file__), '..', 'assets', 'decks')
 ROMAJI = ("a i u e o ka ki ku ke ko sa shi su se so ta chi tsu te to na ni nu ne no "
           "ha hi fu he ho ma mi mu me mo ya yu yo ra ri ru re ro wa wo n").split()
@@ -46,14 +47,14 @@ decks = [
   ("妈", "mā", "mother (1st tone: high and flat)"), ("麻", "má", "hemp (2nd tone: rising)"),
   ("马", "mǎ", "horse (3rd tone: dips low, then rises)"), ("骂", "mà", "to scold (4th tone: sharp fall)"),
   ("吗", "ma", "question particle (neutral tone: light, short)")])},
- {"id": "zh_hanzi", "lang": "zh", "title": "First hanzi", "description": "30 common characters with pinyin.", "cards": rows([
+ {"id": "zh_hanzi", "lang": "zh", "title": "First hanzi", "description": "Common characters with pinyin.", "cards": rows([
   ("一", "yī", "one"), ("二", "èr", "two"), ("三", "sān", "three"), ("四", "sì", "four"), ("五", "wǔ", "five"),
   ("六", "liù", "six"), ("七", "qī", "seven"), ("八", "bā", "eight"), ("九", "jiǔ", "nine"), ("十", "shí", "ten"),
   ("人", "rén", "person"), ("大", "dà", "big"), ("小", "xiǎo", "small"), ("我", "wǒ", "I / me"), ("你", "nǐ", "you"),
   ("他", "tā", "he / him"), ("她", "tā", "she / her"), ("好", "hǎo", "good"), ("是", "shì", "to be"), ("不", "bù", "not"),
   ("有", "yǒu", "to have"), ("水", "shuǐ", "water"), ("火", "huǒ", "fire"), ("山", "shān", "mountain"),
   ("日", "rì", "sun / day"), ("月", "yuè", "moon / month"), ("中", "zhōng", "middle"), ("国", "guó", "country"),
-  ("吃", "chī", "to eat"), ("喝", "hē", "to drink")])},
+  ("吃", "chī", "to eat"), ("喝", "hē", "to drink")] + [(h, p, m) for _, h, p, m, _, _ in ZX.flat()])},
  {"id": "zh_phrases", "lang": "zh", "title": "First phrases", "description": "Survival phrases.", "cards": rows([
   ("你好", "nǐ hǎo", "hello"), ("谢谢", "xièxie", "thank you"), ("不客气", "bú kèqi", "you're welcome"),
   ("对不起", "duìbuqǐ", "sorry"), ("没关系", "méi guānxi", "it's okay"), ("再见", "zàijiàn", "goodbye"),

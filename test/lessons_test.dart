@@ -255,6 +255,17 @@ void main() {
     }
   });
 
+  test('the Mandarin reading course teaches about a hundred distinct hanzi', () {
+    final course = courses.firstWhere((c) => c.id == 'zh_basics_course');
+    expect(course.units.length, greaterThanOrEqualTo(18));
+    final hanzi = [for (final u in course.units) ...u.items.map((i) => i.front)];
+    expect(hanzi.toSet().length, hanzi.length, reason: 'a hanzi is taught twice');
+    expect(hanzi.length, greaterThanOrEqualTo(95));
+    // Later units build on earlier ones, so compound words should appear.
+    final words = [for (final u in course.units) ...u.words];
+    expect(words.length, greaterThanOrEqualTo(80));
+  });
+
   test('everyday sentence courses cover both languages with whole sentences', () {
     for (final lang in ['ja', 'zh']) {
       final course = courses.firstWhere((c) => c.id == '${lang}_sentences_course');

@@ -2,7 +2,7 @@
  "id": "zh_hanzi",
  "lang": "zh",
  "title": "First hanzi",
- "description": "30 common characters with pinyin.",
+ "description": "Common characters with pinyin.",
  "cards": [
   {
    "id": "1",
@@ -183,6 +183,396 @@
    "front": "喝",
    "reading": "hē",
    "meaning": "to drink"
+  },
+  {
+   "id": "31",
+   "front": "爸",
+   "reading": "bà",
+   "meaning": "dad, father"
+  },
+  {
+   "id": "32",
+   "front": "哥",
+   "reading": "gē",
+   "meaning": "older brother"
+  },
+  {
+   "id": "33",
+   "front": "姐",
+   "reading": "jiě",
+   "meaning": "older sister"
+  },
+  {
+   "id": "34",
+   "front": "弟",
+   "reading": "dì",
+   "meaning": "younger brother"
+  },
+  {
+   "id": "35",
+   "front": "妹",
+   "reading": "mèi",
+   "meaning": "younger sister"
+  },
+  {
+   "id": "36",
+   "front": "学",
+   "reading": "xué",
+   "meaning": "to study, to learn"
+  },
+  {
+   "id": "37",
+   "front": "生",
+   "reading": "shēng",
+   "meaning": "to be born, life, raw"
+  },
+  {
+   "id": "38",
+   "front": "老",
+   "reading": "lǎo",
+   "meaning": "old"
+  },
+  {
+   "id": "39",
+   "front": "师",
+   "reading": "shī",
+   "meaning": "teacher, master"
+  },
+  {
+   "id": "40",
+   "front": "校",
+   "reading": "xiào",
+   "meaning": "school"
+  },
+  {
+   "id": "41",
+   "front": "们",
+   "reading": "men",
+   "meaning": "(plural for people)"
+  },
+  {
+   "id": "42",
+   "front": "的",
+   "reading": "de",
+   "meaning": "'s (belonging)"
+  },
+  {
+   "id": "43",
+   "front": "家",
+   "reading": "jiā",
+   "meaning": "home, family"
+  },
+  {
+   "id": "44",
+   "front": "朋",
+   "reading": "péng",
+   "meaning": "friend (in 朋友)"
+  },
+  {
+   "id": "45",
+   "front": "友",
+   "reading": "yǒu",
+   "meaning": "friend"
+  },
+  {
+   "id": "46",
+   "front": "饭",
+   "reading": "fàn",
+   "meaning": "cooked rice, a meal"
+  },
+  {
+   "id": "47",
+   "front": "茶",
+   "reading": "chá",
+   "meaning": "tea"
+  },
+  {
+   "id": "48",
+   "front": "米",
+   "reading": "mǐ",
+   "meaning": "rice (uncooked)"
+  },
+  {
+   "id": "49",
+   "front": "肉",
+   "reading": "ròu",
+   "meaning": "meat"
+  },
+  {
+   "id": "50",
+   "front": "菜",
+   "reading": "cài",
+   "meaning": "vegetable, a dish"
+  },
+  {
+   "id": "51",
+   "front": "去",
+   "reading": "qù",
+   "meaning": "to go"
+  },
+  {
+   "id": "52",
+   "front": "来",
+   "reading": "lái",
+   "meaning": "to come"
+  },
+  {
+   "id": "53",
+   "front": "看",
+   "reading": "kàn",
+   "meaning": "to look, to watch"
+  },
+  {
+   "id": "54",
+   "front": "说",
+   "reading": "shuō",
+   "meaning": "to speak, to say"
+  },
+  {
+   "id": "55",
+   "front": "听",
+   "reading": "tīng",
+   "meaning": "to listen, to hear"
+  },
+  {
+   "id": "56",
+   "front": "买",
+   "reading": "mǎi",
+   "meaning": "to buy"
+  },
+  {
+   "id": "57",
+   "front": "做",
+   "reading": "zuò",
+   "meaning": "to do, to make"
+  },
+  {
+   "id": "58",
+   "front": "想",
+   "reading": "xiǎng",
+   "meaning": "to want, to think"
+  },
+  {
+   "id": "59",
+   "front": "写",
+   "reading": "xiě",
+   "meaning": "to write"
+  },
+  {
+   "id": "60",
+   "front": "读",
+   "reading": "dú",
+   "meaning": "to read"
+  },
+  {
+   "id": "61",
+   "front": "年",
+   "reading": "nián",
+   "meaning": "year"
+  },
+  {
+   "id": "62",
+   "front": "天",
+   "reading": "tiān",
+   "meaning": "day, sky"
+  },
+  {
+   "id": "63",
+   "front": "今",
+   "reading": "jīn",
+   "meaning": "now, this"
+  },
+  {
+   "id": "64",
+   "front": "明",
+   "reading": "míng",
+   "meaning": "bright, next"
+  },
+  {
+   "id": "65",
+   "front": "昨",
+   "reading": "zuó",
+   "meaning": "yesterday, past"
+  },
+  {
+   "id": "66",
+   "front": "上",
+   "reading": "shàng",
+   "meaning": "up, above, before"
+  },
+  {
+   "id": "67",
+   "front": "下",
+   "reading": "xià",
+   "meaning": "down, below, after"
+  },
+  {
+   "id": "68",
+   "front": "午",
+   "reading": "wǔ",
+   "meaning": "noon"
+  },
+  {
+   "id": "69",
+   "front": "点",
+   "reading": "diǎn",
+   "meaning": "o'clock, a dot"
+  },
+  {
+   "id": "70",
+   "front": "分",
+   "reading": "fēn",
+   "meaning": "minute, to divide"
+  },
+  {
+   "id": "71",
+   "front": "红",
+   "reading": "hóng",
+   "meaning": "red"
+  },
+  {
+   "id": "72",
+   "front": "白",
+   "reading": "bái",
+   "meaning": "white"
+  },
+  {
+   "id": "73",
+   "front": "黑",
+   "reading": "hēi",
+   "meaning": "black"
+  },
+  {
+   "id": "74",
+   "front": "多",
+   "reading": "duō",
+   "meaning": "many, much"
+  },
+  {
+   "id": "75",
+   "front": "少",
+   "reading": "shǎo",
+   "meaning": "few, little"
+  },
+  {
+   "id": "76",
+   "front": "东",
+   "reading": "dōng",
+   "meaning": "east"
+  },
+  {
+   "id": "77",
+   "front": "西",
+   "reading": "xī",
+   "meaning": "west"
+  },
+  {
+   "id": "78",
+   "front": "南",
+   "reading": "nán",
+   "meaning": "south"
+  },
+  {
+   "id": "79",
+   "front": "北",
+   "reading": "běi",
+   "meaning": "north"
+  },
+  {
+   "id": "80",
+   "front": "京",
+   "reading": "jīng",
+   "meaning": "capital city"
+  },
+  {
+   "id": "81",
+   "front": "高",
+   "reading": "gāo",
+   "meaning": "tall, high"
+  },
+  {
+   "id": "82",
+   "front": "长",
+   "reading": "cháng",
+   "meaning": "long"
+  },
+  {
+   "id": "83",
+   "front": "新",
+   "reading": "xīn",
+   "meaning": "new"
+  },
+  {
+   "id": "84",
+   "front": "太",
+   "reading": "tài",
+   "meaning": "too, extremely"
+  },
+  {
+   "id": "85",
+   "front": "很",
+   "reading": "hěn",
+   "meaning": "very"
+  },
+  {
+   "id": "86",
+   "front": "这",
+   "reading": "zhè",
+   "meaning": "this"
+  },
+  {
+   "id": "87",
+   "front": "那",
+   "reading": "nà",
+   "meaning": "that"
+  },
+  {
+   "id": "88",
+   "front": "个",
+   "reading": "gè",
+   "meaning": "(measure word)"
+  },
+  {
+   "id": "89",
+   "front": "书",
+   "reading": "shū",
+   "meaning": "book"
+  },
+  {
+   "id": "90",
+   "front": "本",
+   "reading": "běn",
+   "meaning": "(for books), root"
+  },
+  {
+   "id": "91",
+   "front": "什",
+   "reading": "shén",
+   "meaning": "what (in 什么)"
+  },
+  {
+   "id": "92",
+   "front": "么",
+   "reading": "me",
+   "meaning": "(in 什么)"
+  },
+  {
+   "id": "93",
+   "front": "谁",
+   "reading": "shéi",
+   "meaning": "who"
+  },
+  {
+   "id": "94",
+   "front": "哪",
+   "reading": "nǎ",
+   "meaning": "which, where"
+  },
+  {
+   "id": "95",
+   "front": "里",
+   "reading": "lǐ",
+   "meaning": "inside, in"
   }
  ]
 }
