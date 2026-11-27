@@ -5,3 +5,6 @@ build/
 .packages
 .idea/
 *.iml
+
+# Python bytecode from tool/ scripts
+__pycache__/
