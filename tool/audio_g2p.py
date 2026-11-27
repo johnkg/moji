@@ -62,4 +62,6 @@ def zh_phonemes(text, reading, neutral='→'):
 
 def ja_phonemes(text):
     # misaki spells some u sounds with 'ɨ'; the plain Japanese u 'ɯ' was recognised more often (79 words: +3).
-    return _JA(text).replace('ɨ', 'ɯ')
+    # Spelling fixes, each kept only after it won on the words it touches (see tool/AUDIO_NOTES.md):
+    # 'ɨ'->'ɯ' (plain u), 'ɾ'->'r' (ら行 was heard as な), 'ʦ'->'ts' (つ was heard as ず).
+    return _JA(text).replace('ɨ', 'ɯ').replace('ɾ', 'r').replace('ʦ', 'ts')
