@@ -1,0 +1,925 @@
+{
+ "id": "zh_reading_sentences_course",
+ "lang": "zh",
+ "mode": "sentences",
+ "title": "Read: sentences",
+ "description": "Read whole sentences. Learn the small words that hold them together.",
+ "units": [
+  {
+   "id": "zh_shi",
+   "title": "是: to be",
+   "intro": [
+    "Time to read whole sentences. Every character here is one you have already learned.",
+    "Mandarin has no changing forms. 是 means am, is and are, so 我是学生 is word for word 'I be student': I am a student.",
+    "Word order is close to English: who, then 是, then what."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "我是学生。",
+     "reading": "wǒ shì xuésheng.",
+     "meaning": "I am a student.",
+     "hint": "我 is I. 学生 is student.",
+     "card": "zh_read_sentences:1",
+     "parts": [
+      "我",
+      "是",
+      "学生。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "是",
+       "吃",
+       "喝",
+       "去"
+      ]
+     }
+    },
+    {
+     "id": "2",
+     "front": "他是老师。",
+     "reading": "tā shì lǎoshī.",
+     "meaning": "He is a teacher.",
+     "hint": "他 is he. 老师 is teacher.",
+     "card": "zh_read_sentences:2",
+     "parts": [
+      "他",
+      "是",
+      "老师。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "是",
+       "吃",
+       "喝",
+       "去"
+      ]
+     }
+    },
+    {
+     "id": "3",
+     "front": "她是我妈妈。",
+     "reading": "tā shì wǒ māma.",
+     "meaning": "She is my mom.",
+     "hint": "For close family you can skip 的: 我妈妈 is my mom.",
+     "card": "zh_read_sentences:3",
+     "parts": [
+      "她",
+      "是",
+      "我",
+      "妈妈。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "是",
+       "很",
+       "太",
+       "多"
+      ]
+     }
+    },
+    {
+     "id": "4",
+     "front": "他们是我的朋友。",
+     "reading": "tāmen shì wǒ de péngyou.",
+     "meaning": "They are my friends.",
+     "hint": "们 makes 他 into 他们, they. 我的 is my.",
+     "card": "zh_read_sentences:4",
+     "parts": [
+      "他们",
+      "是",
+      "我的",
+      "朋友。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "是",
+       "吃",
+       "喝",
+       "去"
+      ]
+     }
+    },
+    {
+     "id": "5",
+     "front": "我们是中国人。",
+     "reading": "wǒmen shì Zhōngguórén.",
+     "meaning": "We are Chinese.",
+     "hint": "中国人 is a Chinese person.",
+     "card": "zh_read_sentences:5",
+     "parts": [
+      "我们",
+      "是",
+      "中国人。"
+     ]
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_ma",
+   "title": "吗: yes or no questions",
+   "intro": [
+    "Put 吗 at the end of a statement and it becomes a yes or no question. There is no change in word order.",
+    "你是学生 is 'You are a student.' Add 吗 and 你是学生吗？ asks 'Are you a student?'"
+   ],
+   "items": [
+    {
+     "id": "6",
+     "front": "你是学生吗？",
+     "reading": "nǐ shì xuésheng ma?",
+     "meaning": "Are you a student?",
+     "hint": "吗 is light and short.",
+     "card": "zh_read_sentences:6",
+     "parts": [
+      "你",
+      "是",
+      "学生",
+      "吗？"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "吗？",
+       "的？",
+       "们？",
+       "是？"
+      ]
+     }
+    },
+    {
+     "id": "7",
+     "front": "你好吗？",
+     "reading": "nǐ hǎo ma?",
+     "meaning": "How are you?",
+     "hint": "Word for word: you good question? A very common greeting.",
+     "card": "zh_read_sentences:7",
+     "parts": [
+      "你",
+      "好",
+      "吗？"
+     ],
+     "blank": {
+      "part": 2,
+      "options": [
+       "吗？",
+       "的？",
+       "们？",
+       "是？"
+      ]
+     }
+    },
+    {
+     "id": "8",
+     "front": "他是老师吗？",
+     "reading": "tā shì lǎoshī ma?",
+     "meaning": "Is he a teacher?",
+     "hint": "Same pattern: statement plus 吗.",
+     "card": "zh_read_sentences:8",
+     "parts": [
+      "他",
+      "是",
+      "老师",
+      "吗？"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "吗？",
+       "的？",
+       "们？",
+       "是？"
+      ]
+     }
+    },
+    {
+     "id": "9",
+     "front": "这是你的书吗？",
+     "reading": "zhè shì nǐ de shū ma?",
+     "meaning": "Is this your book?",
+     "hint": "你的 is your. 书 is book.",
+     "card": "zh_read_sentences:9",
+     "parts": [
+      "这",
+      "是",
+      "你的",
+      "书",
+      "吗？"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "吗？",
+       "的？",
+       "们？",
+       "是？"
+      ]
+     }
+    },
+    {
+     "id": "10",
+     "front": "你有朋友吗？",
+     "reading": "nǐ yǒu péngyou ma?",
+     "meaning": "Do you have friends?",
+     "hint": "有 is to have.",
+     "card": "zh_read_sentences:10",
+     "parts": [
+      "你",
+      "有",
+      "朋友",
+      "吗？"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "吗？",
+       "的？",
+       "们？",
+       "是？"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_bu",
+   "title": "不: not",
+   "intro": [
+    "Put 不 right before the word you want to negate: 我不是老师 is 'I not be teacher': I am not a teacher.",
+    "不 is bù, but before a falling tone it flips to rising: 不是 is bú shì. You will hear the change, but the character stays the same."
+   ],
+   "items": [
+    {
+     "id": "11",
+     "front": "我不是老师。",
+     "reading": "wǒ bú shì lǎoshī.",
+     "meaning": "I am not a teacher.",
+     "hint": "不 before 是 sounds like bú.",
+     "card": "zh_read_sentences:11",
+     "parts": [
+      "我",
+      "不",
+      "是",
+      "老师。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "不",
+       "很",
+       "太",
+       "多"
+      ]
+     }
+    },
+    {
+     "id": "12",
+     "front": "他不吃肉。",
+     "reading": "tā bù chī ròu.",
+     "meaning": "He does not eat meat.",
+     "hint": "不 goes before the verb.",
+     "card": "zh_read_sentences:12",
+     "parts": [
+      "他",
+      "不",
+      "吃",
+      "肉。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "不",
+       "太",
+       "上",
+       "下"
+      ]
+     }
+    },
+    {
+     "id": "13",
+     "front": "我不想去。",
+     "reading": "wǒ bù xiǎng qù.",
+     "meaning": "I do not want to go.",
+     "hint": "不 goes before 想, 'want'.",
+     "card": "zh_read_sentences:13",
+     "parts": [
+      "我",
+      "不",
+      "想",
+      "去。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "不",
+       "上",
+       "下",
+       "北"
+      ]
+     }
+    },
+    {
+     "id": "14",
+     "front": "她不喝茶。",
+     "reading": "tā bù hē chá.",
+     "meaning": "She does not drink tea.",
+     "hint": "喝茶 is drink tea.",
+     "card": "zh_read_sentences:14",
+     "parts": [
+      "她",
+      "不",
+      "喝",
+      "茶。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "不",
+       "太",
+       "上",
+       "下"
+      ]
+     }
+    },
+    {
+     "id": "15",
+     "front": "我不是中国人。",
+     "reading": "wǒ bú shì Zhōngguórén.",
+     "meaning": "I am not Chinese.",
+     "hint": "不是 is the full 'am not'.",
+     "card": "zh_read_sentences:15",
+     "parts": [
+      "我",
+      "不是",
+      "中国人。"
+     ]
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_hen",
+   "title": "很: very",
+   "intro": [
+    "To describe something, put 很 before the adjective: 我很好 is 'I very good': I am well.",
+    "Mandarin does not use 是 before adjectives. Say 这个很大, not 这个是大."
+   ],
+   "items": [
+    {
+     "id": "16",
+     "front": "我很好。",
+     "reading": "wǒ hěn hǎo.",
+     "meaning": "I am very well.",
+     "hint": "很 here is a light 'very', almost just a linking word.",
+     "card": "zh_read_sentences:16",
+     "parts": [
+      "我",
+      "很",
+      "好。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "很",
+       "去",
+       "看",
+       "吃"
+      ]
+     }
+    },
+    {
+     "id": "17",
+     "front": "这个很大。",
+     "reading": "zhège hěn dà.",
+     "meaning": "This one is very big.",
+     "hint": "这个 is this one.",
+     "card": "zh_read_sentences:17",
+     "parts": [
+      "这个",
+      "很",
+      "大。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "很",
+       "去",
+       "看",
+       "吃"
+      ]
+     }
+    },
+    {
+     "id": "18",
+     "front": "这本书很新。",
+     "reading": "zhè běn shū hěn xīn.",
+     "meaning": "This book is very new.",
+     "hint": "这本书 is this book. 新 is new.",
+     "card": "zh_read_sentences:18",
+     "parts": [
+      "这本书",
+      "很",
+      "新。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "很",
+       "去",
+       "看",
+       "吃"
+      ]
+     }
+    },
+    {
+     "id": "19",
+     "front": "北京很大。",
+     "reading": "Běijīng hěn dà.",
+     "meaning": "Beijing is very big.",
+     "hint": "北京 is Beijing.",
+     "card": "zh_read_sentences:19",
+     "parts": [
+      "北京",
+      "很",
+      "大。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "很",
+       "去",
+       "看",
+       "吃"
+      ]
+     }
+    },
+    {
+     "id": "20",
+     "front": "我爸爸很高。",
+     "reading": "wǒ bàba hěn gāo.",
+     "meaning": "My dad is very tall.",
+     "hint": "高 is tall.",
+     "card": "zh_read_sentences:20",
+     "parts": [
+      "我",
+      "爸爸",
+      "很",
+      "高。"
+     ],
+     "blank": {
+      "part": 2,
+      "options": [
+       "很",
+       "去",
+       "看",
+       "吃"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_de",
+   "title": "的: belonging",
+   "intro": [
+    "的 shows belonging, like 's in English: 我的书 is 'my book'. It is light and short, and said 'de'.",
+    "It works for any owner: 爸爸的茶 is dad's tea."
+   ],
+   "items": [
+    {
+     "id": "21",
+     "front": "这是我的书。",
+     "reading": "zhè shì wǒ de shū.",
+     "meaning": "This is my book.",
+     "hint": "我的 is my.",
+     "card": "zh_read_sentences:21",
+     "parts": [
+      "这",
+      "是",
+      "我",
+      "的",
+      "书。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "的",
+       "吗",
+       "很",
+       "不"
+      ]
+     }
+    },
+    {
+     "id": "22",
+     "front": "他是我的朋友。",
+     "reading": "tā shì wǒ de péngyou.",
+     "meaning": "He is my friend.",
+     "hint": "我的朋友 is my friend.",
+     "card": "zh_read_sentences:22",
+     "parts": [
+      "他",
+      "是",
+      "我",
+      "的",
+      "朋友。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "的",
+       "吗",
+       "很",
+       "不"
+      ]
+     }
+    },
+    {
+     "id": "23",
+     "front": "你的家很大。",
+     "reading": "nǐ de jiā hěn dà.",
+     "meaning": "Your home is very big.",
+     "hint": "你的家 is your home.",
+     "card": "zh_read_sentences:23",
+     "parts": [
+      "你",
+      "的",
+      "家",
+      "很",
+      "大。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "的",
+       "吗",
+       "不",
+       "是"
+      ]
+     }
+    },
+    {
+     "id": "24",
+     "front": "我的老师是中国人。",
+     "reading": "wǒ de lǎoshī shì Zhōngguórén.",
+     "meaning": "My teacher is Chinese.",
+     "hint": "我的老师 is my teacher.",
+     "card": "zh_read_sentences:24",
+     "parts": [
+      "我",
+      "的",
+      "老师",
+      "是",
+      "中国人。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "的",
+       "吗",
+       "不",
+       "很"
+      ]
+     }
+    },
+    {
+     "id": "25",
+     "front": "这是爸爸的茶。",
+     "reading": "zhè shì bàba de chá.",
+     "meaning": "This is dad's tea.",
+     "hint": "爸爸的 is dad's.",
+     "card": "zh_read_sentences:25",
+     "parts": [
+      "这",
+      "是",
+      "爸爸",
+      "的",
+      "茶。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "的",
+       "吗",
+       "很",
+       "不"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_xiang",
+   "title": "想: want to",
+   "intro": [
+    "想 means want to. It goes before the verb: 我想吃 is 'I want eat': I want to eat.",
+    "去 is go. 去学校 is go to school. Mandarin does not need a word for 'to' here."
+   ],
+   "items": [
+    {
+     "id": "26",
+     "front": "我想吃米饭。",
+     "reading": "wǒ xiǎng chī mǐfàn.",
+     "meaning": "I want to eat rice.",
+     "hint": "米饭 is cooked rice.",
+     "card": "zh_read_sentences:26",
+     "parts": [
+      "我",
+      "想",
+      "吃",
+      "米饭。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "想",
+       "大",
+       "小",
+       "新"
+      ]
+     }
+    },
+    {
+     "id": "27",
+     "front": "我想喝茶。",
+     "reading": "wǒ xiǎng hē chá.",
+     "meaning": "I want to drink tea.",
+     "hint": "喝 is drink.",
+     "card": "zh_read_sentences:27",
+     "parts": [
+      "我",
+      "想",
+      "喝",
+      "茶。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "想",
+       "大",
+       "小",
+       "新"
+      ]
+     }
+    },
+    {
+     "id": "28",
+     "front": "我想去学校。",
+     "reading": "wǒ xiǎng qù xuéxiào.",
+     "meaning": "I want to go to school.",
+     "hint": "学校 is school.",
+     "card": "zh_read_sentences:28",
+     "parts": [
+      "我",
+      "想",
+      "去",
+      "学校。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "想",
+       "大",
+       "小",
+       "新"
+      ]
+     }
+    },
+    {
+     "id": "29",
+     "front": "你想去北京吗？",
+     "reading": "nǐ xiǎng qù Běijīng ma?",
+     "meaning": "Do you want to go to Beijing?",
+     "hint": "吗 makes it a question.",
+     "card": "zh_read_sentences:29",
+     "parts": [
+      "你",
+      "想",
+      "去",
+      "北京",
+      "吗？"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "想",
+       "大",
+       "小",
+       "新"
+      ]
+     }
+    },
+    {
+     "id": "30",
+     "front": "我们想买书。",
+     "reading": "wǒmen xiǎng mǎi shū.",
+     "meaning": "We want to buy books.",
+     "hint": "买 is buy.",
+     "card": "zh_read_sentences:30",
+     "parts": [
+      "我们",
+      "想",
+      "买",
+      "书。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "想",
+       "大",
+       "小",
+       "新"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_qwords",
+   "title": "Question words",
+   "intro": [
+    "A question word goes where the answer would go. 你想吃什么 is 'you want eat what': What do you want to eat? No change in word order.",
+    "什么 is what, 哪里 is where, 谁 is who. They do not need 吗 as well."
+   ],
+   "items": [
+    {
+     "id": "31",
+     "front": "你想吃什么？",
+     "reading": "nǐ xiǎng chī shénme?",
+     "meaning": "What do you want to eat?",
+     "hint": "什么 is what. The 么 is light.",
+     "card": "zh_read_sentences:31",
+     "parts": [
+      "你",
+      "想",
+      "吃",
+      "什么？"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "什么？",
+       "哪里？",
+       "谁？",
+       "是？"
+      ]
+     }
+    },
+    {
+     "id": "32",
+     "front": "这是什么？",
+     "reading": "zhè shì shénme?",
+     "meaning": "What is this?",
+     "hint": "Point and ask.",
+     "card": "zh_read_sentences:32",
+     "parts": [
+      "这",
+      "是",
+      "什么？"
+     ]
+    },
+    {
+     "id": "33",
+     "front": "你想去哪里？",
+     "reading": "nǐ xiǎng qù nǎlǐ?",
+     "meaning": "Where do you want to go?",
+     "hint": "哪里 is where. The 里 is light.",
+     "card": "zh_read_sentences:33",
+     "parts": [
+      "你",
+      "想",
+      "去",
+      "哪里？"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "哪里？",
+       "什么？",
+       "谁？",
+       "是？"
+      ]
+     }
+    },
+    {
+     "id": "34",
+     "front": "他是谁？",
+     "reading": "tā shì shéi?",
+     "meaning": "Who is he?",
+     "hint": "谁 is who.",
+     "card": "zh_read_sentences:34",
+     "parts": [
+      "他",
+      "是",
+      "谁？"
+     ]
+    },
+    {
+     "id": "35",
+     "front": "你喝什么茶？",
+     "reading": "nǐ hē shénme chá?",
+     "meaning": "What tea do you drink?",
+     "hint": "什么茶 is what tea, or what kind of tea.",
+     "card": "zh_read_sentences:35",
+     "parts": [
+      "你",
+      "喝",
+      "什么",
+      "茶？"
+     ]
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "zh_time",
+   "title": "When: today, tomorrow",
+   "intro": [
+    "Time words go near the start of the sentence, before the person: 明天我去北京 is 'tomorrow I go Beijing'.",
+    "The verb does not change for tense. The time word tells you when."
+   ],
+   "items": [
+    {
+     "id": "36",
+     "front": "今天我去学校。",
+     "reading": "jīntiān wǒ qù xuéxiào.",
+     "meaning": "Today I go to school.",
+     "hint": "今天 is today.",
+     "card": "zh_read_sentences:36",
+     "parts": [
+      "今天",
+      "我",
+      "去",
+      "学校。"
+     ]
+    },
+    {
+     "id": "37",
+     "front": "明天我们去北京。",
+     "reading": "míngtiān wǒmen qù Běijīng.",
+     "meaning": "Tomorrow we go to Beijing.",
+     "hint": "明天 is tomorrow.",
+     "card": "zh_read_sentences:37",
+     "parts": [
+      "明天",
+      "我们",
+      "去",
+      "北京。"
+     ]
+    },
+    {
+     "id": "38",
+     "front": "昨天我看书。",
+     "reading": "zuótiān wǒ kàn shū.",
+     "meaning": "Yesterday I read a book.",
+     "hint": "昨天 is yesterday. 看书 is to read, literally look at a book.",
+     "card": "zh_read_sentences:38",
+     "parts": [
+      "昨天",
+      "我",
+      "看",
+      "书。"
+     ]
+    },
+    {
+     "id": "39",
+     "front": "上午我读书。",
+     "reading": "shàngwǔ wǒ dú shū.",
+     "meaning": "In the morning I read.",
+     "hint": "上午 is morning. 读书 is to read, or to study.",
+     "card": "zh_read_sentences:39",
+     "parts": [
+      "上午",
+      "我",
+      "读",
+      "书。"
+     ]
+    },
+    {
+     "id": "40",
+     "front": "下午三点我去买菜。",
+     "reading": "xiàwǔ sān diǎn wǒ qù mǎi cài.",
+     "meaning": "At three in the afternoon I go grocery shopping.",
+     "hint": "三点 is three o'clock. 买菜 is buy groceries.",
+     "card": "zh_read_sentences:40",
+     "parts": [
+      "下午",
+      "三点",
+      "我",
+      "去",
+      "买菜。"
+     ]
+    }
+   ],
+   "words": []
+  }
+ ]
+}

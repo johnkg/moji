@@ -61,6 +61,9 @@ class _LessonScreenState extends State<LessonScreen> {
   bool _finished = false;
   bool _busy = false;
   int _firstTryCorrect = 0;
+
+  /// Word chips placed so far in an arrange exercise, as indexes into its options.
+  List<int> _placed = [];
   int _earnedXp = 0;
   int _streak = 0;
 
@@ -89,6 +92,19 @@ class _LessonScreenState extends State<LessonScreen> {
     if (option == exercise.answer && !_isRetryStep) _firstTryCorrect++;
     setState(() => _picked = option);
     _say(exercise.speak);
+  }
+
+  void _place(Exercise exercise, int chip) {
+    if (_picked != null || _placed.contains(chip)) return;
+    setState(() => _placed = [..._placed, chip]);
+    if (_placed.length == exercise.options.length) {
+      _pick(exercise, [for (final i in _placed) exercise.options[i]].join());
+    }
+  }
+
+  void _unplace(int position) {
+    if (_picked != null) return;
+    setState(() => _placed = [..._placed]..removeAt(position));
   }
 
   Future<void> _next() async {
@@ -121,6 +137,7 @@ class _LessonScreenState extends State<LessonScreen> {
     setState(() {
       _index++;
       _picked = null;
+      _placed = [];
     });
     final next = _steps[_index];
     if (next.kind == _StepKind.meet) {
@@ -214,11 +231,29 @@ class _LessonScreenState extends State<LessonScreen> {
   Widget _buildMeet(BuildContext context, LessonItem item) {
     final theme = Theme.of(context);
     final speaking = widget.course.isSpeaking;
+    final sentences = widget.course.isSentences;
     return Column(
       children: [
-        Text(speaking ? 'New phrase' : 'New character', style: theme.textTheme.labelLarge),
+        Text(
+          sentences ? 'New sentence' : (speaking ? 'New phrase' : 'New character'),
+          style: theme.textTheme.labelLarge,
+        ),
         const SizedBox(height: 8),
-        if (speaking) ...[
+        if (sentences) ...[
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 8,
+            runSpacing: 4,
+            children: [
+              for (final part in item.parts)
+                Text(part, locale: scriptLocale(_lang), style: const TextStyle(fontSize: 32)),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(item.reading, textAlign: TextAlign.center, style: theme.textTheme.titleMedium),
+          const SizedBox(height: 4),
+          Text(item.meaning, textAlign: TextAlign.center, style: theme.textTheme.titleLarge),
+        ] else if (speaking) ...[
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(item.reading, style: const TextStyle(fontSize: 44)),
@@ -269,7 +304,10 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   Widget _buildExercise(BuildContext context, Exercise exercise) {
+    if (exercise.kind == ExerciseKind.arrange) return _buildArrange(context, exercise);
     final theme = Theme.of(context);
+    final sentence =
+        exercise.kind == ExerciseKind.readSentence || exercise.kind == ExerciseKind.fillBlank;
     final answered = _picked != null;
     final correct = _picked == exercise.answer;
     final hearing = exercise.isListening;
@@ -295,7 +333,16 @@ class _LessonScreenState extends State<LessonScreen> {
               style: theme.textTheme.bodyMedium,
             ),
           ],
-        ] else
+        ] else if (sentence)
+          Center(
+            child: Text(
+              exercise.display!,
+              textAlign: TextAlign.center,
+              locale: scriptLocale(_lang),
+              style: const TextStyle(fontSize: 34),
+            ),
+          )
+        else
           Center(
             child: FittedBox(
               fit: BoxFit.scaleDown,
@@ -327,6 +374,90 @@ class _LessonScreenState extends State<LessonScreen> {
     );
   }
 
+  Widget _buildArrange(BuildContext context, Exercise exercise) {
+    final theme = Theme.of(context);
+    final answered = _picked != null;
+    final correct = _picked == exercise.answer;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(exercise.question, textAlign: TextAlign.center, style: theme.textTheme.titleMedium),
+        const SizedBox(height: 12),
+        Text(exercise.display!, textAlign: TextAlign.center, style: theme.textTheme.headlineSmall),
+        const SizedBox(height: 16),
+        Container(
+          constraints: const BoxConstraints(minHeight: 72),
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            border: Border.all(color: theme.colorScheme.outline),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (var n = 0; n < _placed.length; n++)
+                _chip(
+                  context,
+                  exercise.options[_placed[n]],
+                  answered
+                      ? (correct ? const Color(0xFFB7E4C7) : theme.colorScheme.errorContainer)
+                      : theme.colorScheme.primaryContainer,
+                  answered ? null : () => _unplace(n),
+                ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 16),
+        Wrap(
+          alignment: WrapAlignment.center,
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            for (var i = 0; i < exercise.options.length; i++)
+              if (!_placed.contains(i))
+                _chip(
+                  context,
+                  exercise.options[i],
+                  theme.colorScheme.secondaryContainer,
+                  answered ? null : () => _place(exercise, i),
+                ),
+          ],
+        ),
+        if (answered) ...[
+          const SizedBox(height: 16),
+          Text(
+            correct ? 'Correct!' : 'Not quite.',
+            textAlign: TextAlign.center,
+            style: theme.textTheme.titleMedium,
+          ),
+          const SizedBox(height: 4),
+          Text(
+            exercise.reveal,
+            textAlign: TextAlign.center,
+            locale: scriptLocale(_lang),
+            style: theme.textTheme.titleLarge,
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _chip(BuildContext context, String text, Color background, VoidCallback? onTap) {
+    return Material(
+      color: background,
+      borderRadius: BorderRadius.circular(10),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
+          child: Text(text, locale: scriptLocale(_lang), style: const TextStyle(fontSize: 26)),
+        ),
+      ),
+    );
+  }
+
   Widget _optionTile(BuildContext context, Exercise exercise, String option) {
     final scheme = Theme.of(context).colorScheme;
     final answered = _picked != null;
@@ -340,6 +471,7 @@ class _LessonScreenState extends State<LessonScreen> {
       foreground = scheme.onErrorContainer;
     }
     final native = exercise.optionsAreNative;
+    final longNative = exercise.kind == ExerciseKind.hearSentence;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Material(
@@ -354,7 +486,8 @@ class _LessonScreenState extends State<LessonScreen> {
               child: Text(
                 option,
                 locale: native ? scriptLocale(_lang) : null,
-                style: TextStyle(fontSize: native ? 32 : 20, color: foreground),
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: native ? (longNative ? 24 : 32) : 20, color: foreground),
               ),
             ),
           ),
@@ -373,21 +506,35 @@ class _LessonScreenState extends State<LessonScreen> {
         const SizedBox(height: 16),
         Text('Unit complete', style: theme.textTheme.headlineSmall),
         const SizedBox(height: 12),
-        FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Text(
-            widget.course.isSpeaking
-                ? _unit.items.map((i) => i.reading).join(' · ')
-                : _unit.items.map((i) => i.front).join('  '),
-            locale: scriptLocale(_lang),
-            style: TextStyle(fontSize: widget.course.isSpeaking ? 24 : 40),
+        if (widget.course.isSentences)
+          for (final item in _unit.items)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 2),
+              child: Text(
+                item.front,
+                textAlign: TextAlign.center,
+                locale: scriptLocale(_lang),
+                style: const TextStyle(fontSize: 22),
+              ),
+            )
+        else
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              widget.course.isSpeaking
+                  ? _unit.items.map((i) => i.reading).join(' · ')
+                  : _unit.items.map((i) => i.front).join('  '),
+              locale: scriptLocale(_lang),
+              style: TextStyle(fontSize: widget.course.isSpeaking ? 24 : 40),
+            ),
           ),
-        ),
         const SizedBox(height: 16),
         Text(
-          widget.course.isSpeaking
-              ? 'These phrases are now in your flashcard review. They come back tomorrow. Keep saying them out loud.'
-              : 'These characters are now in your flashcard review. They come back tomorrow.',
+          widget.course.isSentences
+              ? 'These sentences are now in your flashcard review. They come back tomorrow.'
+              : widget.course.isSpeaking
+                  ? 'These phrases are now in your flashcard review. They come back tomorrow. Keep saying them out loud.'
+                  : 'These characters are now in your flashcard review. They come back tomorrow.',
           textAlign: TextAlign.center,
           style: theme.textTheme.bodyLarge,
         ),

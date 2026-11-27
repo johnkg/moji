@@ -1,3 +1,19 @@
+/// A gap in a sentence: the part to hide and the four words to choose from.
+class LessonBlank {
+  const LessonBlank({required this.part, required this.options});
+
+  /// Index into [LessonItem.parts] of the hidden word.
+  final int part;
+  final List<String> options;
+
+  factory LessonBlank.fromJson(Map<String, dynamic> json) {
+    return LessonBlank(
+      part: json['part'] as int,
+      options: (json['options'] as List<dynamic>).cast<String>(),
+    );
+  }
+}
+
 /// A character taught in a lesson.
 class LessonItem {
   const LessonItem({
@@ -8,6 +24,8 @@ class LessonItem {
     required this.hint,
     required this.card,
     this.listen = true,
+    this.parts = const [],
+    this.blank,
   });
 
   final String id;
@@ -29,6 +47,12 @@ class LessonItem {
   /// listening exercise is made for it.
   final bool listen;
 
+  /// For sentences: the word chips. Joined, they are [front].
+  final List<String> parts;
+
+  /// For sentences: an optional gap to fill, such as a particle.
+  final LessonBlank? blank;
+
   factory LessonItem.fromJson(Map<String, dynamic> json) {
     return LessonItem(
       id: json['id'] as String,
@@ -38,6 +62,10 @@ class LessonItem {
       hint: (json['hint'] as String?) ?? '',
       card: json['card'] as String?,
       listen: (json['listen'] as bool?) ?? true,
+      parts: ((json['parts'] as List<dynamic>?) ?? const <dynamic>[]).cast<String>(),
+      blank: json['blank'] == null
+          ? null
+          : LessonBlank.fromJson(json['blank'] as Map<String, dynamic>),
     );
   }
 }
@@ -98,6 +126,9 @@ enum CourseMode {
 
   /// Learn to say phrases. Romaji or pinyin is shown large, native text small.
   speaking,
+
+  /// Read whole sentences, with the small grammar words taught on the way.
+  sentences,
 }
 
 class Course {
@@ -120,6 +151,7 @@ class Course {
   final List<LessonUnit> units;
 
   bool get isSpeaking => mode == CourseMode.speaking;
+  bool get isSentences => mode == CourseMode.sentences;
 
   /// Key used to store that [unit] is finished. Unique across courses.
   String keyFor(LessonUnit unit) => '$id:${unit.id}';
@@ -128,7 +160,11 @@ class Course {
     return Course(
       id: json['id'] as String,
       lang: json['lang'] as String,
-      mode: json['mode'] == 'speaking' ? CourseMode.speaking : CourseMode.reading,
+      mode: switch (json['mode']) {
+        'speaking' => CourseMode.speaking,
+        'sentences' => CourseMode.sentences,
+        _ => CourseMode.reading,
+      },
       title: json['title'] as String,
       description: (json['description'] as String?) ?? '',
       units: (json['units'] as List<dynamic>)

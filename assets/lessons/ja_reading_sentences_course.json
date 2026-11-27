@@ -1,0 +1,975 @@
+{
+ "id": "ja_reading_sentences_course",
+ "lang": "ja",
+ "mode": "sentences",
+ "title": "Read: sentences",
+ "description": "Read whole sentences. Learn the small words that hold them together.",
+ "units": [
+  {
+   "id": "ja_wa_desu",
+   "title": "は and です",
+   "intro": [
+    "Time to read whole sentences. Japanese puts the verb or ending last, and small words called particles show each word's job.",
+    "は marks the topic: 'as for this...'. It is written は but said 'wa' here. です (desu) is the polite 'is' or 'am' that closes the sentence. The u is almost silent.",
+    "So これはほんです is word for word 'This (topic) book is': This is a book."
+   ],
+   "items": [
+    {
+     "id": "1",
+     "front": "わたしはがくせいです。",
+     "reading": "watashi wa gakusei desu.",
+     "meaning": "I am a student.",
+     "hint": "わたし is I. は is said 'wa'. がくせい is student.",
+     "card": "ja_read_sentences:1",
+     "parts": [
+      "わたし",
+      "は",
+      "がくせい",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "は",
+       "を",
+       "に",
+       "で"
+      ]
+     }
+    },
+    {
+     "id": "2",
+     "front": "これはほんです。",
+     "reading": "kore wa hon desu.",
+     "meaning": "This is a book.",
+     "hint": "これ is this, close to you. ほん is book.",
+     "card": "ja_read_sentences:2",
+     "parts": [
+      "これ",
+      "は",
+      "ほん",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "は",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "3",
+     "front": "それはペンです。",
+     "reading": "sore wa pen desu.",
+     "meaning": "That is a pen.",
+     "hint": "それ is that, near the listener. ペン is pen, in katakana because it is a borrowed word.",
+     "card": "ja_read_sentences:3",
+     "parts": [
+      "それ",
+      "は",
+      "ペン",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "は",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "4",
+     "front": "あれはくるまです。",
+     "reading": "are wa kuruma desu.",
+     "meaning": "That over there is a car.",
+     "hint": "あれ is that over there, far from both of you. くるま is car.",
+     "card": "ja_read_sentences:4",
+     "parts": [
+      "あれ",
+      "は",
+      "くるま",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "は",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "5",
+     "front": "たなかさんはせんせいです。",
+     "reading": "tanaka-san wa sensei desu.",
+     "meaning": "Mr. Tanaka is a teacher.",
+     "hint": "さん is a polite ending for names, like Mr. or Ms. Never use it for yourself.",
+     "card": "ja_read_sentences:5",
+     "parts": [
+      "たなかさん",
+      "は",
+      "せんせい",
+      "です。"
+     ]
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_ka",
+   "title": "か: asking questions",
+   "intro": [
+    "Add か at the end of a sentence and it becomes a question. Your voice does not need to rise.",
+    "Question words take the place of the answer: なん (what), どこ (where), いくら (how much), だれ (who).",
+    "これはなんですか is 'This (topic) what is?': What is this?"
+   ],
+   "items": [
+    {
+     "id": "6",
+     "front": "これはなんですか。",
+     "reading": "kore wa nan desu ka.",
+     "meaning": "What is this?",
+     "hint": "なん means what. The か at the end makes the question.",
+     "card": "ja_read_sentences:6",
+     "parts": [
+      "これ",
+      "は",
+      "なん",
+      "です",
+      "か。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "か。",
+       "を。",
+       "に。",
+       "で。"
+      ]
+     }
+    },
+    {
+     "id": "7",
+     "front": "あなたはがくせいですか。",
+     "reading": "anata wa gakusei desu ka.",
+     "meaning": "Are you a student?",
+     "hint": "あなた is you. Japanese often leaves it out and uses a name instead.",
+     "card": "ja_read_sentences:7",
+     "parts": [
+      "あなた",
+      "は",
+      "がくせい",
+      "です",
+      "か。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "か。",
+       "を。",
+       "に。",
+       "で。"
+      ]
+     }
+    },
+    {
+     "id": "8",
+     "front": "トイレはどこですか。",
+     "reading": "toire wa doko desu ka.",
+     "meaning": "Where is the toilet?",
+     "hint": "どこ is where. A very useful sentence.",
+     "card": "ja_read_sentences:8",
+     "parts": [
+      "トイレ",
+      "は",
+      "どこ",
+      "です",
+      "か。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "か。",
+       "を。",
+       "に。",
+       "で。"
+      ]
+     }
+    },
+    {
+     "id": "9",
+     "front": "これはいくらですか。",
+     "reading": "kore wa ikura desu ka.",
+     "meaning": "How much is this?",
+     "hint": "いくら is how much.",
+     "card": "ja_read_sentences:9",
+     "parts": [
+      "これ",
+      "は",
+      "いくら",
+      "です",
+      "か。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "か。",
+       "を。",
+       "に。",
+       "で。"
+      ]
+     }
+    },
+    {
+     "id": "10",
+     "front": "あのひとはだれですか。",
+     "reading": "ano hito wa dare desu ka.",
+     "meaning": "Who is that person?",
+     "hint": "あの is that (before a noun). ひと is person. だれ is who.",
+     "card": "ja_read_sentences:10",
+     "parts": [
+      "あの",
+      "ひと",
+      "は",
+      "だれ",
+      "です",
+      "か。"
+     ]
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_no",
+   "title": "の: belonging",
+   "intro": [
+    "の links two nouns and shows belonging, like 's in English: わたしのほん is 'my book'.",
+    "It also joins a place to a thing: にほんのおちゃ is 'Japan's tea', so Japanese tea."
+   ],
+   "items": [
+    {
+     "id": "11",
+     "front": "わたしのほんです。",
+     "reading": "watashi no hon desu.",
+     "meaning": "It is my book.",
+     "hint": "わたしの is my.",
+     "card": "ja_read_sentences:11",
+     "parts": [
+      "わたし",
+      "の",
+      "ほん",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "の",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "12",
+     "front": "これはわたしのかばんです。",
+     "reading": "kore wa watashi no kaban desu.",
+     "meaning": "This is my bag.",
+     "hint": "かばん is bag.",
+     "card": "ja_read_sentences:12",
+     "parts": [
+      "これ",
+      "は",
+      "わたし",
+      "の",
+      "かばん",
+      "です。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "の",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "13",
+     "front": "たなかさんのくるまです。",
+     "reading": "tanaka-san no kuruma desu.",
+     "meaning": "It is Mr. Tanaka's car.",
+     "hint": "Put の after the owner.",
+     "card": "ja_read_sentences:13",
+     "parts": [
+      "たなかさん",
+      "の",
+      "くるま",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "の",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "14",
+     "front": "にほんのおちゃです。",
+     "reading": "nihon no ocha desu.",
+     "meaning": "It is Japanese tea.",
+     "hint": "にほん is Japan. おちゃ is tea.",
+     "card": "ja_read_sentences:14",
+     "parts": [
+      "にほん",
+      "の",
+      "おちゃ",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "の",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "15",
+     "front": "せんせいのペンです。",
+     "reading": "sensei no pen desu.",
+     "meaning": "It is the teacher's pen.",
+     "hint": "せんせい is teacher.",
+     "card": "ja_read_sentences:15",
+     "parts": [
+      "せんせい",
+      "の",
+      "ペン",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "の",
+       "を",
+       "に",
+       "へ"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_wo",
+   "title": "を: the thing you act on",
+   "intro": [
+    "を marks the object of a verb, the thing the action lands on: みずをのみます is 'water (object) drink': I drink water.",
+    "を is written を but said 'o', just like お. It is only used as this marker.",
+    "Polite verbs end in ます. のみます is drink, たべます is eat, よみます is read."
+   ],
+   "items": [
+    {
+     "id": "16",
+     "front": "みずをのみます。",
+     "reading": "mizu o nomimasu.",
+     "meaning": "I drink water.",
+     "hint": "みず is water. のみます is drink. The を sounds like o.",
+     "card": "ja_read_sentences:16",
+     "parts": [
+      "みず",
+      "を",
+      "のみます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "を",
+       "に",
+       "の",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "17",
+     "front": "ごはんをたべます。",
+     "reading": "gohan o tabemasu.",
+     "meaning": "I eat rice.",
+     "hint": "ごはん is cooked rice, and also a meal. たべます is eat.",
+     "card": "ja_read_sentences:17",
+     "parts": [
+      "ごはん",
+      "を",
+      "たべます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "を",
+       "に",
+       "の",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "18",
+     "front": "ほんをよみます。",
+     "reading": "hon o yomimasu.",
+     "meaning": "I read a book.",
+     "hint": "よみます is read.",
+     "card": "ja_read_sentences:18",
+     "parts": [
+      "ほん",
+      "を",
+      "よみます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "を",
+       "に",
+       "の",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "19",
+     "front": "テレビをみます。",
+     "reading": "terebi o mimasu.",
+     "meaning": "I watch TV.",
+     "hint": "みます is look or watch.",
+     "card": "ja_read_sentences:19",
+     "parts": [
+      "テレビ",
+      "を",
+      "みます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "を",
+       "に",
+       "の",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "20",
+     "front": "おんがくをききます。",
+     "reading": "ongaku o kikimasu.",
+     "meaning": "I listen to music.",
+     "hint": "おんがく is music. ききます is listen.",
+     "card": "ja_read_sentences:20",
+     "parts": [
+      "おんがく",
+      "を",
+      "ききます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "を",
+       "に",
+       "の",
+       "へ"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_ni_de",
+   "title": "に and で: where",
+   "intro": [
+    "に points to where you are going or coming back to: がっこうにいきます is 'to school go'.",
+    "で marks where an action happens: レストランでたべます is 'at a restaurant eat'.",
+    "A quick test: if the verb is a movement like go or return, use に. If it is an action like eat or study, use で for the place."
+   ],
+   "items": [
+    {
+     "id": "21",
+     "front": "がっこうにいきます。",
+     "reading": "gakkou ni ikimasu.",
+     "meaning": "I go to school.",
+     "hint": "がっこう is school. いきます is go.",
+     "card": "ja_read_sentences:21",
+     "parts": [
+      "がっこう",
+      "に",
+      "いきます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "に",
+       "を",
+       "で",
+       "の"
+      ]
+     }
+    },
+    {
+     "id": "22",
+     "front": "いえにかえります。",
+     "reading": "ie ni kaerimasu.",
+     "meaning": "I go home.",
+     "hint": "いえ is house or home. かえります is return.",
+     "card": "ja_read_sentences:22",
+     "parts": [
+      "いえ",
+      "に",
+      "かえります。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "に",
+       "を",
+       "で",
+       "の"
+      ]
+     }
+    },
+    {
+     "id": "23",
+     "front": "えきであいます。",
+     "reading": "eki de aimasu.",
+     "meaning": "We meet at the station.",
+     "hint": "えき is station. あいます is meet.",
+     "card": "ja_read_sentences:23",
+     "parts": [
+      "えき",
+      "で",
+      "あいます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "で",
+       "を",
+       "の",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "24",
+     "front": "レストランでたべます。",
+     "reading": "resutoran de tabemasu.",
+     "meaning": "I eat at a restaurant.",
+     "hint": "The restaurant is where the eating happens.",
+     "card": "ja_read_sentences:24",
+     "parts": [
+      "レストラン",
+      "で",
+      "たべます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "で",
+       "を",
+       "の",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "25",
+     "front": "としょかんでべんきょうします。",
+     "reading": "toshokan de benkyou shimasu.",
+     "meaning": "I study at the library.",
+     "hint": "としょかん is library. べんきょうします is study.",
+     "card": "ja_read_sentences:25",
+     "parts": [
+      "としょかん",
+      "で",
+      "べんきょうします。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "で",
+       "を",
+       "の",
+       "へ"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_mo_to",
+   "title": "も and と: also, and with",
+   "intro": [
+    "も means also and takes the place of は: わたしもがくせいです is 'I too am a student'.",
+    "と means and, or with: ともだちといきます is 'with a friend go'."
+   ],
+   "items": [
+    {
+     "id": "26",
+     "front": "わたしもがくせいです。",
+     "reading": "watashi mo gakusei desu.",
+     "meaning": "I am a student too.",
+     "hint": "も replaces は when you mean also.",
+     "card": "ja_read_sentences:26",
+     "parts": [
+      "わたし",
+      "も",
+      "がくせい",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "も",
+       "を",
+       "に",
+       "で"
+      ]
+     }
+    },
+    {
+     "id": "27",
+     "front": "ともだちといきます。",
+     "reading": "tomodachi to ikimasu.",
+     "meaning": "I go with a friend.",
+     "hint": "ともだち is friend.",
+     "card": "ja_read_sentences:27",
+     "parts": [
+      "ともだち",
+      "と",
+      "いきます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "と",
+       "を",
+       "の",
+       "で"
+      ]
+     }
+    },
+    {
+     "id": "28",
+     "front": "コーヒーものみます。",
+     "reading": "koohii mo nomimasu.",
+     "meaning": "I drink coffee too.",
+     "hint": "も here means too or also.",
+     "card": "ja_read_sentences:28",
+     "parts": [
+      "コーヒー",
+      "も",
+      "のみます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "も",
+       "の",
+       "と",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "29",
+     "front": "ちちとはははせんせいです。",
+     "reading": "chichi to haha wa sensei desu.",
+     "meaning": "My father and mother are teachers.",
+     "hint": "ちち and はは are my own father and mother. と joins the two.",
+     "card": "ja_read_sentences:29",
+     "parts": [
+      "ちち",
+      "と",
+      "はは",
+      "は",
+      "せんせい",
+      "です。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "と",
+       "を",
+       "で",
+       "へ"
+      ]
+     }
+    },
+    {
+     "id": "30",
+     "front": "わたしもいきます。",
+     "reading": "watashi mo ikimasu.",
+     "meaning": "I will go too.",
+     "hint": "Same pattern: わたしも, 'I also'.",
+     "card": "ja_read_sentences:30",
+     "parts": [
+      "わたし",
+      "も",
+      "いきます。"
+     ],
+     "blank": {
+      "part": 1,
+      "options": [
+       "も",
+       "を",
+       "の",
+       "へ"
+      ]
+     }
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_i_adj",
+   "title": "Describing things: おいしい",
+   "intro": [
+    "Words like おいしい (delicious) end in い and are called い-adjectives. They go straight in front of です.",
+    "これはおいしいです is 'This is delicious'. The adjective comes straight before です, with nothing in between."
+   ],
+   "items": [
+    {
+     "id": "31",
+     "front": "これはおいしいです。",
+     "reading": "kore wa oishii desu.",
+     "meaning": "This is delicious.",
+     "hint": "おいしい is delicious. The long ii is held for two beats.",
+     "card": "ja_read_sentences:31",
+     "parts": [
+      "これ",
+      "は",
+      "おいしい",
+      "です。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "です。",
+       "ます。",
+       "を。",
+       "に。"
+      ]
+     }
+    },
+    {
+     "id": "32",
+     "front": "あのくるまはおおきいです。",
+     "reading": "ano kuruma wa ookii desu.",
+     "meaning": "That car is big.",
+     "hint": "おおきい is big. The oo is long.",
+     "card": "ja_read_sentences:32",
+     "parts": [
+      "あの",
+      "くるま",
+      "は",
+      "おおきい",
+      "です。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "です。",
+       "ます。",
+       "を。",
+       "に。"
+      ]
+     }
+    },
+    {
+     "id": "33",
+     "front": "このほんはおもしろいです。",
+     "reading": "kono hon wa omoshiroi desu.",
+     "meaning": "This book is interesting.",
+     "hint": "おもしろい is interesting or funny.",
+     "card": "ja_read_sentences:33",
+     "parts": [
+      "この",
+      "ほん",
+      "は",
+      "おもしろい",
+      "です。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "です。",
+       "ます。",
+       "を。",
+       "に。"
+      ]
+     }
+    },
+    {
+     "id": "34",
+     "front": "きょうはあついです。",
+     "reading": "kyou wa atsui desu.",
+     "meaning": "Today is hot.",
+     "hint": "きょう is today. あつい is hot.",
+     "card": "ja_read_sentences:34",
+     "parts": [
+      "きょう",
+      "は",
+      "あつい",
+      "です。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "です。",
+       "ます。",
+       "を。",
+       "に。"
+      ]
+     }
+    },
+    {
+     "id": "35",
+     "front": "わたしのいえはちいさいです。",
+     "reading": "watashi no ie wa chiisai desu.",
+     "meaning": "My house is small.",
+     "hint": "ちいさい is small.",
+     "card": "ja_read_sentences:35",
+     "parts": [
+      "わたし",
+      "の",
+      "いえ",
+      "は",
+      "ちいさい",
+      "です。"
+     ]
+    }
+   ],
+   "words": []
+  },
+  {
+   "id": "ja_neg_past",
+   "title": "Not, and in the past",
+   "intro": [
+    "To say not, use ありません after では: がくせいではありません is 'is not a student'. For verbs, ます becomes ません.",
+    "For the past, ます becomes ました: いきます (go) becomes いきました (went). And い-adjectives drop い and add かった: あつい becomes あつかった."
+   ],
+   "items": [
+    {
+     "id": "36",
+     "front": "わたしはがくせいではありません。",
+     "reading": "watashi wa gakusei dewa arimasen.",
+     "meaning": "I am not a student.",
+     "hint": "では + ありません is the polite not of です.",
+     "card": "ja_read_sentences:36",
+     "parts": [
+      "わたし",
+      "は",
+      "がくせい",
+      "では",
+      "ありません。"
+     ],
+     "blank": {
+      "part": 4,
+      "options": [
+       "ありません。",
+       "あります。",
+       "です。",
+       "ました。"
+      ]
+     }
+    },
+    {
+     "id": "37",
+     "front": "さかなはたべません。",
+     "reading": "sakana wa tabemasen.",
+     "meaning": "I do not eat fish.",
+     "hint": "さかな is fish. たべません is do not eat.",
+     "card": "ja_read_sentences:37",
+     "parts": [
+      "さかな",
+      "は",
+      "たべません。"
+     ]
+    },
+    {
+     "id": "38",
+     "front": "きのうがっこうにいきました。",
+     "reading": "kinou gakkou ni ikimashita.",
+     "meaning": "I went to school yesterday.",
+     "hint": "きのう is yesterday, so the verb is in the past.",
+     "card": "ja_read_sentences:38",
+     "parts": [
+      "きのう",
+      "がっこう",
+      "に",
+      "いきました。"
+     ],
+     "blank": {
+      "part": 3,
+      "options": [
+       "いきました。",
+       "いきます。",
+       "いきません。",
+       "いって。"
+      ]
+     }
+    },
+    {
+     "id": "39",
+     "front": "きのうはあつかったです。",
+     "reading": "kinou wa atsukatta desu.",
+     "meaning": "Yesterday was hot.",
+     "hint": "あつかった is the past of あつい. The small っ is a held beat.",
+     "card": "ja_read_sentences:39",
+     "parts": [
+      "きのう",
+      "は",
+      "あつかった",
+      "です。"
+     ],
+     "blank": {
+      "part": 2,
+      "options": [
+       "あつかった",
+       "あつい",
+       "あつく",
+       "あつくない"
+      ]
+     }
+    },
+    {
+     "id": "40",
+     "front": "おいしかったです。",
+     "reading": "oishikatta desu.",
+     "meaning": "It was delicious.",
+     "hint": "おいしかった is the past of おいしい. Handy after a meal.",
+     "card": "ja_read_sentences:40",
+     "parts": [
+      "おいしかった",
+      "です。"
+     ]
+    }
+   ],
+   "words": []
+  }
+ ]
+}

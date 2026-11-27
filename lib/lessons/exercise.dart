@@ -17,6 +17,18 @@ enum ExerciseKind {
 
   /// See a phrase in romaji or pinyin, pick its meaning.
   readMeaning,
+
+  /// See a sentence in native script, pick its meaning.
+  readSentence,
+
+  /// See a sentence with a gap, pick the word that fits.
+  fillBlank,
+
+  /// Hear a sentence, pick the written sentence.
+  hearSentence,
+
+  /// Put word chips in the right order to build a sentence.
+  arrange,
 }
 
 class Exercise {
@@ -31,6 +43,7 @@ class Exercise {
     required this.answer,
     required this.reading,
     required this.reveal,
+    this.parts = const [],
   });
 
   final ExerciseKind kind;
@@ -51,6 +64,10 @@ class Exercise {
 
   /// Shown after answering, e.g. "あい = ai (love)".
   final String reveal;
+
+  /// For [ExerciseKind.arrange]: the chips in the right order. [options] holds
+  /// the same chips shuffled, and [answer] is them joined.
+  final List<String> parts;
 
   bool get isListening => display == null;
 }
@@ -76,15 +93,117 @@ List<String> _options(
   return all;
 }
 
+/// The chips in a random order, not already in the right one when that can be avoided.
+List<String> _shuffledChips(List<String> parts, math.Random rng) {
+  final chips = List.of(parts);
+  for (var attempt = 0; attempt < 8; attempt++) {
+    chips.shuffle(rng);
+    if (chips.join() != parts.join()) break;
+  }
+  return chips;
+}
+
 String _reveal(String text, String reading, String meaning) {
   return meaning.isEmpty ? '$text = $reading' : '$text = $reading ($meaning)';
 }
 
 /// Exercises for one unit of [course].
 List<Exercise> buildExercises(Course course, int unitIndex, math.Random rng) {
+  if (course.isSentences) return _sentenceExercises(course, unitIndex, rng);
   return course.isSpeaking
       ? _speakingExercises(course, unitIndex, rng)
       : _readingExercises(course, unitIndex, rng);
+}
+
+/// Read each sentence and pick its meaning, fill the gap, hear each sentence
+/// and pick the written one, then build each sentence from word chips.
+List<Exercise> _sentenceExercises(Course course, int unitIndex, math.Random rng) {
+  final unit = course.units[unitIndex];
+  final earlierItems = course.units.sublist(0, unitIndex).expand((u) => u.items).toList();
+
+  final reads = <Exercise>[];
+  final fills = <Exercise>[];
+  final hears = <Exercise>[];
+  final arranges = <Exercise>[];
+  for (final item in unit.items) {
+    final reveal = '${item.front} = ${item.reading} (${item.meaning})';
+    reads.add(Exercise(
+      kind: ExerciseKind.readSentence,
+      question: 'What does this say?',
+      speak: item.front,
+      display: item.front,
+      displayIsNative: true,
+      options: _options(
+        item.meaning,
+        unit.items.map((i) => i.meaning),
+        earlierItems.map((i) => i.meaning),
+        rng,
+      ),
+      optionsAreNative: false,
+      answer: item.meaning,
+      reading: item.reading,
+      reveal: reveal,
+    ));
+
+    final blank = item.blank;
+    if (blank != null) {
+      final shown = StringBuffer();
+      for (var i = 0; i < item.parts.length; i++) {
+        shown.write(i == blank.part ? '＿＿' : item.parts[i]);
+      }
+      fills.add(Exercise(
+        kind: ExerciseKind.fillBlank,
+        question: 'Which word fits the gap?',
+        speak: item.front,
+        display: shown.toString(),
+        displayIsNative: true,
+        options: List.of(blank.options)..shuffle(rng),
+        optionsAreNative: true,
+        answer: item.parts[blank.part],
+        reading: item.reading,
+        reveal: reveal,
+      ));
+    }
+
+    hears.add(Exercise(
+      kind: ExerciseKind.hearSentence,
+      question: 'Which sentence did you hear?',
+      speak: item.front,
+      display: null,
+      displayIsNative: true,
+      options: _options(
+        item.front,
+        unit.items.map((i) => i.front),
+        earlierItems.map((i) => i.front),
+        rng,
+      ),
+      optionsAreNative: true,
+      answer: item.front,
+      reading: item.reading,
+      reveal: reveal,
+    ));
+
+    if (item.parts.length >= 2) {
+      arranges.add(Exercise(
+        kind: ExerciseKind.arrange,
+        question: 'Put the words in order.',
+        speak: item.front,
+        display: item.meaning,
+        displayIsNative: false,
+        options: _shuffledChips(item.parts, rng),
+        optionsAreNative: true,
+        answer: item.parts.join(),
+        reading: item.reading,
+        reveal: reveal,
+        parts: item.parts,
+      ));
+    }
+  }
+  reads.shuffle(rng);
+  fills.shuffle(rng);
+  hears.shuffle(rng);
+  arranges.shuffle(rng);
+  return [...reads, ...fills, ...hears, ...arranges];
 }
 
 /// Read each character, then hear each character, then read words built from

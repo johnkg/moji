@@ -634,8 +634,30 @@ _extend_mandarin()
 mandarin["title"] = "Read: tones and hanzi"
 mandarin["description"] = "Tones first, then about a hundred common hanzi with compound words."
 
+
+import read_sentences as RS
+
+def sentence_reading_course(lang, units, deck, title):
+    flat = {}
+    for cid, text, reading, meaning, hint, uid, parts, blank in RS.flat(units):
+        flat.setdefault(uid, []).append((cid, hint, parts, blank))
+    out_units = []
+    for uid, utitle, intro, _ in units:
+        its = items(deck, [(cid, hint) for cid, hint, _, _ in flat[uid]])
+        for it, (_, _, parts, blank) in zip(its, flat[uid]):
+            it["parts"] = parts
+            if blank:
+                it["blank"] = {"part": blank[0], "options": blank[1]}
+        out_units.append({"id": uid, "title": utitle, "intro": intro, "items": its, "words": []})
+    return {"id": f"{lang}_reading_sentences_course", "lang": lang, "mode": "sentences", "title": title,
+            "description": "Read whole sentences. Learn the small words that hold them together.",
+            "units": out_units}
+
+ja_read_sentences = sentence_reading_course("ja", RS.JA, "ja_read_sentences", "Read: sentences")
+zh_read_sentences = sentence_reading_course("zh", RS.ZH, "zh_read_sentences", "Read: sentences")
+
 os.makedirs(OUT, exist_ok=True)
-for course in (ja_speaking, ja_sentences, hiragana, hiragana_extra, katakana, katakana_extra, zh_speaking, zh_sentences, mandarin):
+for course in (ja_speaking, ja_sentences, hiragana, hiragana_extra, katakana, katakana_extra, ja_read_sentences, zh_speaking, zh_sentences, mandarin, zh_read_sentences):
     for u in course["units"]:
         ids = [i["id"] for i in u["items"]]
         assert len(ids) == len(set(ids)), u["id"]

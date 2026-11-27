@@ -1,0 +1,248 @@
+{
+ "id": "zh_read_sentences",
+ "lang": "zh",
+ "title": "Reading sentences",
+ "description": "Sentences read in hanzi: 是, 吗, 不, 很, 的.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "我是学生。",
+   "reading": "wǒ shì xuésheng.",
+   "meaning": "I am a student."
+  },
+  {
+   "id": "2",
+   "front": "他是老师。",
+   "reading": "tā shì lǎoshī.",
+   "meaning": "He is a teacher."
+  },
+  {
+   "id": "3",
+   "front": "她是我妈妈。",
+   "reading": "tā shì wǒ māma.",
+   "meaning": "She is my mom."
+  },
+  {
+   "id": "4",
+   "front": "他们是我的朋友。",
+   "reading": "tāmen shì wǒ de péngyou.",
+   "meaning": "They are my friends."
+  },
+  {
+   "id": "5",
+   "front": "我们是中国人。",
+   "reading": "wǒmen shì Zhōngguórén.",
+   "meaning": "We are Chinese."
+  },
+  {
+   "id": "6",
+   "front": "你是学生吗？",
+   "reading": "nǐ shì xuésheng ma?",
+   "meaning": "Are you a student?"
+  },
+  {
+   "id": "7",
+   "front": "你好吗？",
+   "reading": "nǐ hǎo ma?",
+   "meaning": "How are you?"
+  },
+  {
+   "id": "8",
+   "front": "他是老师吗？",
+   "reading": "tā shì lǎoshī ma?",
+   "meaning": "Is he a teacher?"
+  },
+  {
+   "id": "9",
+   "front": "这是你的书吗？",
+   "reading": "zhè shì nǐ de shū ma?",
+   "meaning": "Is this your book?"
+  },
+  {
+   "id": "10",
+   "front": "你有朋友吗？",
+   "reading": "nǐ yǒu péngyou ma?",
+   "meaning": "Do you have friends?"
+  },
+  {
+   "id": "11",
+   "front": "我不是老师。",
+   "reading": "wǒ bú shì lǎoshī.",
+   "meaning": "I am not a teacher."
+  },
+  {
+   "id": "12",
+   "front": "他不吃肉。",
+   "reading": "tā bù chī ròu.",
+   "meaning": "He does not eat meat."
+  },
+  {
+   "id": "13",
+   "front": "我不想去。",
+   "reading": "wǒ bù xiǎng qù.",
+   "meaning": "I do not want to go."
+  },
+  {
+   "id": "14",
+   "front": "她不喝茶。",
+   "reading": "tā bù hē chá.",
+   "meaning": "She does not drink tea."
+  },
+  {
+   "id": "15",
+   "front": "我不是中国人。",
+   "reading": "wǒ bú shì Zhōngguórén.",
+   "meaning": "I am not Chinese."
+  },
+  {
+   "id": "16",
+   "front": "我很好。",
+   "reading": "wǒ hěn hǎo.",
+   "meaning": "I am very well."
+  },
+  {
+   "id": "17",
+   "front": "这个很大。",
+   "reading": "zhège hěn dà.",
+   "meaning": "This one is very big."
+  },
+  {
+   "id": "18",
+   "front": "这本书很新。",
+   "reading": "zhè běn shū hěn xīn.",
+   "meaning": "This book is very new."
+  },
+  {
+   "id": "19",
+   "front": "北京很大。",
+   "reading": "Běijīng hěn dà.",
+   "meaning": "Beijing is very big."
+  },
+  {
+   "id": "20",
+   "front": "我爸爸很高。",
+   "reading": "wǒ bàba hěn gāo.",
+   "meaning": "My dad is very tall."
+  },
+  {
+   "id": "21",
+   "front": "这是我的书。",
+   "reading": "zhè shì wǒ de shū.",
+   "meaning": "This is my book."
+  },
+  {
+   "id": "22",
+   "front": "他是我的朋友。",
+   "reading": "tā shì wǒ de péngyou.",
+   "meaning": "He is my friend."
+  },
+  {
+   "id": "23",
+   "front": "你的家很大。",
+   "reading": "nǐ de jiā hěn dà.",
+   "meaning": "Your home is very big."
+  },
+  {
+   "id": "24",
+   "front": "我的老师是中国人。",
+   "reading": "wǒ de lǎoshī shì Zhōngguórén.",
+   "meaning": "My teacher is Chinese."
+  },
+  {
+   "id": "25",
+   "front": "这是爸爸的茶。",
+   "reading": "zhè shì bàba de chá.",
+   "meaning": "This is dad's tea."
+  },
+  {
+   "id": "26",
+   "front": "我想吃米饭。",
+   "reading": "wǒ xiǎng chī mǐfàn.",
+   "meaning": "I want to eat rice."
+  },
+  {
+   "id": "27",
+   "front": "我想喝茶。",
+   "reading": "wǒ xiǎng hē chá.",
+   "meaning": "I want to drink tea."
+  },
+  {
+   "id": "28",
+   "front": "我想去学校。",
+   "reading": "wǒ xiǎng qù xuéxiào.",
+   "meaning": "I want to go to school."
+  },
+  {
+   "id": "29",
+   "front": "你想去北京吗？",
+   "reading": "nǐ xiǎng qù Běijīng ma?",
+   "meaning": "Do you want to go to Beijing?"
+  },
+  {
+   "id": "30",
+   "front": "我们想买书。",
+   "reading": "wǒmen xiǎng mǎi shū.",
+   "meaning": "We want to buy books."
+  },
+  {
+   "id": "31",
+   "front": "你想吃什么？",
+   "reading": "nǐ xiǎng chī shénme?",
+   "meaning": "What do you want to eat?"
+  },
+  {
+   "id": "32",
+   "front": "这是什么？",
+   "reading": "zhè shì shénme?",
+   "meaning": "What is this?"
+  },
+  {
+   "id": "33",
+   "front": "你想去哪里？",
+   "reading": "nǐ xiǎng qù nǎlǐ?",
+   "meaning": "Where do you want to go?"
+  },
+  {
+   "id": "34",
+   "front": "他是谁？",
+   "reading": "tā shì shéi?",
+   "meaning": "Who is he?"
+  },
+  {
+   "id": "35",
+   "front": "你喝什么茶？",
+   "reading": "nǐ hē shénme chá?",
+   "meaning": "What tea do you drink?"
+  },
+  {
+   "id": "36",
+   "front": "今天我去学校。",
+   "reading": "jīntiān wǒ qù xuéxiào.",
+   "meaning": "Today I go to school."
+  },
+  {
+   "id": "37",
+   "front": "明天我们去北京。",
+   "reading": "míngtiān wǒmen qù Běijīng.",
+   "meaning": "Tomorrow we go to Beijing."
+  },
+  {
+   "id": "38",
+   "front": "昨天我看书。",
+   "reading": "zuótiān wǒ kàn shū.",
+   "meaning": "Yesterday I read a book."
+  },
+  {
+   "id": "39",
+   "front": "上午我读书。",
+   "reading": "shàngwǔ wǒ dú shū.",
+   "meaning": "In the morning I read."
+  },
+  {
+   "id": "40",
+   "front": "下午三点我去买菜。",
+   "reading": "xiàwǔ sān diǎn wǒ qù mǎi cài.",
+   "meaning": "At three in the afternoon I go grocery shopping."
+  }
+ ]
+}

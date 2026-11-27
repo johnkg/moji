@@ -1,0 +1,248 @@
+{
+ "id": "ja_read_sentences",
+ "lang": "ja",
+ "title": "Reading sentences",
+ "description": "Sentences read in kana: particles, questions, verbs.",
+ "cards": [
+  {
+   "id": "1",
+   "front": "わたしはがくせいです。",
+   "reading": "watashi wa gakusei desu.",
+   "meaning": "I am a student."
+  },
+  {
+   "id": "2",
+   "front": "これはほんです。",
+   "reading": "kore wa hon desu.",
+   "meaning": "This is a book."
+  },
+  {
+   "id": "3",
+   "front": "それはペンです。",
+   "reading": "sore wa pen desu.",
+   "meaning": "That is a pen."
+  },
+  {
+   "id": "4",
+   "front": "あれはくるまです。",
+   "reading": "are wa kuruma desu.",
+   "meaning": "That over there is a car."
+  },
+  {
+   "id": "5",
+   "front": "たなかさんはせんせいです。",
+   "reading": "tanaka-san wa sensei desu.",
+   "meaning": "Mr. Tanaka is a teacher."
+  },
+  {
+   "id": "6",
+   "front": "これはなんですか。",
+   "reading": "kore wa nan desu ka.",
+   "meaning": "What is this?"
+  },
+  {
+   "id": "7",
+   "front": "あなたはがくせいですか。",
+   "reading": "anata wa gakusei desu ka.",
+   "meaning": "Are you a student?"
+  },
+  {
+   "id": "8",
+   "front": "トイレはどこですか。",
+   "reading": "toire wa doko desu ka.",
+   "meaning": "Where is the toilet?"
+  },
+  {
+   "id": "9",
+   "front": "これはいくらですか。",
+   "reading": "kore wa ikura desu ka.",
+   "meaning": "How much is this?"
+  },
+  {
+   "id": "10",
+   "front": "あのひとはだれですか。",
+   "reading": "ano hito wa dare desu ka.",
+   "meaning": "Who is that person?"
+  },
+  {
+   "id": "11",
+   "front": "わたしのほんです。",
+   "reading": "watashi no hon desu.",
+   "meaning": "It is my book."
+  },
+  {
+   "id": "12",
+   "front": "これはわたしのかばんです。",
+   "reading": "kore wa watashi no kaban desu.",
+   "meaning": "This is my bag."
+  },
+  {
+   "id": "13",
+   "front": "たなかさんのくるまです。",
+   "reading": "tanaka-san no kuruma desu.",
+   "meaning": "It is Mr. Tanaka's car."
+  },
+  {
+   "id": "14",
+   "front": "にほんのおちゃです。",
+   "reading": "nihon no ocha desu.",
+   "meaning": "It is Japanese tea."
+  },
+  {
+   "id": "15",
+   "front": "せんせいのペンです。",
+   "reading": "sensei no pen desu.",
+   "meaning": "It is the teacher's pen."
+  },
+  {
+   "id": "16",
+   "front": "みずをのみます。",
+   "reading": "mizu o nomimasu.",
+   "meaning": "I drink water."
+  },
+  {
+   "id": "17",
+   "front": "ごはんをたべます。",
+   "reading": "gohan o tabemasu.",
+   "meaning": "I eat rice."
+  },
+  {
+   "id": "18",
+   "front": "ほんをよみます。",
+   "reading": "hon o yomimasu.",
+   "meaning": "I read a book."
+  },
+  {
+   "id": "19",
+   "front": "テレビをみます。",
+   "reading": "terebi o mimasu.",
+   "meaning": "I watch TV."
+  },
+  {
+   "id": "20",
+   "front": "おんがくをききます。",
+   "reading": "ongaku o kikimasu.",
+   "meaning": "I listen to music."
+  },
+  {
+   "id": "21",
+   "front": "がっこうにいきます。",
+   "reading": "gakkou ni ikimasu.",
+   "meaning": "I go to school."
+  },
+  {
+   "id": "22",
+   "front": "いえにかえります。",
+   "reading": "ie ni kaerimasu.",
+   "meaning": "I go home."
+  },
+  {
+   "id": "23",
+   "front": "えきであいます。",
+   "reading": "eki de aimasu.",
+   "meaning": "We meet at the station."
+  },
+  {
+   "id": "24",
+   "front": "レストランでたべます。",
+   "reading": "resutoran de tabemasu.",
+   "meaning": "I eat at a restaurant."
+  },
+  {
+   "id": "25",
+   "front": "としょかんでべんきょうします。",
+   "reading": "toshokan de benkyou shimasu.",
+   "meaning": "I study at the library."
+  },
+  {
+   "id": "26",
+   "front": "わたしもがくせいです。",
+   "reading": "watashi mo gakusei desu.",
+   "meaning": "I am a student too."
+  },
+  {
+   "id": "27",
+   "front": "ともだちといきます。",
+   "reading": "tomodachi to ikimasu.",
+   "meaning": "I go with a friend."
+  },
+  {
+   "id": "28",
+   "front": "コーヒーものみます。",
+   "reading": "koohii mo nomimasu.",
+   "meaning": "I drink coffee too."
+  },
+  {
+   "id": "29",
+   "front": "ちちとはははせんせいです。",
+   "reading": "chichi to haha wa sensei desu.",
+   "meaning": "My father and mother are teachers."
+  },
+  {
+   "id": "30",
+   "front": "わたしもいきます。",
+   "reading": "watashi mo ikimasu.",
+   "meaning": "I will go too."
+  },
+  {
+   "id": "31",
+   "front": "これはおいしいです。",
+   "reading": "kore wa oishii desu.",
+   "meaning": "This is delicious."
+  },
+  {
+   "id": "32",
+   "front": "あのくるまはおおきいです。",
+   "reading": "ano kuruma wa ookii desu.",
+   "meaning": "That car is big."
+  },
+  {
+   "id": "33",
+   "front": "このほんはおもしろいです。",
+   "reading": "kono hon wa omoshiroi desu.",
+   "meaning": "This book is interesting."
+  },
+  {
+   "id": "34",
+   "front": "きょうはあついです。",
+   "reading": "kyou wa atsui desu.",
+   "meaning": "Today is hot."
+  },
+  {
+   "id": "35",
+   "front": "わたしのいえはちいさいです。",
+   "reading": "watashi no ie wa chiisai desu.",
+   "meaning": "My house is small."
+  },
+  {
+   "id": "36",
+   "front": "わたしはがくせいではありません。",
+   "reading": "watashi wa gakusei dewa arimasen.",
+   "meaning": "I am not a student."
+  },
+  {
+   "id": "37",
+   "front": "さかなはたべません。",
+   "reading": "sakana wa tabemasen.",
+   "meaning": "I do not eat fish."
+  },
+  {
+   "id": "38",
+   "front": "きのうがっこうにいきました。",
+   "reading": "kinou gakkou ni ikimashita.",
+   "meaning": "I went to school yesterday."
+  },
+  {
+   "id": "39",
+   "front": "きのうはあつかったです。",
+   "reading": "kinou wa atsukatta desu.",
+   "meaning": "Yesterday was hot."
+  },
+  {
+   "id": "40",
+   "front": "おいしかったです。",
+   "reading": "oishikatta desu.",
+   "meaning": "It was delicious."
+  }
+ ]
+}
