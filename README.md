@@ -2,7 +2,7 @@
 
 Learn to read and speak basic Japanese and Mandarin. Flutter, web-first.
 
-**Status: v0.8. Compiled, tested and deployed by CI. Katakana, XP/streak and writing practice are new and not yet run by hand.**
+**Status: v0.9. Compiled, tested and deployed by CI. Katakana, XP/streak and writing practice are new and not yet run by hand.**
 
 ## First run
 
@@ -22,7 +22,7 @@ One-time setup: repo Settings > Pages > Source: **GitHub Actions**. Free Pages n
 
 Site: https://johnkg.github.io/moji/
 
-## What v0.8 does
+## What v0.9 does
 
 Each language has two paths. Units unlock in order inside each path.
 
@@ -34,6 +34,7 @@ Each language has two paths. Units unlock in order inside each path.
 - Wrong answers come back once. Finishing a unit puts its items into flashcard review, due the next day.
 - Flashcard decks with spaced repetition (SM-2 style, Again / Hard / Good / Easy)
 - Audio through device or browser text-to-speech
+- **Read: sentences** (new path for each language): 8 units of 5 sentences each, in kana for Japanese (は, です, か, の, を, に, で, も, と, い-adjectives, not and past) and in the hanzi already learned for Mandarin (是, 吗, 不, 很, 的, 想, question words, time words). Each sentence is read and matched to its meaning, completed by picking the missing particle, heard and matched to the written sentence, and built by tapping word chips into the right order.
 - **Write** (pencil button on kana and Mandarin hanzi units; combined sounds like きゃ and the long mark ー have no stroke data, so they are skipped): for each character, watch the strokes in order, trace over a guide, then write from memory. The check is loose: each stroke must start and end near the right place and go the right way. 5 XP per character written from memory.
 - XP, levels and a daily streak. A unit gives 20 XP (5 on a redo) plus 2 per exercise right first try; a flashcard not marked Again gives 2. A level is 100 XP. The streak counts days in a row with any activity.
 - Progress saved on device
@@ -59,6 +60,6 @@ When adding CC-CEDICT, JMdict, KanjiVG or Tatoeba data, record the licence here.
 
 ## Next
 
-1. Reading path for sentences (は, です, を and basic grammar written out in kana)
-2. Speech check (say it aloud)
-3. Writing practice for combined sounds (two characters in a row)
+1. Speech check (say it aloud)
+2. Writing practice for combined sounds (two characters in a row)
+3. Recorded voice: see tool/AUDIO_NOTES.md

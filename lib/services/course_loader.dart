@@ -13,9 +13,11 @@ const List<String> courseFiles = [
   'ja_hiragana_extra_course',
   'ja_katakana_course',
   'ja_katakana_extra_course',
+  'ja_reading_sentences_course',
   'zh_speaking_course',
   'zh_sentences_course',
   'zh_basics_course',
+  'zh_reading_sentences_course',
 ];
 
 Course parseCourse(String source) {

@@ -127,7 +127,7 @@ void main() {
   });
 
   test('every exercise has its answer among distinct options', () {
-    for (final course in courses) {
+    for (final course in courses.where((c) => !c.isSentences)) {
       for (var i = 0; i < course.units.length; i++) {
         final unit = course.units[i];
         final exercises = buildExercises(course, i, math.Random(7));
@@ -278,5 +278,80 @@ void main() {
         expect(item.hint, isNotEmpty, reason: item.front);
       }
     }
+  });
+
+  group('sentence reading courses', () {
+    final sentenceCourses = courses.where((c) => c.isSentences).toList();
+
+    test('exist for both languages with whole sentences', () {
+      expect(sentenceCourses.map((c) => c.lang).toSet(), {'ja', 'zh'});
+      for (final course in sentenceCourses) {
+        expect(course.units.length, greaterThanOrEqualTo(8));
+        final items = [for (final u in course.units) ...u.items];
+        expect(items.length, greaterThanOrEqualTo(40));
+        final meanings = items.map((i) => i.meaning).toList();
+        expect(meanings.toSet().length, meanings.length, reason: '${course.id} repeats a meaning');
+      }
+    });
+
+    test('word chips join into the sentence and gaps point at a real chip', () {
+      for (final course in sentenceCourses) {
+        for (final item in [for (final u in course.units) ...u.items]) {
+          expect(item.parts.join(), item.front);
+          final blank = item.blank;
+          if (blank == null) continue;
+          expect(blank.part, inInclusiveRange(0, item.parts.length - 1), reason: item.front);
+          expect(blank.options, contains(item.parts[blank.part]), reason: item.front);
+          expect(blank.options.toSet().length, 4, reason: item.front);
+        }
+      }
+    });
+
+    test('sentences only use characters the learner has already met', () {
+      Set<String> runesOf(Iterable<Course> from) => {
+            for (final c in from)
+              for (final u in c.units)
+                for (final i in u.items) ...i.front.runes.map(String.fromCharCode),
+          };
+      final known = {
+        'ja': runesOf(courses.where((c) => c.lang == 'ja' && c.mode == CourseMode.reading)),
+        'zh': runesOf(courses.where((c) => c.id == 'zh_basics_course')),
+      };
+      for (final course in sentenceCourses) {
+        final ok = {...known[course.lang]!, '。', '？', '，'};
+        for (final item in [for (final u in course.units) ...u.items]) {
+          for (final rune in item.front.runes) {
+            expect(ok, contains(String.fromCharCode(rune)), reason: item.front);
+          }
+        }
+      }
+    });
+
+    test('every unit builds read, fill, hear and arrange exercises with the answer available', () {
+      for (final course in sentenceCourses) {
+        for (var i = 0; i < course.units.length; i++) {
+          final unit = course.units[i];
+          final exercises = buildExercises(course, i, math.Random(5));
+          int count(ExerciseKind kind) => exercises.where((e) => e.kind == kind).length;
+          expect(count(ExerciseKind.readSentence), unit.items.length, reason: unit.id);
+          expect(count(ExerciseKind.hearSentence), unit.items.length, reason: unit.id);
+          expect(count(ExerciseKind.fillBlank), unit.items.where((it) => it.blank != null).length,
+              reason: unit.id);
+          expect(count(ExerciseKind.arrange), unit.items.length, reason: unit.id);
+          for (final exercise in exercises) {
+            if (exercise.kind == ExerciseKind.arrange) {
+              final chips = [...exercise.options]..sort();
+              final parts = [...exercise.parts]..sort();
+              expect(chips, parts, reason: exercise.reveal);
+              expect(exercise.parts.join(), exercise.answer);
+            } else {
+              expect(exercise.options, contains(exercise.answer), reason: exercise.reveal);
+              expect(exercise.options.toSet().length, exercise.options.length);
+              expect(exercise.options.length, inInclusiveRange(2, 4));
+            }
+          }
+        }
+      }
+    });
   });
 }
